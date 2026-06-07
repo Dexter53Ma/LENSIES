@@ -17,7 +17,7 @@ export interface HeroData {
   title: string;
   body: string;
   scrollDownLabel: string;
-  videoSrc: string;
+  youtubeId: string;
 }
 
 export interface ParallaxGridData {

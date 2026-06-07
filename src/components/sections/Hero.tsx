@@ -8,9 +8,74 @@ export interface HeroProps {
   data: HeroData;
 }
 
+type YTPlayer = {
+  mute: () => void;
+  unMute: () => void;
+  playVideo: () => void;
+  pauseVideo: () => void;
+  destroy: () => void;
+  setSize?: (w: number, h: number) => void;
+};
+
+type YTPlayerOptions = {
+  videoId: string;
+  playerVars?: Record<string, number | string>;
+  events?: {
+    onReady?: (event: { target: YTPlayer }) => void;
+  };
+};
+
+type YTNs = {
+  Player: new (
+    el: HTMLElement | string,
+    options: YTPlayerOptions,
+  ) => YTPlayer;
+};
+
+declare global {
+  interface Window {
+    YT?: YTNs;
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
+
+const YOUTUBE_IFRAME_API_SRC = "https://www.youtube.com/iframe_api";
+const SCRIPT_ID = "lensies-youtube-iframe-api";
+
+let apiPromise: Promise<YTNs> | null = null;
+
+function loadYouTubeApi(): Promise<YTNs> {
+  if (typeof window === "undefined") {
+    return Promise.reject(new Error("window is not available"));
+  }
+  if (apiPromise) return apiPromise;
+  apiPromise = new Promise<YTNs>((resolve) => {
+    const w = window;
+    const previous = w.onYouTubeIframeAPIReady;
+    w.onYouTubeIframeAPIReady = () => {
+      previous?.();
+      if (w.YT) resolve(w.YT);
+    };
+    if (w.YT?.Player) {
+      resolve(w.YT);
+      return;
+    }
+    let script = document.getElementById(SCRIPT_ID) as HTMLScriptElement | null;
+    if (!script) {
+      script = document.createElement("script");
+      script.id = SCRIPT_ID;
+      script.src = YOUTUBE_IFRAME_API_SRC;
+      script.async = true;
+      document.head.appendChild(script);
+    }
+  });
+  return apiPromise;
+}
+
 export default function Hero({ data }: HeroProps) {
   const sectionRef = useRef<HTMLElement>(null);
   const pioneersRef = useRef<HTMLDivElement>(null);
+  const playerHostRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const onScroll = () => {
@@ -29,6 +94,50 @@ export default function Hero({ data }: HeroProps) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  useEffect(() => {
+    const host = playerHostRef.current;
+    if (!host) return;
+    let player: YTPlayer | null = null;
+    let cancelled = false;
+
+    loadYouTubeApi().then((YT) => {
+      if (cancelled || !host.isConnected) return;
+      player = new YT.Player(host, {
+        videoId: data.youtubeId,
+        playerVars: {
+          autoplay: 1,
+          mute: 1,
+          loop: 1,
+          playlist: data.youtubeId,
+          controls: 0,
+          rel: 0,
+          modestbranding: 1,
+          playsinline: 1,
+          disablekb: 1,
+          fs: 0,
+          iv_load_policy: 3,
+          cc_load_policy: 0,
+          showinfo: 0,
+        },
+        events: {
+          onReady: (event) => {
+            event.target.mute();
+            event.target.playVideo();
+          },
+        },
+      });
+    });
+
+    return () => {
+      cancelled = true;
+      try {
+        player?.destroy();
+      } catch {
+        /* player may not have finished initializing */
+      }
+    };
+  }, [data.youtubeId]);
+
   const scrollDown = () => {
     const next = sectionRef.current?.nextElementSibling as HTMLElement | null;
     next?.scrollIntoView({ behavior: "smooth" });
@@ -39,14 +148,10 @@ export default function Hero({ data }: HeroProps) {
       ref={sectionRef}
       className="relative h-screen w-full overflow-hidden bg-foreground text-cream"
     >
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        preload="auto"
-        src={data.videoSrc}
-        className="absolute inset-0 size-full object-cover"
+      <div
+        ref={playerHostRef}
+        aria-hidden
+        className="pointer-events-none absolute top-1/2 left-1/2 h-[56.25vw] w-[100vw] min-h-[100vh] min-w-[177.78vh] -translate-x-1/2 -translate-y-1/2"
       />
       <div
         aria-hidden

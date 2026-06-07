@@ -54,6 +54,7 @@ next-env.d.ts
 /audit-*.png
 /qa-*.png
 /screenshot-*.png
+/hero-*.png
 
 # OS / editor
 Thumbs.db

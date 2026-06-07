@@ -9,7 +9,7 @@ export interface SafetyHeroProps {
   data: SafetyHeroData;
 }
 
-const DEFAULT_VIDEO = "/videos/Villa Marrakech Aerial Video.mp4";
+const DEFAULT_VIDEO = "/videos/light-tunnel.mp4";
 
 export default function SafetyHero({ data }: SafetyHeroProps) {
   const sectionRef = useRef<HTMLElement>(null);

@@ -269,7 +269,7 @@ export const en: Dictionary = {
       title: "Marrakech, shot honestly.",
       body: "Lensies is a Marrakech-based studio for real estate photography, videography, drone, events, and curated experiences across Morocco.",
       scrollDownLabel: "Scroll down",
-      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+      youtubeId: "h64HW1hbyyk",
     },
     platforms: { eyebrow: "Listed on" },
     parallax: {
@@ -440,7 +440,7 @@ export const en: Dictionary = {
       title: "We shoot what we love, where we live.",
       body: "Lensies is a creative studio built by photographers, drone operators, and storytellers. We've been making Marrakech look like itself for eight years.",
       scrollDownLabel: "Scroll down",
-      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+      youtubeId: "h64HW1hbyyk",
     },
     parallax: {
       title: "Eight years on rooftops, in riads, and behind the lens.",
@@ -527,7 +527,7 @@ export const en: Dictionary = {
       title: "Real estate, video, drone, events, tours, 3D.",
       body: "Pick one service or bundle a package. We staff, shoot, edit, and deliver — all under one roof, one invoice, one deadline.",
       scrollDownLabel: "Scroll down",
-      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+      youtubeId: "h64HW1hbyyk",
     },
     parallax: {
       title: "Built for Marrakech briefs.",
@@ -614,7 +614,7 @@ export const en: Dictionary = {
       title: "What we've been shooting.",
       body: "A cross-section of recent projects across real estate, hospitality, events, tours, and brand. Hover, click, request a private gallery link.",
       scrollDownLabel: "Scroll down",
-      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+      youtubeId: "h64HW1hbyyk",
     },
     data: {
       eyebrow: "Portfolio",
@@ -680,7 +680,7 @@ export const en: Dictionary = {
       title: "Pricing, kept simple.",
       body: "Real estate, riads, villas, events, and drone. One studio, one invoice, one deadline. Pick a package or request a custom quote inside 24 hours.",
       scrollDownLabel: "Scroll down",
-      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+      youtubeId: "h64HW1hbyyk",
     },
     data: {
       eyebrow: "Pricing",
@@ -816,7 +816,7 @@ export const en: Dictionary = {
       title: "Tell us what to shoot.",
       body: "Real estate, video, drone, events, tours — or something we haven't done yet. We reply inside 24 hours, weekdays.",
       scrollDownLabel: "Scroll down",
-      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+      youtubeId: "h64HW1hbyyk",
     },
     parallax: {
       title: "A small studio in Gueliz, Marrakech.",
@@ -877,7 +877,7 @@ export const en: Dictionary = {
       title: "What we've been learning.",
       body: "Behind-the-scenes from Marrakech shoots, real estate photography guides, drone tips, and the small things that make a frame finish.",
       scrollDownLabel: "Scroll down",
-      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+      youtubeId: "h64HW1hbyyk",
     },
     data: {
       eyebrow: "Field notes",

@@ -9,7 +9,7 @@ export interface ProductShowcaseProps {
   data: ProductShowcaseData;
 }
 
-const DEFAULT_VIDEO = "/videos/Villa Marrakech Aerial Video.mp4";
+const DEFAULT_VIDEO = "/videos/feature.mp4";
 
 export default function ProductShowcase({ data }: ProductShowcaseProps) {
   const cards = data.cards.map((c) => ({
