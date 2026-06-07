@@ -90,6 +90,10 @@ export default function Insights() {
                 <img
                   src={a.image}
                   alt={a.title}
+                  width={576}
+                  height={432}
+                  loading="lazy"
+                  decoding="async"
                   className="size-full object-cover transition-transform duration-700"
                 />
               </div>

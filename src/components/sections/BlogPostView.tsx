@@ -54,6 +54,10 @@ export default function BlogPostView({ post, related }: BlogPostViewProps) {
               key={post.heroImage}
               src={post.heroImage}
               alt={post.title}
+              width={1920}
+              height={823}
+              decoding="async"
+              fetchPriority="high"
               initial={{ opacity: 0, scale: 1.05 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
@@ -118,6 +122,9 @@ export default function BlogPostView({ post, related }: BlogPostViewProps) {
                 <img
                   src={post.author.avatar}
                   alt={post.author.name}
+                  width={56}
+                  height={56}
+                  decoding="async"
                   className="size-56 rounded-full object-cover"
                 />
                 <div className="flex flex-col gap-2">
@@ -173,6 +180,10 @@ export default function BlogPostView({ post, related }: BlogPostViewProps) {
                   <img
                     src={section.image}
                     alt={section.imageCaption ?? ""}
+                    width={960}
+                    height={640}
+                    loading="lazy"
+                    decoding="async"
                     className="aspect-[3/2] w-full object-cover"
                   />
                   {section.imageCaption ? (
@@ -307,6 +318,10 @@ export default function BlogPostView({ post, related }: BlogPostViewProps) {
                       <img
                         src={p.heroImage}
                         alt={p.title}
+                        width={640}
+                        height={480}
+                        loading="lazy"
+                        decoding="async"
                         className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
                       />
                     </div>

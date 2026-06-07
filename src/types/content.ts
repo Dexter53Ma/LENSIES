@@ -1,5 +1,11 @@
 // Content types for the Waabi clone
 
+declare global {
+  interface Window {
+    __lastHeaderY?: number;
+  }
+}
+
 export interface AnnouncementBarProps {
   text: string;
   linkText: string;

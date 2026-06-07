@@ -29,8 +29,8 @@ export default function Footer({
         loop
         muted
         playsInline
-        preload="auto"
-        poster={posterSrc}
+        preload="metadata"
+        poster={posterSrc ?? "/images/parallax-9.jpg"}
         src={videoSrc}
         className="absolute inset-0 size-full object-cover"
       />
@@ -46,6 +46,10 @@ export default function Footer({
             <img
               src="/images/logo.png"
               alt="Lensies"
+              width={156}
+              height={130}
+              loading="lazy"
+              decoding="async"
               className="h-110 w-auto md:h-130"
             />
             <p className="max-w-full text-pretty font-body text-[1.3rem] font-medium leading-[1.5] text-white/85 sm:max-w-[44rem] sm:text-[1.4rem] md:text-[1.5rem]">

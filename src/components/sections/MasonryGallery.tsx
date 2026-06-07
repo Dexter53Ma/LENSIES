@@ -125,6 +125,10 @@ export default function MasonryGallery() {
                 <img
                   src={featured.src}
                   alt={featured.title}
+                  width={1080}
+                  height={810}
+                  fetchPriority="high"
+                  decoding="async"
                   className="size-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
                   style={{ transitionTimingFunction: "var(--ease-snappy)" }}
                 />
@@ -191,13 +195,17 @@ export default function MasonryGallery() {
                 aria-label={`${data.zoomBadgeLabel}: ${project.title}`}
               >
                 <div className={`relative w-full ${ASPECT_CLASS[project.aspect]}`}>
-                  <img
-                    src={project.src}
-                    alt={project.title}
-                    className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    style={{ transitionTimingFunction: "var(--ease-snappy)" }}
-                    loading="lazy"
-                  />
+                    <img
+                      src={project.src}
+                      alt={project.title}
+                      width={640}
+                      height={640}
+                      loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
+                      className="size-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      style={{ transitionTimingFunction: "var(--ease-snappy)" }}
+                    />
                   <div
                     aria-hidden
                     className="pointer-events-none absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
@@ -516,7 +524,10 @@ function Lightbox({ projects, index, onClose, onNext, onPrev, labels, bookSimila
                 ref={imageRef}
                 src={project.src}
                 alt={project.title}
+                width={1080}
+                height={810}
                 draggable={false}
+                decoding="async"
                 className="max-h-[78vh] max-w-full select-none rounded-[1.2rem] object-contain shadow-[0_3rem_8rem_-2rem_oklab(0_0_0_/0.6)] md:max-h-[80vh]"
                 style={{
                   transform: `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`,

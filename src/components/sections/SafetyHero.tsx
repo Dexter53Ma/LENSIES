@@ -1,8 +1,9 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { ArrowRightIcon } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
+import { useSharedScroll } from "@/components/use-shared-scroll";
 import type { SafetyHeroData } from "@/i18n/types";
 
 export interface SafetyHeroProps {
@@ -16,22 +17,18 @@ export default function SafetyHero({ data }: SafetyHeroProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const videoSrc = data.videoSrc ?? DEFAULT_VIDEO;
 
-  useEffect(() => {
-    const onScroll = () => {
-      const sec = sectionRef.current;
-      const video = videoRef.current;
-      if (!sec || !video) return;
-      const rect = sec.getBoundingClientRect();
-      const vh = window.innerHeight;
-      const scrolled = -rect.top;
-      if (scrolled > -200 && scrolled < vh + rect.height) {
-        const scale = 1 + Math.min(0.08, Math.max(0, scrolled / vh) * 0.08);
-        video.style.transform = `scale(${scale})`;
-      }
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  useSharedScroll(() => {
+    const sec = sectionRef.current;
+    const video = videoRef.current;
+    if (!sec || !video) return;
+    const rect = sec.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const scrolled = -rect.top;
+    if (scrolled > -200 && scrolled < vh + rect.height) {
+      const scale = 1 + Math.min(0.08, Math.max(0, scrolled / vh) * 0.08);
+      video.style.transform = `scale(${scale})`;
+    }
+  });
 
   return (
     <section
@@ -44,7 +41,8 @@ export default function SafetyHero({ data }: SafetyHeroProps) {
         loop
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
+        poster="/images/parallax-11.jpg"
         src={videoSrc}
         className="absolute inset-0 size-full object-cover"
         style={{ willChange: "transform", transition: "transform 0.4s linear" }}

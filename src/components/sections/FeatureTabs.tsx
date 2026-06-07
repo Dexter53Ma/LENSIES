@@ -1,14 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Reveal } from "@/components/reveal";
+import { useSharedScroll } from "@/components/use-shared-scroll";
 import type { FeatureTabsData } from "@/i18n/types";
 
 export interface FeatureTabsProps {
   data: FeatureTabsData;
 }
 
-const DEFAULT_IMAGE = "/images/feature-safe.png";
+const DEFAULT_IMAGE = "/images/feature-safe.jpg";
 
 export default function FeatureTabs({ data }: FeatureTabsProps) {
   const features = data.features;
@@ -16,21 +17,16 @@ export default function FeatureTabs({ data }: FeatureTabsProps) {
   const [active, setActive] = useState(0);
   const image = data.image ?? DEFAULT_IMAGE;
 
-  useEffect(() => {
-    const onScroll = () => {
-      if (!sectionRef.current) return;
-      const rect = sectionRef.current.getBoundingClientRect();
-      const vh = window.innerHeight;
-      const totalScrollable = rect.height - vh;
-      const scrolled = Math.max(0, Math.min(totalScrollable, -rect.top + vh * 0.5));
-      const ratio = totalScrollable > 0 ? scrolled / totalScrollable : 0;
-      const idx = Math.min(features.length - 1, Math.max(0, Math.floor(ratio * features.length)));
-      setActive(idx);
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, [features.length]);
+  useSharedScroll(() => {
+    if (!sectionRef.current) return;
+    const rect = sectionRef.current.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const totalScrollable = rect.height - vh;
+    const scrolled = Math.max(0, Math.min(totalScrollable, -rect.top + vh * 0.5));
+    const ratio = totalScrollable > 0 ? scrolled / totalScrollable : 0;
+    const idx = Math.min(features.length - 1, Math.max(0, Math.floor(ratio * features.length)));
+    setActive((prev) => (prev === idx ? prev : idx));
+  });
 
   return (
     <section
@@ -49,6 +45,10 @@ export default function FeatureTabs({ data }: FeatureTabsProps) {
                 <img
                   src={image}
                   alt={data.imageAlt ?? data.heading}
+                  width={1080}
+                  height={1350}
+                  decoding="async"
+                  fetchPriority="high"
                   className="size-full object-cover"
                 />
               </div>

@@ -14,7 +14,7 @@ const DEFAULT_VIDEO = "/videos/feature.mp4";
 export default function ProductShowcase({ data }: ProductShowcaseProps) {
   const cards = data.cards.map((c) => ({
     ...c,
-    videoSrc: c.videoSrc ?? DEFAULT_VIDEO,
+    videoSrc: c.imageSrc ? undefined : (c.videoSrc ?? DEFAULT_VIDEO),
     align: c.align ?? "left",
   }));
   const sectionRef = useRef<HTMLElement>(null);
@@ -121,24 +121,24 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
                     ) : null}
                   </div>
 
-                  <div
-                    className={`img-zoom relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] bg-cream md:col-span-7 ${
-                      card.align === "right" ? "md:order-1" : ""
-                    }`}
-                  >
-                    {card.videoSrc ? (
-                      <video
-                        autoPlay
-                        loop
-                        muted
-                        playsInline
-                        src={card.videoSrc}
-                        className="size-full object-cover"
-                      />
-                    ) : card.imageSrc ? (
-                      <img src={card.imageSrc} alt={card.title} className="size-full object-cover" />
-                    ) : null}
-                  </div>
+                <div
+                  className={`img-zoom relative aspect-[4/3] w-full overflow-hidden rounded-[2rem] bg-cream md:col-span-7 ${
+                    card.align === "right" ? "md:order-1" : ""
+                  }`}
+                >
+                  {card.imageSrc ? (
+                    <img src={card.imageSrc} alt={card.title} className="size-full object-cover" />
+                  ) : card.videoSrc ? (
+                    <video
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      src={card.videoSrc}
+                      className="size-full object-cover"
+                    />
+                  ) : null}
+                </div>
                 </div>
               ))}
             </div>
@@ -186,7 +186,9 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
                 className="flex flex-col gap-16"
               >
                 <div className="img-zoom relative aspect-[4/3] w-full overflow-hidden rounded-[1.6rem] bg-cream">
-                  {card.videoSrc ? (
+                  {card.imageSrc ? (
+                    <img src={card.imageSrc} alt={card.title} width={1080} height={810} loading="lazy" decoding="async" className="size-full object-cover" />
+                  ) : card.videoSrc ? (
                     <video
                       autoPlay
                       loop

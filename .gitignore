@@ -55,6 +55,11 @@ next-env.d.ts
 /qa-*.png
 /screenshot-*.png
 /hero-*.png
+/home-*.png
+/portfolio-*.png
+/blog-*.png
+/dev-server.log
+/dev-server-err.log
 
 # OS / editor
 Thumbs.db

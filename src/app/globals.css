@@ -457,12 +457,12 @@
     transform: scaleX(1);
   }
 
-  /* Smooth image fade-in on load */
+  /* Smooth image fade-in on load (only for in-view images) */
   @keyframes img-fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
   }
-  img, video {
+  .img-fade-in {
     animation: img-fade-in 0.6s var(--ease-snappy) both;
   }
 

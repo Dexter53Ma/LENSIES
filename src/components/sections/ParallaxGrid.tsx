@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Reveal } from "@/components/reveal";
+import { useSharedScroll } from "@/components/use-shared-scroll";
 import type { ParallaxGridData } from "@/i18n/types";
 
 export interface ParallaxGridProps {
@@ -80,20 +81,15 @@ export default function ParallaxGrid({ data }: ParallaxGridProps) {
   const [progress, setProgress] = useState(0);
   const previewImage = data.previewImage ?? DEFAULT_PREVIEW;
 
-  useEffect(() => {
-    const onScroll = () => {
-      if (!sectionRef.current) return;
-      const rect = sectionRef.current.getBoundingClientRect();
-      const vh = window.innerHeight;
-      const total = rect.height;
-      const scrolled = Math.max(0, -rect.top);
-      const p = Math.min(1, scrolled / (total - vh));
-      setProgress(p);
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  useSharedScroll(() => {
+    if (!sectionRef.current) return;
+    const rect = sectionRef.current.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const total = rect.height;
+    const scrolled = Math.max(0, -rect.top);
+    const p = Math.min(1, scrolled / (total - vh));
+    setProgress(p);
+  });
 
   return (
     <section
@@ -125,6 +121,11 @@ export default function ParallaxGrid({ data }: ParallaxGridProps) {
                     <img
                       src={cell.src}
                       alt=""
+                      width={640}
+                      height={640}
+                      loading="lazy"
+                      decoding="async"
+                      fetchPriority="low"
                       className="size-full object-cover"
                     />
                   ) : null}
@@ -153,6 +154,11 @@ export default function ParallaxGrid({ data }: ParallaxGridProps) {
           <img
             src={previewImage}
             alt=""
+            width={640}
+            height={640}
+            loading="lazy"
+            decoding="async"
+            fetchPriority="low"
             className="size-full object-cover"
           />
         </Reveal>
@@ -175,7 +181,7 @@ export default function ParallaxGrid({ data }: ParallaxGridProps) {
               delay={((i % 4) + 1) as 1 | 2 | 3 | 4}
               className="img-zoom relative aspect-square w-full overflow-hidden rounded-[1.2rem] bg-cream"
             >
-              <img src={src} alt="" className="size-full object-cover" />
+              <img src={src} alt="" width={640} height={640} loading="lazy" decoding="async" fetchPriority="low" className="size-full object-cover" />
             </Reveal>
           ))}
         </div>

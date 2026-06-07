@@ -6,6 +6,7 @@ import { CalendarIcon } from "@/components/icons-extended";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import BookingModal from "@/components/BookingModal";
 import { useT } from "@/i18n/provider";
+import { useSharedScroll } from "@/components/use-shared-scroll";
 
 export default function Header() {
   const t = useT();
@@ -22,18 +23,15 @@ export default function Header() {
     return () => clearTimeout(id);
   }, []);
 
-  useEffect(() => {
-    let lastY = window.scrollY;
-    const onScroll = () => {
-      const y = window.scrollY;
-      setScrolled(y > 24);
-      setHidden(y > lastY && y > 200);
-      lastY = y;
-    };
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  useSharedScroll(() => {
+    const y = window.scrollY;
+    setScrolled((prev) => (prev !== (y > 24) ? y > 24 : prev));
+    setHidden((prev) => {
+      const next = y > (window.__lastHeaderY ?? y) && y > 200;
+      window.__lastHeaderY = y;
+      return next;
+    });
+  });
 
   useEffect(() => {
     document.body.classList.toggle("menu-open", open);
@@ -75,6 +73,10 @@ export default function Header() {
                 <img
                   src="/images/logo.png"
                   alt="Lensies"
+                  width={120}
+                  height={36}
+                  decoding="async"
+                  fetchPriority="high"
                   className="h-32 w-auto sm:h-36"
                 />
               </a>
@@ -225,6 +227,7 @@ export default function Header() {
                     loop
                     muted
                     playsInline
+                    preload="none"
                     src={NAV[activeIdx].image}
                     className="size-full object-cover"
                     style={{
@@ -235,6 +238,10 @@ export default function Header() {
                   <img
                     src={NAV[activeIdx].image}
                     alt={NAV[activeIdx].label}
+                    width={640}
+                    height={480}
+                    loading="lazy"
+                    decoding="async"
                     className="size-full object-cover"
                     style={{
                       animation: "reveal-scale 0.5s var(--ease-snappy)",
