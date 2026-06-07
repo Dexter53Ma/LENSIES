@@ -1,0 +1,1354 @@
+import type { DeepPartial, Dictionary } from "../types";
+
+/**
+ * FRENCH TRANSLATION STUB
+ *
+ * Fill in any string you want translated. Anything left as `undefined`
+ * (or omitted entirely) falls back to the English string at render
+ * time via the deep-merge loader in `dictionaries/index.ts`.
+ *
+ * To preview what an untranslated page looks like, set a value to the
+ * empty string `""` — the fallback logic treats that as "use English".
+ *
+ * Add a new section only when you have a translation ready — missing
+ * keys inherit the English value automatically.
+ */
+export const fr: DeepPartial<Dictionary> = {
+  meta: {
+    titleDefault: "Lensies — Photographie & Vidéo Immobilière à Marrakech",
+    description:
+      "Lensies est un studio créatif basé à Marrakech, spécialisé en photographie immobilière, vidéographie, drone, événements, expériences et visites à travers le Maroc.",
+    addressLocality: "Marrakech",
+    addressRegion: "Marrakech-Safi",
+    addressCountry: "MA",
+    pageTitle: {
+      home: "Lensies",
+      about: "À propos",
+      services: "Services",
+      portfolio: "Portfolio",
+      pricing: "Tarifs",
+      contact: "Contact",
+      blog: "Notes de terrain",
+      blogPostTemplate: "{title} — Notes de terrain",
+    },
+  },
+
+  localeSwitcher: {
+    enLabel: "EN",
+    frLabel: "FR",
+    ariaLabel: "Langue",
+  },
+
+  nav: {
+    items: [
+      {
+        label: "Accueil",
+        href: "/",
+        description:
+          "Lensies — le studio de Marrakech pour l'immobilier, le drone, la vidéo, les événements et les visites.",
+        tags: ["Studio", "Marrakech", "Métier"],
+        image: "/images/work-2.png",
+      },
+      {
+        label: "À propos",
+        href: "/about",
+        description:
+          "Huit ans, une ville, une petite équipe qui tourne ensemble. Découvrez Lensies.",
+        tags: ["Histoire", "Équipe", "Valeurs"],
+        image: "/images/work-3.png",
+      },
+      {
+        label: "Services",
+        href: "/services",
+        description:
+          "Immobilier, vidéographie, drone, événements, expériences, visites. Six métiers, un seul studio.",
+        tags: ["Immobilier", "Drone", "Vidéo"],
+        image: "/images/work-5.png",
+      },
+      {
+        label: "Portfolio",
+        href: "/portfolio",
+        description:
+          "Sélection de travaux à travers riads, hôtels, marques, mariages et visites au Maroc.",
+        tags: ["Immobilier", "Hôtellerie", "Événements"],
+        image: "/images/work-7.png",
+      },
+      {
+        label: "Tarifs",
+        href: "/pricing",
+        description:
+          "Tarifs transparents pour l'immobilier, les riads, les villas, les événements et le drone.",
+        tags: ["MAD", "Formules", "Devis"],
+        image: "/images/work-4.png",
+      },
+      {
+        label: "Blog",
+        href: "/blog",
+        description:
+          "Notes de terrain depuis les tournages à Marrakech, guides immobiliers, conseils drone.",
+        tags: ["Terrain", "Conseils", "Guides"],
+        image: "/images/work-14.png",
+      },
+      {
+        label: "Contact",
+        href: "/contact",
+        description:
+          "Obtenez un devis en 24 heures. Studio à Guéliz, Marrakech.",
+        tags: ["Réserver", "Devis", "Presse"],
+        image: "/images/work-8.png",
+      },
+    ],
+  },
+
+  header: {
+    bookButton: "Réserver",
+    openMenuLabel: "Ouvrir le menu",
+    closeMenuLabel: "Fermer le menu",
+    logoAriaLabel: "Logo Lensies",
+    navigationLabel: "Navigation",
+    previewLabel: "Aperçu",
+    getInTouchLabel: "Nous contacter",
+    copyrightTemplate: "© {year} Lensies",
+  },
+
+  footer: {
+    taglineTemplate:
+      "Photographie immobilière, vidéographie, drone, événements et visites à Marrakech. Écrivez-nous à",
+    emailLabel: "E-mail",
+    pressLabel: "Presse",
+    email: "contact@lensies.com",
+    pressEmail: "Press@lensies.com",
+    studioLabel: "Studio",
+    copyrightTemplate: "© {year} Lensies Studio · Marrakech",
+    aboutLinks: [
+      { label: "Accueil", href: "/" },
+      { label: "À propos", href: "/about" },
+      { label: "Services", href: "/services" },
+      { label: "Portfolio", href: "/portfolio" },
+      { label: "Contact", href: "/contact" },
+    ],
+    socials: [
+      { label: "Instagram", href: "https://instagram.com/lensies.ma", kind: "instagram" },
+      { label: "YouTube", href: "https://youtube.com/@lensies", kind: "youtube" },
+      { label: "X", href: "https://x.com/lensies", kind: "x" },
+    ],
+  },
+
+  backToTop: {
+    label: "Retour en haut",
+  },
+
+  aiSupport: {
+    triggerLabel: "Ouvrir l'assistant IA",
+    closeLabel: "Fermer l'assistant IA",
+    title: "Conciergerie Lensies",
+    subtitle: "IA · réponse en quelques secondes",
+    clearLabel: "Effacer",
+    clearAriaLabel: "Effacer la conversation",
+    welcomeLabel: "Bienvenue",
+    welcome:
+      "Posez-moi vos questions sur nos services, nos tarifs, les délais de livraison ou comment réserver. Je suis la conciergerie Lensies — formée sur les services du studio.",
+    tryLabel: "Essayer",
+    inputPlaceholder: "Demandez tout sur Lensies…",
+    sendLabel: "Envoyer le message",
+    errorFallback:
+      "Désolé — l'assistant est hors ligne. Envoyez un e-mail à contact@lensies.com ou un WhatsApp au +212 620 137 771, l'équipe vous répondra sous 24 heures.",
+    emptyReply:
+      "Je n'arrive pas à joindre l'assistant. Réessayez ou écrivez à contact@lensies.com.",
+    suggestions: [
+      "Combien coûte une séance immobilière ?",
+      "Faites-vous voler des drones dans la médina ?",
+      "Quels sont vos délais de livraison ?",
+      "Comment réserver une séance ?",
+    ],
+  },
+
+  booking: {
+    bookSessionLabel: "Réserver une séance",
+    services: [
+      {
+        id: "appartement",
+        name: "Appartement",
+        price: "1 000 MAD",
+        description: "Appartements modernes, studios",
+      },
+      {
+        id: "riads",
+        name: "Riads",
+        price: "1 500 MAD",
+        description: "Riads traditionnels marocains",
+      },
+      {
+        id: "villa",
+        name: "Villa",
+        price: "2 000 MAD",
+        description: "Villas de luxe, intérieur + extérieur",
+      },
+      {
+        id: "events",
+        name: "Événements",
+        price: "3 000–5 000 MAD",
+        description: "Mariages, séminaires, réceptions",
+      },
+      {
+        id: "drone",
+        name: "Pack Drone",
+        price: "4 500 MAD",
+        description: "Vidéo aérienne cinéma + photos",
+      },
+    ],
+    steps: [
+      { title: "Service", subtitle: "Que filmons-nous ?" },
+      { title: "Projet", subtitle: "Où est-ce ?" },
+      { title: "Date & heure", subtitle: "Quand êtes-vous disponible ?" },
+      { title: "Budget", subtitle: "Quel ordre d'idée ?" },
+      { title: "Vos coordonnées", subtitle: "Comment vous joindre ?" },
+      { title: "Confirmation", subtitle: "Presque fini" },
+    ],
+    serviceStepTitle: "Choisissez un service",
+    serviceStepSubtitle:
+      "Dites-nous ce que nous filmons. Vous pourrez préciser à l'étape suivante.",
+    projectStepTitle: "Parlez-nous du projet",
+    projectStepSubtitle:
+      "Le lieu et une courte description — une seule phrase suffit.",
+    dateTimeStepTitle: "Choisissez une date et une heure",
+    dateTimeStepSubtitle:
+      "Nous confirmons la disponibilité sous 24 heures, en semaine.",
+    budgetStepTitle: "Indiquez une fourchette de budget",
+    budgetStepSubtitle:
+      "Une indication, pas un engagement — nous adaptons le devis au brief.",
+    detailsStepTitle: "Comment vous joindre ?",
+    detailsStepSubtitle:
+      "Nous répondons par e-mail avec un devis et la confirmation de l'équipe.",
+    confirmStepTitle: "Vérifiez votre demande",
+    confirmStepSubtitle: "Un dernier coup d'œil avant d'envoyer.",
+    locationLabel: "Lieu",
+    locations: [
+      "Médina",
+      "Palmeraie",
+      "Guéliz",
+      "Hivernage",
+      "Atlas",
+      "Agafay",
+      "Essaouira",
+      "Autre",
+    ],
+    projectTypeLabel: "Type de projet",
+    projectTypePlaceholder:
+      "Appartement moderne 2 chambres, riad traditionnel, villa 5 chambres, etc.",
+    pickDateLabel: "Choisir une date",
+    pickTimeLabel: "Choisir une heure",
+    selectedDateTemplate: "Sélectionné : {date}",
+    budgetRangeLabel: "Fourchette de budget",
+    budgetHint:
+      "Le budget est une indication — nous adaptons le devis à votre brief sous 24 heures.",
+    yourDetailsLabel: "Vos coordonnées",
+    fullNameLabel: "Nom complet",
+    fullNamePlaceholder: "Sofia Bennani",
+    phoneLabel: "Téléphone",
+    emailLabel: "E-mail",
+    phonePlaceholder: "+212 6 12 34 56 78",
+    emailPlaceholder: "vous@studio.com",
+    anythingElseLabel: "Autre chose ?",
+    notesPlaceholder:
+      "Liste de plans précise, style préféré, autorisations drone, etc.",
+    backLabel: "Retour",
+    continueLabel: "Continuer",
+    sendRequestLabel: "Envoyer la demande",
+    closeLabel: "Fermer la réservation",
+    submittedHeaderTitle: "Demande envoyée",
+    requiredHint: "Requis",
+    confirmIntro:
+      "Voici votre demande. Nous enverrons un devis et confirmerons l'équipe sous 24 heures, en semaine.",
+    summary: {
+      service: "Service",
+      location: "Lieu",
+      project: "Projet",
+      dateTime: "Date & heure",
+      budget: "Budget",
+      name: "Nom",
+      email: "E-mail",
+      phone: "Téléphone",
+      notes: "Notes",
+    },
+    successTitleTemplate: "Demande envoyée, {firstName}.",
+    successGenericName: "merci",
+    successBodyTemplate:
+      "Nous avons bien reçu le brief pour votre {service} à {location}. Vous recevrez un devis et la confirmation de l'équipe à {email} sous 24 heures, en semaine.",
+    successFallbackService: "séance",
+    successFallbackLocation: "Marrakech",
+    successFallbackEmail: "votre boîte mail",
+    doneLabel: "Terminé",
+  },
+
+  home: {
+    hero: {
+      pioneering: ["Marrakech", "à travers", "notre objectif"],
+      title: "Marrakech, photographiée honnêtement.",
+      body: "Lensies est un studio basé à Marrakech, spécialisé en photographie immobilière, vidéographie, drone, événements et expériences sur mesure à travers le Maroc.",
+      scrollDownLabel: "Défiler vers le bas",
+      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+    },
+    platforms: { eyebrow: "Listé sur" },
+    parallax: {
+      title: "Nous voyons Marrakech telle qu'elle est.",
+      body: "Immobilier, riads, hôtels, marques, mariages, excursions. Nous avons photographié les angles évidents et quelques-uns qui ne le sont pas. Ci-dessous : un petit échantillon du travail.",
+    },
+    features: {
+      heading: "Pensé pour les briefs marrakchis.",
+      intro:
+        "Trois savoir-faire que nous exerçons chaque semaine. Faites défiler pour voir chacun sur le terrain.",
+      features: [
+        {
+          label: "Immobilier",
+          description:
+            "Heure bleue, heure dorée, intérieurs. HDR + flash, entièrement retouchés, prêts MLS en 24 heures. La référence pour les agences de Marrakech.",
+        },
+        {
+          label: "Drone & Aérien",
+          description:
+            "Pilotes brevetés. Couverture de toit à toit, prises aériennes immobilières, paysages. 4K HDR, autorisations gérées.",
+        },
+        {
+          label: "Vidéo & Cinéma",
+          description:
+            "Films de marque, visites virtuelles, cuts sociaux. 4K, stabilisé gimbal, étalonné. Prêt pour le web, les réseaux et les écrans.",
+        },
+      ],
+    },
+    showcase: {
+      eyebrow: "Notre IA",
+      seeFullPictureLabel: "Voir l'image complète",
+      mobileTitle: "Une plateforme. Des possibilités infinies.",
+      cards: [
+        {
+          id: "real-estate",
+          eyebrow: "Immobilier",
+          title: "Des annonces qui vendent.",
+          body: "Extérieurs à l'heure bleue, intérieurs en lumière naturelle, prises drone, visites 3D. Forfaits clés en main pensés pour les agences et promoteurs de Marrakech — livrés en 48 heures.",
+          ctaLabel: "Voir les forfaits",
+          ctaHref: "/services#real-estate",
+          align: "left",
+        },
+        {
+          id: "drone",
+          eyebrow: "Drone & Aérien",
+          title: "La ville vue d'en haut.",
+          body: "Pilotes de drone brevetés, 4K HDR, gestion complète des autorisations. Toitures, riads, l'Atlas, le désert. Des images aériennes qui méritent leur place dans le montage.",
+          ctaLabel: "Réserver un vol",
+          ctaHref: "/services#drone",
+          align: "right",
+        },
+        {
+          id: "video",
+          eyebrow: "Vidéo",
+          title: "Des films au pouls de Marrakech.",
+          body: "Films de marque, cuts sociaux, re-edits verticaux. 4K, stabilisé gimbal, étalonnage en interne. Musique licenciée, prêt à être lancé.",
+          ctaLabel: "Voir nos reels",
+          ctaHref: "/portfolio",
+          align: "left",
+        },
+      ],
+    },
+    safety: {
+      heading: "Faits sur le terrain, pas dans une banque d'images.",
+      body: "Chaque projet Lensies commence sur place — à l'heure dorée, dans un vrai riad, sur un vrai toit. Nous photographions ce que nous voyons, polissons ce que nous capturons, et ne fabriquons jamais un instant que nous n'avons pas vécu.",
+      ctaLabel: "Découvrir notre travail",
+      ctaHref: "/portfolio",
+    },
+    partners: {
+      eyebrow: "Ils nous font confiance",
+      heading: "Les mots de ceux qui reviennent.",
+      intro:
+        "Agences immobilières, groupes hôteliers, tours-opérateurs, grandes plateformes de réservation. Même équipe, mêmes exigences, à chaque brief.",
+      trustedByLabel: "Ils nous font confiance sur",
+      becomePartnerLabel: "Devenir partenaire",
+      previousLabel: "Témoignage précédent",
+      nextLabel: "Témoignage suivant",
+      testimonials: [
+        {
+          id: "marrakech-living",
+          company: "Marrakech Living",
+          companyLogoKind: "text",
+          companyTextLogo: "Marrakech Living",
+          brandColor: "#7A4A2B",
+          rating: 5,
+          quote:
+            "Lensies est le seul studio auquel nous confions nos annonces à Marrakech. Prises aériennes à l'heure bleue, livraisons rapides — nos agents les demandent désormais par leur nom.",
+          authorName: "Sofia Bennani",
+          authorTitle: "Directrice, Marrakech Living Real Estate",
+          authorInitials: "SB",
+          authorBg: "linear-gradient(135deg, #C58A5E 0%, #7A4A2B 100%)",
+        },
+        {
+          id: "riads-du-sud",
+          company: "Riads du Sud",
+          companyLogoKind: "text",
+          companyTextLogo: "Riads du Sud",
+          brandColor: "#2F4A3A",
+          rating: 5,
+          quote:
+            "Ils comprennent les riads. La lumière, le zellige, les proportions. Nous avons travaillé avec de plus grosses agences — Lensies gagne toujours le brief.",
+          authorName: "Karim Tazi",
+          authorTitle: "Fondateur, Riads du Sud",
+          authorInitials: "KT",
+          authorBg: "linear-gradient(135deg, #4A6E55 0%, #2F4A3A 100%)",
+        },
+        {
+          id: "atlas-hotels",
+          company: "Atlas Hotels",
+          companyLogoKind: "text",
+          companyTextLogo: "Atlas Hotels",
+          brandColor: "#1F2A44",
+          rating: 5,
+          quote:
+            "Films de marque, drone, cuts sociaux — un seul studio, une seule facture, une seule deadline. Ils sont devenus discrètement notre choix par défaut pour chaque lancement.",
+          authorName: "Lina Ouazzani",
+          authorTitle: "Responsable marketing, Atlas Hotels",
+          authorInitials: "LO",
+          authorBg: "linear-gradient(135deg, #3B4D78 0%, #1F2A44 100%)",
+        },
+        {
+          id: "sahara-experiences",
+          company: "Sahara Experiences",
+          companyLogoKind: "text",
+          companyTextLogo: "Sahara",
+          brandColor: "#A4551B",
+          rating: 5,
+          quote:
+            "Excursions, montgolfière, camps du désert. Lensies photographie tout d'une manière qui ressemble à la vraie journée, pas à une brochure. Notre taux de conversion a doublé.",
+          authorName: "Youssef El Fassi",
+          authorTitle: "Co-fondateur, Sahara Experiences",
+          authorInitials: "YF",
+          authorBg: "linear-gradient(135deg, #D8843A 0%, #A4551B 100%)",
+        },
+        {
+          id: "royal-mansour",
+          company: "Royal Mansour",
+          companyLogoKind: "text",
+          companyTextLogo: "Royal Mansour",
+          brandColor: "#8C7331",
+          rating: 5,
+          quote:
+            "Discrétion, savoir-faire et vraie compréhension de l'architecture patrimoniale. C'est le seul studio que nous faisons intervenir pour nos résidences privées.",
+          authorName: "Hind Alaoui",
+          authorTitle: "Responsable marketing résidences",
+          authorInitials: "HA",
+          authorBg: "linear-gradient(135deg, #C8A24A 0%, #8C7331 100%)",
+        },
+      ],
+    },
+    insights: {
+      eyebrow: "Notes de terrain",
+      heading: "Notes de terrain.",
+      intro:
+        "Conseils du terrain, coulisses de nos shootings à Marrakech et les petits détails qui font la différence.",
+      viewAllLabel: "Tout voir",
+      previousLabel: "Précédent",
+      nextLabel: "Suivant",
+    },
+    cta: {
+      heading: "Un projet à filmer ?",
+      body: "Dites-nous où, quand et quoi. Nous répondons sous 24 heures, en semaine.",
+      ctaLabel: "Réserver un shooting",
+      ctaHref: "/contact",
+    },
+  },
+
+  about: {
+    hero: {
+      pioneering: ["Construit", "à", "Marrakech"],
+      title: "Nous filmons ce que nous aimons, là où nous vivons.",
+      body: "Lensies est un studio créatif construit par des photographes, des opérateurs drone et des conteurs. Nous montrons Marrakech sous son vrai jour depuis huit ans.",
+      scrollDownLabel: "Défiler vers le bas",
+      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+    },
+    parallax: {
+      title: "Huit ans sur les toits, dans les riads et derrière l'objectif.",
+      body: "Immobilier, riads, hôtels, marques, mariages, excursions. Nous avons photographié les angles évidents et quelques-uns qui ne le sont pas. Ci-dessous : un petit échantillon du travail.",
+    },
+    features: {
+      heading: "Notre manière de travailler.",
+      intro:
+        "Trois principes qui guident chaque shooting — du premier brief à la livraison finale.",
+      features: [
+        {
+          label: "Savoir-faire",
+          description:
+            "Chaque image est une décision. Nous soignons les détails pour que le travail paraisse simple à l'arrivée.",
+        },
+        {
+          label: "Local",
+          description:
+            "Nous vivons ici, nous filmons ici. Notre connaissance de la lumière, des riads et des toits est acquise, pas louée à une banque d'images.",
+        },
+        {
+          label: "Honnête",
+          description:
+            "Nous retouchons, nous n'inventons pas. Ce que vous voyez dans la galerie finale est ce que l'acheteur verra en personne.",
+        },
+      ],
+    },
+    showcase: {
+      eyebrow: "Notre IA",
+      seeFullPictureLabel: "Voir l'image complète",
+      mobileTitle: "Une plateforme. Des possibilités infinies.",
+      cards: [
+        {
+          id: "team",
+          eyebrow: "Équipe",
+          title: "Quatre personnes, une ville.",
+          body: "Une petite équipe qui tourne ensemble presque chaque semaine. Directeur de la photographie, responsable immobilier, pilote drone, et producteur événements & excursions. Nous faisons appel à des collaborateurs locaux de confiance pour les gros projets.",
+          ctaLabel: "Rencontrer l'équipe",
+          ctaHref: "#team",
+          align: "left",
+        },
+        {
+          id: "gear",
+          eyebrow: "Équipement",
+          title: "Le bon outil, pour le bon usage.",
+          body: "Boîtiers Sony A7R V, optiques G-Master, drones DJI Mavic 3 Pro, gimbal Ronin, éclairages Aputure, strobes Profoto. Nous en sommes propriétaires, nous les entretenons, nous amenons des backups.",
+          ctaLabel: "Voir le matériel",
+          ctaHref: "#gear",
+          align: "right",
+        },
+        {
+          id: "process",
+          eyebrow: "Processus",
+          title: "Brief, tournage, livraison, recommence.",
+          body: "Le même workflow à chaque mission : brief écrit, repérage, tournage, montage, relecture, livraison. Pas de surprises, pas de plans manquants, pas de délais ratés.",
+          ctaLabel: "Notre workflow",
+          ctaHref: "#process",
+          align: "left",
+        },
+      ],
+    },
+    safety: {
+      heading: "Huit ans plus tard, toujours obsédés par la lumière.",
+      body: "D'un seul appareil photo sur un toit de la médina en 2017 à une équipe complète en 2025. Nous avons grandi sans perdre ce qui faisait la force de nos premières images : être sur place, à la bonne heure, avec les bonnes personnes.",
+      ctaLabel: "Voir notre travail",
+      ctaHref: "/portfolio",
+    },
+    partners: {
+      eyebrow: "Ils nous font confiance",
+      heading: "Huit ans, bâti sur le bouche-à-oreille.",
+      intro:
+        "La majorité de notre travail vient de clients qui nous ont engagés une fois et ne sont jamais partis. Voici ce que certains d'entre eux disent du studio.",
+      trustedByLabel: "Présent sur",
+      becomePartnerLabel: "Devenir partenaire",
+      previousLabel: "Témoignage précédent",
+      nextLabel: "Témoignage suivant",
+    },
+    cta: {
+      heading: "Envie de tourner avec nous ?",
+      body: "Nous recrutons des photographes et opérateurs drone freelances pour la haute saison. Envoyez un portfolio, nous le gardons en archive.",
+      ctaLabel: "Rejoindre l'équipe",
+      ctaHref: "/contact",
+    },
+  },
+
+  services: {
+    hero: {
+      pioneering: ["Six", "métiers.", "Un seul studio."],
+      title: "Immobilier, vidéo, drone, événements, excursions, 3D.",
+      body: "Choisissez un service ou composez un pack. Nous staffons, filmons, montons et livrons — sous un même toit, une seule facture, une seule deadline.",
+      scrollDownLabel: "Défiler vers le bas",
+      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+    },
+    parallax: {
+      title: "Pensé pour les briefs marrakchis.",
+      body: "Agences immobilières, groupes hôteliers, tours-opérateurs, marques. Ci-dessous : les six métiers que nous exerçons chaque semaine, sur le terrain, à Marrakech.",
+    },
+    features: {
+      heading: "Les trois que nous exerçons chaque semaine.",
+      intro:
+        "L'immobilier, le drone et la vidéo occupent l'essentiel de notre agenda. Les trois autres — événements, expériences et 3D — complètent l'année.",
+      features: [
+        {
+          label: "Immobilier",
+          description:
+            "Heure bleue, heure dorée, intérieurs. HDR + flash, entièrement retouchés, prêts MLS en 24 heures. La référence pour les agences de Marrakech.",
+        },
+        {
+          label: "Drone & Aérien",
+          description:
+            "Pilotes brevetés. Couverture de toit à toit, prises aériennes immobilières, paysages. 4K HDR, autorisations gérées.",
+        },
+        {
+          label: "Vidéo & Cinéma",
+          description:
+            "Films de marque, visites virtuelles, cuts sociaux. 4K, stabilisé gimbal, étalonné. Prêt pour le web, les réseaux et les écrans.",
+        },
+      ],
+    },
+    showcase: {
+      eyebrow: "Notre IA",
+      seeFullPictureLabel: "Voir l'image complète",
+      mobileTitle: "Une plateforme. Des possibilités infinies.",
+      cards: [
+        {
+          id: "real-estate-package",
+          eyebrow: "Immobilier",
+          title: "Pack Annonce.",
+          body: "40 à 80 photos retouchées, prises drone, heure bleue ou heure dorée, livraison 24-48 h. Des riads aux villas à 20 M$.",
+          ctaLabel: "Demander un devis",
+          ctaHref: "/contact",
+          align: "left",
+        },
+        {
+          id: "drone-package",
+          eyebrow: "Drone & Aérien",
+          title: "Pack Aérien.",
+          body: "Images drone 4K HDR, plans top-down, fenêtre de tournage de 2 à 4 heures. Autorisations incluses.",
+          ctaLabel: "Réserver un vol",
+          ctaHref: "/contact",
+          align: "right",
+        },
+        {
+          id: "video-package",
+          eyebrow: "Vidéo",
+          title: "Pack Film de Marque.",
+          body: "Demi-journée de tournage, master 60 s, cuts sociaux 30 s et 15 s, re-edits verticaux. Musique licenciée, étalonnée.",
+          ctaLabel: "Voir les reels",
+          ctaHref: "/portfolio",
+          align: "left",
+        },
+      ],
+    },
+    safety: {
+      heading: "Six métiers, un seul studio, une seule deadline.",
+      body: "D'une seule photo à un mariage à 12 caméras. La même équipe, les mêmes exigences, la même ponctualité. La plupart des projets sont livrés en moins de 48 heures.",
+      ctaLabel: "Demander un devis sur mesure",
+      ctaHref: "/contact",
+    },
+    partners: {
+      eyebrow: "Ils nous font confiance",
+      heading: "La confiance de ceux qui reviennent.",
+      intro:
+        "Des clients fidèles dans l'immobilier, l'hôtellerie et les excursions. Voici ce qu'ils disent après le premier projet.",
+      trustedByLabel: "Listé sur",
+      becomePartnerLabel: "Devenir partenaire",
+      previousLabel: "Témoignage précédent",
+      nextLabel: "Témoignage suivant",
+    },
+    cta: {
+      heading: "Besoin d'un projet sur mesure ?",
+      body: "Combinez immobilier, drone et excursions dans une même journée de tournage. Dites-nous ce qu'il vous faut — devis sous 24 heures, en semaine.",
+      ctaLabel: "Demander un devis sur mesure",
+      ctaHref: "/contact",
+    },
+  },
+
+  portfolio: {
+    hero: {
+      pioneering: ["Sélection", "de travaux.", "Marrakech."],
+      title: "Ce que nous avons filmé.",
+      body: "Un échantillon de projets récents en immobilier, hôtellerie, événements, excursions et marque. Survolez pour le brief, cliquez pour zoomer et explorer.",
+    },
+    data: {
+      eyebrow: "Portfolio",
+      title: "Ce que nous avons filmé.",
+      body: "Un échantillon de projets récents en immobilier, hôtellerie, événements, excursions et marque. Survolez pour le brief, cliquez pour zoomer et explorer.",
+      projectCountLabel: "projets",
+      zoomHint: "Cliquez sur une image pour zoomer.",
+      featuredLabel: "À la une",
+      zoomBadgeLabel: "Zoom",
+      emptyState: "Aucun projet dans cette catégorie pour l'instant.",
+      bookSimilarLabel: "Réserver un shooting similaire",
+      projects: [
+        { src: "/images/work-2.png", title: "Royal Mansour Residences", category: "Immobilier", aspect: "tall", location: "Marrakech", year: "2026", client: "Royal Mansour", description: "Extérieurs à l'heure bleue et intérieurs en lumière naturelle pour 14 résidences privées. Journée de tournage à deux caméras, prises drone 4K, livraison en 48 h." },
+        { src: "/images/work-3.png", title: "Riad Yasmine", category: "Hôtellerie", aspect: "landscape", location: "Médina", year: "2026", client: "Riad Yasmine", description: "Patio, piscine, hammam et trois suites. Tournage sur 12 heures pour capter le zellige à chaque angle de la lumière." },
+        { src: "/images/work-4.png", title: "Drone Massif du Toubkal", category: "Excursions", aspect: "square", location: "Haut Atlas", year: "2026", client: "Sahara Experiences", description: "Survol aérien du lever au coucher du soleil sur le massif du Toubkal. DJI Mavic 3 Pro, 4K HDR, autorisations gérées." },
+        { src: "/images/work-5.png", title: "Film de marque Atlas Hotels", category: "Marque", aspect: "tall", location: "Marrakech", year: "2026", client: "Atlas Hotels", description: "Film de marque + six cuts sociaux. Master 60 s, montages 30 s et 15 s, re-edits verticaux pour Reels et TikTok." },
+        { src: "/images/work-6.png", title: "Mariage à la Palmeraie", category: "Événements", aspect: "landscape", location: "Palmeraie", year: "2025", client: "Privé", description: "Couverture de mariage sur une journée complète, deux photographes, montage 4K de la cérémonie et un highlight de 90 secondes." },
+        { src: "/images/work-7.png", title: "Sofitel à l'heure bleue", category: "Hôtellerie", aspect: "portrait", location: "Hivernage", year: "2025", client: "Sofitel Marrakech", description: "Extérieurs à l'heure bleue de la piscine et des jardins. 18 minutes de prises en rafale, puis retour aux intérieurs." },
+        { src: "/images/work-8.png", title: "Montgolfière à l'Agafay", category: "Excursions", aspect: "square", location: "Agafay", year: "2025", client: "Ciel d'Afrique", description: "Vol en montgolfière au lever du soleil au-dessus du désert. Plans aériens + reportage à bord, demi-journée de tournage." },
+        { src: "/images/work-9.png", title: "Série rue dans la médina", category: "Marque", aspect: "tall", location: "Médina", year: "2025", client: "Atelier 11", description: "Série éditoriale pour une maison de mode marrakchie. Deux jours à marcher dans les souks, uniquement en lumière disponible." },
+        { src: "/images/work-10.png", title: "Camp du Sahara", category: "Excursions", aspect: "landscape", location: "Merzouga", year: "2025", client: "Sahara Experiences", description: "Tournage de deux jours dans un camp de luxe dans le désert. Drone sur les dunes à l'heure dorée, intérieurs à la lumière des lampes." },
+        { src: "/images/work-11.png", title: "Beldi Country Club", category: "Hôtellerie", aspect: "square", location: "Palmeraie", year: "2025", client: "Beldi", description: "Visite du domaine sur 12 hectares. Piscine, spa, jardins, trois restaurants — un seul set éditorial." },
+        { src: "/images/work-12.png", title: "Loft à Guéliz", category: "Immobilier", aspect: "tall", location: "Guéliz", year: "2025", client: "Marrakech Living", description: "Loft moderne, lumière nord, 22 photos, livraison express en 12 h. Journée à une seule caméra, deux optiques." },
+        { src: "/images/work-13.png", title: "Vallée de l'Ourika", category: "Excursions", aspect: "landscape", location: "Ourika", year: "2025", client: "Atlas Trek Co.", description: "Reportage d'une journée dans la vallée : départs de sentiers, villages, déjeuner berbère. Mix de drone et de prises à pied." },
+        { src: "/images/work-14.png", title: "La Mamounia", category: "Hôtellerie", aspect: "portrait", location: "Hivernage", year: "2025", client: "La Mamounia", description: "Tournage à l'heure bleue des jardins et des suites. 4 panneaux LED, 2 strobes, 12 gels — aucun détail laissé au hasard." },
+        { src: "/images/work-15.png", title: "Kasbah du Toubkal", category: "Hôtellerie", aspect: "square", location: "Imlil", year: "2025", client: "Kasbah du Toubkal", description: "Retraite en montagne, à 1 800 m d'altitude. Arrivés deux jours plus tôt pour repérer la lumière, tournage l'après-midi même." },
+        { src: "/images/work-16.png", title: "Jardin Majorelle", category: "Marque", aspect: "tall", location: "Marrakech", year: "2025", client: "Jardin Majorelle", description: "Campagne de marque pour l'anniversaire du jardin. Portraits éditoriaux mêlés à des plans de paysage." },
+        { src: "/images/work-17.png", title: "Yacht à la journée", category: "Excursions", aspect: "landscape", location: "Essaouira", year: "2025", client: "Essaouira Charters", description: "Couverture en bateau suiveur depuis le port d'Essaouira. Drone, gimbal et une session photo à bord." },
+        { src: "/images/work-18.png", title: "Palais de la Bahia", category: "Immobilier", aspect: "square", location: "Médina", year: "2025", client: "Heritage Trust", description: "Documentation de la restauration du Palais de la Bahia. Focus sur les détails architecturaux, sans personnes, en lumière disponible." },
+        { src: "/images/work-19.png", title: "Hammam de la Rose", category: "Hôtellerie", aspect: "portrait", location: "Marrakech", year: "2025", client: "Hammam de la Rose", description: "Shooting carte spa. Vapeur, marbre, cuivre — traité avec des optiques basse lumière et une balance des blancs soignée." },
+        { src: "/images/work-20.png", title: "Atlas Film Studio", category: "Marque", aspect: "tall", location: "Ouarzazate", year: "2025", client: "AFS", description: "Campagne coulisses pour le studio de cinéma. Distribution éditoriale, accessoires, plans à l'heure dorée." },
+        { src: "/images/work-21.png", title: "Trek du Toubkal", category: "Excursions", aspect: "landscape", location: "Haut Atlas", year: "2024", client: "Atlas Trek Co.", description: "Trek de trois jours jusqu'au refuge du Toubkal. Reportage + aériens, montés en un récap de 90 secondes." },
+        { src: "/images/work-22.png", title: "Mariage au Selman", category: "Événements", aspect: "square", location: "Palmeraie", year: "2024", client: "Privé", description: "Célébration sur plusieurs jours au Selman. Trois photographes, deux vols de drone, galerie complète en 48 heures." },
+        { src: "/images/work-23.png", title: "Toit-terrasse El Fenn", category: "Hôtellerie", aspect: "tall", location: "Médina", year: "2024", client: "El Fenn", description: "Suite et bar en rooftop, photographiés en fin de journée. La dernière lumière sur la médina en arrière-plan." },
+        { src: "/images/work-24.png", title: "Riad Kniza", category: "Hôtellerie", aspect: "landscape", location: "Médina", year: "2024", client: "Riad Kniza", description: "Documentation d'un riad patrimonial. Zellige, plâtre, cèdre — pose longue, sans flash, trois matinées." },
+        { src: "/images/work-25.png", title: "Coucher de soleil sur le Sahara", category: "Excursions", aspect: "portrait", location: "Agafay", year: "2024", client: "Sahara Experiences", description: "Plans au coucher du soleil sur l'Agafay. Trois caméras, un drone, dix-huit minutes de lumière." },
+        { src: "/images/work-26.png", title: "Atelier de poterie à Fès", category: "Marque", aspect: "square", location: "Fès", year: "2024", client: "Atelier 11", description: "Série documentaire sur une coopérative de poterie à Fès. Tournage, émaillage, four, lumière disponible du début à la fin." },
+      ],
+      lightbox: {
+        counterTemplate: "{current} / {total}",
+        categoryLabel: "Catégorie",
+        ratingLabel: "Note",
+        closeLabel: "Fermer",
+        previousLabel: "Projet précédent",
+        nextLabel: "Projet suivant",
+        zoomInLabel: "Zoomer",
+        zoomOutLabel: "Dézoomer",
+        resetZoomLabel: "Réinitialiser le zoom",
+        zoomToLabel: "Zoomer à 2×",
+      },
+    },
+    cta: {
+      heading: "Un projet dans cet esprit ?",
+      body: "Parlez-nous de votre brief, du lieu et des dates. Nous envoyons une proposition et un devis sous 24 heures, en semaine.",
+      ctaLabel: "Démarrer un projet",
+      ctaHref: "/contact",
+    },
+  },
+
+  pricing: {
+    hero: {
+      pioneering: ["Cinq", "formules.", "Un seul studio."],
+      title: "Des tarifs simples.",
+      body: "Immobilier, riads, villas, événements et drone. Un studio, une facture, une seule deadline. Choisissez un pack ou demandez un devis sur mesure sous 24 heures.",
+      scrollDownLabel: "Défiler vers le bas",
+      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+    },
+    data: {
+      eyebrow: "Tarifs",
+      title: "Pensé pour le brief, tarifé pour le shooting.",
+      body: "Cinq packs couvrant les shootings que nous réalisons le plus souvent à Marrakech. Chaque pack inclut les droits d'usage commercial, une galerie en ligne et un devis sous 24 heures.",
+      billingNote: "Prix en MAD · HT · Devis valables 30 jours",
+      popularLabel: "Le plus populaire",
+      newLabel: "Nouveau",
+      tiers: [
+        {
+          id: "appartement",
+          name: "Appartement",
+          description:
+            "Idéal pour les appartements modernes et les studios, avec photographie intérieure professionnelle.",
+          price: "1 000",
+          priceSuffix: "MAD",
+          ctaLabel: "Réserver une séance Appartement",
+          ctaHref: "/contact?package=appartement",
+          features: [
+            { text: "20 photos haute résolution" },
+            { text: "Prises intérieures de toutes les pièces" },
+            { text: "Optimisation de la lumière naturelle" },
+            { text: "Retouche photo de base" },
+            { text: "Livraison sous 24 heures" },
+            { text: "Accès galerie en ligne" },
+            { text: "Droits d'usage commercial" },
+            { text: "Formats prêts pour les réseaux sociaux" },
+          ],
+        },
+        {
+          id: "riads",
+          name: "Riads",
+          description:
+            "Photographie spécialisée des riads traditionnels marocains, mettant en valeur la beauté architecturale.",
+          price: "1 500",
+          priceSuffix: "MAD",
+          ctaLabel: "Réserver une séance Riad",
+          ctaHref: "/contact?package=riads",
+          badge: "popular",
+          accent: "pink",
+          features: [
+            { text: "30 photos haute résolution", highlight: true },
+            { text: "Focus sur l'architecture traditionnelle" },
+            { text: "Prises du patio et des intérieurs" },
+            { text: "Détails des éléments décoratifs" },
+            { text: "Séances à l'heure dorée" },
+            { text: "Retouche photo avancée" },
+            { text: "Livraison express sous 12 heures", highlight: true },
+            { text: "Galerie en ligne et liens de téléchargement" },
+            { text: "Droits d'usage commercial" },
+          ],
+        },
+        {
+          id: "villa",
+          name: "Villa",
+          description:
+            "Photographie complète pour villas de luxe, avec couverture intérieure et extérieure étendue.",
+          price: "2 000",
+          priceSuffix: "MAD",
+          ctaLabel: "Réserver une séance Villa",
+          ctaHref: "/contact?package=villa",
+          features: [
+            { text: "40 photos haute résolution" },
+            { text: "Visite vidéo professionnelle (3 à 5 minutes)", highlight: true },
+            { text: "Prises intérieures, extérieures et jardins" },
+            { text: "Couverture piscine et espaces outdoor" },
+            { text: "Prises drone (selon la météo)" },
+            { text: "Retouche premium et étalonnage" },
+            { text: "Livraison le jour même disponible" },
+            { text: "Livraison en plusieurs formats" },
+            { text: "Consultation home staging virtuel" },
+            { text: "Droits d'usage commercial" },
+            { text: "Stockage gratuit 3 mois" },
+          ],
+        },
+        {
+          id: "events",
+          name: "Événements",
+          description:
+            "Couverture photographique complète d'événements, des rencontres intimistes aux grandes célébrations.",
+          price: "3 000–5 000",
+          pricePrefix: "À partir de",
+          priceSuffix: "MAD",
+          ctaLabel: "Réserver une couverture événementielle",
+          ctaHref: "/contact?package=events",
+          features: [
+            { text: "Couverture complète (4 à 8 heures)" },
+            { text: "Plusieurs photographes disponibles" },
+            { text: "Photos candides et posées" },
+            { text: "Prises du lieu et de la décoration" },
+            { text: "Photos d'ambiance et d'invités" },
+            { text: "Highlights vidéo professionnels" },
+            { text: "Images drone pour les événements en extérieur" },
+            { text: "Aperçu livré le jour même", highlight: true },
+            { text: "Galerie complète retouchée en 48 h" },
+            { text: "Clé USB avec toutes les photos" },
+            { text: "Droits d'usage commercial" },
+            { text: "Stockage gratuit 6 mois" },
+          ],
+        },
+        {
+          id: "drone",
+          name: "Pack Vidéo & Photos Drone",
+          description:
+            "Contenu aérien cinématique haut de gamme pour annonces premium et campagnes marketing.",
+          price: "4 500",
+          priceSuffix: "MAD",
+          ctaLabel: "Réserver le pack Drone",
+          ctaHref: "/contact?package=drone",
+          badge: "new",
+          accent: "dark",
+          features: [
+            { text: "Visite vidéo drone 4K cinématique (2 à 4 minutes)", highlight: true },
+            { text: "30+ photos aériennes haute résolution" },
+            { text: "Survol complet du bien et des environs" },
+            { text: "Transitions cinématiques et storytelling" },
+            { text: "Pilote de drone breveté (conforme aux réglementations)" },
+            { text: "Étalonnage et stabilisation avancés" },
+            { text: "Formats verticaux et horizontaux pour les réseaux" },
+            { text: "Livraison rapide (48 à 72 heures)" },
+            { text: "Droits d'usage commercial inclus" },
+            { text: "Parfait pour Airbnb, annonces de luxe et pubs" },
+          ],
+        },
+      ],
+    },
+    cta: {
+      heading: "Besoin d'un pack sur mesure ?",
+      body: "Tournages de plusieurs jours, campagnes multi-lieux, ou forfaits trimestriels — nous construisons des packs autour du brief, et pas l'inverse. Dites-nous quoi filmer, nous répondons sous 24 heures en semaine.",
+      ctaLabel: "Demander un devis sur mesure",
+      ctaHref: "/contact",
+    },
+  },
+
+  contact: {
+    hero: {
+      pioneering: ["Bonjour.", "Marrakech.", "Parlons."],
+      title: "Dites-nous quoi filmer.",
+      body: "Immobilier, vidéo, drone, événements, excursions — ou quelque chose que nous n'avons pas encore fait. Nous répondons sous 24 heures, en semaine.",
+      scrollDownLabel: "Défiler vers le bas",
+      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+    },
+    parallax: {
+      title: "Un petit studio à Guéliz, Marrakech.",
+      body: "Café, disques durs, livres d'échantillons et un mur de tirages. Passez entre 9 h et 19 h en semaine, ou envoyez un brief, nous viendrons vers vous.",
+    },
+    features: {
+      heading: "Comment fonctionne un brief.",
+      intro:
+        "Trois étapes. La plupart des devis sont envoyés sous 24 heures en semaine.",
+      features: [
+        {
+          label: "Envoyez un brief",
+          description:
+            "Parlez-nous du projet, du lieu, des dates et de ce qu'il faut livrer. Quelques phrases suffisent.",
+        },
+        {
+          label: "Devis + repérage",
+          description:
+            "Nous envoyons un devis ferme et un repérage en option. Nous confirmons la disponibilité et bloquons l'équipe.",
+        },
+        {
+          label: "Tournage + livraison",
+          description:
+            "Jour de tournage, montage, relecture, livraison. La même équipe à chaque mission, les mêmes exigences, à l'heure.",
+        },
+      ],
+    },
+    form: {
+      subjects: [
+        "Shooting immobilier",
+        "Vidéographie",
+        "Drone",
+        "Couverture événementielle",
+        "Excursion / Expérience",
+        "Presse / Autre",
+      ],
+      nameLabel: "Nom",
+      emailLabel: "E-mail",
+      subjectLabel: "Sujet",
+      messageLabel: "Détails du projet",
+      messagePlaceholder:
+        "Parlez-nous du lieu, des dates et de ce dont vous avez besoin.",
+      submitLabel: "Envoyer la demande",
+      sendInquiryLabel: "Envoyer le brief",
+    },
+    info: [
+      { label: "Studio", value: "Guéliz, Marrakech 40000, Maroc" },
+      { label: "E-mail", value: "contact@lensies.com", href: "mailto:contact@lensies.com" },
+      { label: "Téléphone", value: "+212 620 137 771", href: "tel:+212620137771" },
+      { label: "Horaires", value: "Lun — Sam · 9:00 — 19:00 (GMT+1)" },
+    ],
+    ctaBody: "contact@lensies.com · +212 620 137 771 · Guéliz, Marrakech. On vous répond.",
+    safety: {
+      heading: "Un petit studio. Un délai de réponse court.",
+      body: "La plupart des briefs reçoivent une réponse écrite sous 24 heures, en semaine. Nous décrochons aussi au téléphone — si vous avez besoin de nous, on vous répond.",
+      ctaLabel: "Voir notre travail",
+      ctaHref: "/portfolio",
+    },
+    cta: {
+      heading: "Ou écrivez-nous simplement.",
+      body: "contact@lensies.com · +212 620 137 771 · Guéliz, Marrakech. On vous répond.",
+      ctaLabel: "Voir les services",
+      ctaHref: "/services",
+    },
+  },
+
+  blog: {
+    hero: {
+      pioneering: ["Notes", "de terrain.", "Marrakech."],
+      title: "Ce que nous apprenons en chemin.",
+      body: "Coulisses de nos shootings à Marrakech, guides de photographie immobilière, conseils drone et les petits détails qui font la différence.",
+      scrollDownLabel: "Défiler vers le bas",
+      videoSrc: "/videos/Villa Marrakech Aerial Video.mp4",
+    },
+    data: {
+      eyebrow: "Notes de terrain",
+      title: "Ce que nous apprenons en chemin.",
+      body: "Coulisses de nos shootings à Marrakech, guides de photographie immobilière, conseils drone et les petits détails qui font la différence.",
+      featuredLabel: "À la une",
+      noPostsLabel: "Aucun article dans cette catégorie pour l'instant.",
+      subscribeHeading: "Vous voulez recevoir nos notes ?",
+      subscribeBody: "Une note de terrain courte par mois — une seule idée, une seule photo, un seul enseignement. Pas de spam, pas de drama.",
+      subscribeLabel: "S'abonner",
+      posts: [
+        {
+          slug: "twilight-real-estate-marrakech",
+          title: "Photographie immobilière à l'heure bleue : pourquoi l'heure bleue vend les villas à Marrakech",
+          excerpt: "Les 18 minutes après le coucher du soleil valent plus que le reste de la journée combinée. Voici le planning que nous utilisons, les réglages d'appareil photo qui tiennent, et les questions à poser à l'agence avant de réserver un shooting à l'heure bleue.",
+          date: "4 mai 2026",
+          readTime: "6 min de lecture",
+          tags: ["Immobilier", "Conseils"],
+          category: "Immobilier",
+          heroImage: "/images/work-2.png",
+          author: { name: "Sofia Bennani", role: "Directrice de la photographie", avatar: "/images/work-3.png" },
+          intro: "Chaque villa à Marrakech a deux versions d'elle-même — celle que l'on photographie à midi, et celle que l'on photographie 18 minutes après le coucher du soleil. C'est la deuxième qui vend. Après huit ans à photographier plus de 400 villas à Marrakech, nous pouvons vous dire que la différence n'est pas subtile. La photographie à l'heure bleue est le service au meilleur ROI que nous proposons, et le plus mal compris. Voici le planning exact, les réglages d'appareil et les questions à poser à toute agence avant de réserver.",
+          sections: [
+            {
+              body: "La fenêtre s'ouvre au moment où le soleil passe la ligne d'horizon, et se referme vite. À Marrakech, entre avril et septembre, vous avez environ 18 minutes de lumière bleue utilisable. En hiver, on monte à 28. Nous planifions chaque shooting à l'heure bleue autour du crépuscule civil, et non du coucher du soleil, et nous ne faisons jamais confiance à l'appli Météo — nous utilisons Photographer's Ephemeris pour confirmer l'instant exact où le soleil passe 4° sous l'horizon, moment où le ciel s'équilibre avec les lumières intérieures chaudes de la propriété.",
+              image: "/images/work-3.png",
+              imageCaption: "Un riad dans la médina, photographié 12 minutes après le coucher du soleil, en 24 mm tilt-shift.",
+            },
+            {
+              heading: "Le planning que nous utilisons",
+              body: "Nous arrivons 90 minutes avant le coucher du soleil. La première heure est le gros du travail — installer lumières et stylisme pendant qu'il reste encore de la lumière du jour sur laquelle s'appuyer. Quand le soleil est à 2° au-dessus de l'horizon, la propriété doit être éclairée, la piscine brossée et l'équipe en place. À partir de là, nous shootons pendant 18 minutes d'affilée, extérieurs et intérieurs, avec deux caméras qui tournent. Il n'y a pas le temps de changer d'objectif.",
+              list: [
+                "T-90 min — arriver, parcourir la propriété avec l'agent, planifier l'angle héros",
+                "T-60 min — lumières intérieures allumées, lumières extérieures allumées, piscine allumée, stylisme final",
+                "T-30 min — expositions bracketées larges pour HDR",
+                "T-0 (coucher du soleil) — 18 minutes de shooting en continu, pas de pause",
+                "T+20 min — retour aux intérieurs pour les plans à la lumière chaude des fenêtres",
+              ],
+            },
+            {
+              heading: "Les réglages d'appareil qui tiennent",
+              body: "Les deux réglages les plus importants pour l'immobilier à l'heure bleue sont la discipline du trépied et la balance des blancs. Nous bloquons la balance des blancs à 4 200 K — pas en auto. La balance des blancs automatique va faire basculer le bleu vers l'orange ou l'orange vers le bleu entre les frames, et l'étalonnage s'effondre. Nous shootons à f/8, ISO 100, avec un retardateur de 2 secondes ou une télécommande. Les vitesses d'obturation plus lentes (1/2 s à 4 s) sont précisément la raison pour laquelle nous planifions autour de la fenêtre de 18 minutes — au-delà, les lumières de la ville vont exploser la plage dynamique du capteur.",
+              pullquote: "Bloquez votre balance des blancs. Si vous ne retenez qu'une seule chose de cet article, faites-le.",
+            },
+            {
+              heading: "Les questions à poser à l'agence",
+              body: "La plupart des agences à Marrakech réservent un shooting à l'heure bleue sans posséder le kit d'éclairage. Nous emportons 4 panneaux LED, 2 strobes, 12 gels et un groupe électrogène de secours. Si le photographe qui se présente pour votre shooting a moins que ça, le résultat ressemblera à une photo au téléphone avec un trépied. Demandez à voir leurs trois dernières livraisons à l'heure bleue. S'ils n'ont pas de bibliothèque, passez votre chemin.",
+              image: "/images/work-4.png",
+              imageCaption: "La même villa, 90 minutes plus tôt — le plan large qui ancre l'annonce.",
+            },
+          ],
+          outro: "La photographie à l'heure bleue n'est pas une option premium, c'est un produit différent. Nous avons photographié 14 villas à Marrakech en 2026 jusqu'ici, et les annonces qui ont utilisé la photographie à l'heure bleue surperforment encore leurs voisines en plein jour de 2 à 3 fois sur les demandes de visite. Si vous vendez des villas à Marrakech et que vous n'utilisez pas l'heure bleue, vous laissez de l'argent sur la table que la prochaine agence ramassera.",
+          relatedSlugs: ["real-estate-video-conversion", "24h-delivery-workflow", "lit-14th-century-riad"],
+        },
+        {
+          slug: "drone-permit-checklist-morocco",
+          title: "Checklist des autorisations drone pour tourner dans les médinas du Maroc",
+          excerpt: "Voler à l'intérieur d'une médina classée UNESCO est rarement aussi simple que de faire décoller un drone. Autorisations, zones d'exclusion, escortes policières, et la façon dont nous planifions chaque vol avant de quitter le studio.",
+          date: "12 avril 2026",
+          readTime: "8 min de lecture",
+          tags: ["Drone", "Guides"],
+          category: "Drone",
+          heroImage: "/images/work-5.png",
+          author: { name: "Karim Tazi", role: "Responsable drone", avatar: "/images/work-6.png" },
+          intro: "Les médinas de Marrakech, Fès et Essaouira sont des sites classés au patrimoine mondial de l'UNESCO. Y faire voler un drone n'est pas la même chose qu'en faire voler un au-dessus d'une plage. Nous nous sommes fait contrôler, escorter, et avons une fois été sommés d'effacer des images sur place. Voici la checklist que nous utilisons avant chaque vol, et les questions que nous posons à chaque client avant de signer le contrat.",
+          sections: [
+            {
+              body: "La réglementation marocaine sur les drones a changé en 2024. La Direction Générale de l'Aviation Civile (DGAC) exige désormais une autorisation de vol pour toute opération commerciale de drone, même en zone urbaine. L'autorisation prend 10 à 15 jours ouvrés et coûte 1 200 MAD. La paperasse n'est pas optionnelle, et se présenter à un shooting sans elle garantit une amende de 3 000 MAD plus une confiscation potentielle. Nous déposons chaque autorisation avant même de chiffrer le projet.",
+              image: "/images/work-6.png",
+              imageCaption: "Vol au lever du soleil sur les contreforts de l'Atlas — à 4 km du village le plus proche, aucune autorisation requise.",
+            },
+            {
+              heading: "La règle des médinas",
+              body: "Les médinas UNESCO du Maroc sont des espaces aériens restreints. Point final. On peut voler en périphérie, mais pas à l'intérieur. La médina de Marrakech est délimitée par les remparts du XVIe siècle — tout ce qui se trouve à l'intérieur de ces murs est interdit sans une autorisation écrite du Ministère de la Culture. Nous disposons de cette autorisation pour trois cours spécifiques de médina (le Palais de la Bahia, les Tombeaux Saadiens, et un riad privé que nous photographions tous les mois). Tout le reste est zone d'exclusion.",
+              list: [
+                "Autorisation de vol commercial DGAC (10-15 jours, 1 200 MAD)",
+                "Autorisation du Ministère de la Culture pour les sites UNESCO",
+                "Autorisation écrite du propriétaire",
+                "Notification à la police 24 heures à l'avance pour les travaux en médina",
+                "Attestation d'assurance (minimum 1 M MAD responsabilité civile)",
+              ],
+            },
+            {
+              heading: "Le matériel qui survit au travail en médina",
+              body: "Nous utilisons un Mavic 3 Pro Cine pour la plupart des vols en médina — petit, silencieux, capteur 4/3. L'Inspire 3 reste dans la voiture. Les rues de la médina font 1,5 m de large et le GPS est pour le moins capricieux. Nous préprogrammons chaque vol, fixons le RTH à 30 m minimum, et gardons toujours un observateur visuel au sol. Le nombre d'accidents de drone dans les médinas de Marrakech est élevé — nous avons personnellement récupéré deux drones sur des toits cette année. Les pilotes qui possèdent leur drone ne devraient pas voler en médina.",
+              pullquote: "Si le pilote que vous avez réservé est la même personne qui possède le drone, il ne devrait pas voler dans la médina.",
+            },
+            {
+              heading: "Que faire si un policier vous arrête",
+              body: "Soyez poli. Montrez votre autorisation, votre assurance, l'autorisation du propriétaire et le récépissé de notification à la police. Ayez les quatre documents sur une seule carte plastifiée. N'effacez pas les images. Ne remettez pas le drone. Demandez le nom et le numéro de badge de l'agent, et appelez notre bureau immédiatement. Nous avons un avocat en contrat de rétention pour exactement cette situation. En 8 ans de vol au Maroc, nous n'avons jamais vu d'autorisation révoquée, mais nous avons dû faire appel à l'avocat à deux reprises.",
+              image: "/images/work-7.png",
+              imageCaption: "Les quatre documents qui vivent dans la poche latérale de chacune de nos valises drone.",
+            },
+          ],
+          outro: "Le travail en drone au Maroc est incroyable — la lumière, les textures, l'échelle — mais il est réglementé, et les réglementations sont appliquées. Les pilotes qui zappent la paperasse sont les pilotes qui perdent le drone. Nous ne sommes pas l'équipe drone la moins chère de Marrakech, mais nous sommes les seuls à n'avoir jamais perdu un drone, à n'avoir jamais eu d'autorisation révoquée, et à n'avoir jamais eu à effacer des images.",
+          relatedSlugs: ["atlas-winter", "twilight-real-estate-marrakech", "real-estate-video-conversion"],
+        },
+        {
+          slug: "lit-14th-century-riad",
+          title: "Comment nous avons éclairé un riad du XIVe siècle (sans abîmer le zellige)",
+          excerpt: "Zellige de qualité restauration, pas de perçage, pas de scotch, pas de gels. Le détail du setup à 3 lumières que nous avons utilisé pour photographier une cour du XIVe siècle — et les petits compromis qui ont fait que ça marche.",
+          date: "22 mars 2026",
+          readTime: "5 min de lecture",
+          tags: ["Éclairage", "Étude de cas"],
+          category: "Étude de cas",
+          heroImage: "/images/work-8.png",
+          author: { name: "Lina Ouazzani", role: "Responsable éclairage", avatar: "/images/work-9.png" },
+          intro: "Le propriétaire a passé 11 ans à restaurer ce riad. Le zellige de la cour centrale a été posé par un maître artisan de Fès. La règle était claire : pas de trous de perceuse, pas de scotch gaffer sur le zellige, pas de gels qui laisseraient des résidus. Nous avions une nuit et trois lumières. Voici exactement ce que nous avons fait.",
+          sections: [
+            {
+              body: "Le riad est construit autour d'une cour centrale de 9 m x 6 m avec une fontaine au milieu, quatre orangers, et le sol en zellige d'origine de la restauration du XIVe siècle. Les murs sont en tadelakt artisanal en deux couleurs. Il y a une poutre en cèdre d'origine que l'on nous a demandé de photographier comme une pièce de musée. Le propriétaire est un de nos clients, et dès que nous sommes entrés, nous avons su que c'était un shooting que nous ne pouvions pas rater.",
+              image: "/images/work-9.png",
+              imageCaption: "La cour centrale, une seule lumière, exposition 1/8 s, avant la deuxième lumière.",
+            },
+            {
+              heading: "Le setup à 3 lumières",
+              body: "Lumière 1 : un Profoto B10X renvoyé par une octabox de 1,2 m, positionné à l'entrée ouest, simulant le soleil chaud de fin d'après-midi qui aurait frappé la cour 4 heures plus tôt. Lumière 2 : un Aputure 600D avec fixation fresnel, monté sur un pied de 4 m derrière l'arche est, fournissant une lumière de bord froide sur les orangers. Lumière 3 : un petit tube Astera glissé dans le bassin de la fontaine, fournissant le reflet sur l'eau qui vend la cour au montage.",
+              list: [
+                "Lumière 1 : Profoto B10X + octabox 1,2 m, entrée ouest, 4 500 K",
+                "Lumière 2 : Aputure 600D + fresnel, pied 4 m, arche est, 6 500 K",
+                "Lumière 3 : tube Astera Titan, bassin de la fontaine, 3 200 K",
+                "Boîtier : Phase One IQ4, 23 mm Schneider, f/8, ISO 50, 1/15 s",
+              ],
+            },
+            {
+              heading: "Ce que nous n'avons PAS fait",
+              body: "Nous n'avons pas percé. Nous n'avons pas scotché. Nous n'avons pas mis de gel sur le zellige. Chaque pied de lumière avait un patin caoutchouc. Chaque câble était tiré le long du périmètre de la cour, jamais en travers du sol. Nous avons utilisé deux clamps MagMod MagGrip sur la poutre en cèdre — ils ont été retirés en fin de shoot et inspectés par le propriétaire avant notre départ. La vitesse d'obturation à 1/15 s était le maximum que nous nous autorisions pour éviter tout flou de mouvement sur le reflet de l'eau.",
+              pullquote: "Si le propriétaire ne peut pas dire que vous êtes passés, c'est que vous l'avez bien fait.",
+            },
+            {
+              heading: "Le résultat",
+              body: "Le livrable était de 24 frames, dont 6 sont devenues l'annonce du riad. Le riad s'est vendu en 11 jours, 4 jours en dessous du prix affiché. Le propriétaire a crédité la photographie dans son mot de remerciement. Nous avons encadré un des tirages et le lui avons offert en cadeau de fin d'année. Ce tirage est la seule image marketing que nous avons jamais imprimée et accrochée, et c'est la photo la plus photographiée que nous ayons jamais faite.",
+              image: "/images/work-10.png",
+              imageCaption: "L'image finale, 1/15 s, f/8, ISO 50, trois lumières, aucun trou de perceuse.",
+            },
+          ],
+          outro: "Éclairer un bien patrimonial, c'est faire preuve de retenue. La plus grande erreur est de sur-éclairer — dès que vous ajoutez une quatrième lumière, l'espace commence à ressembler à un plateau. Nous avons photographié 6 riads de qualité restauration ces deux dernières années, et la règle est toujours la même : le moins de lumières possible, tant que le résultat tient. Si vous chiffrez un shooting patrimonial, demandez au propriétaire quels matériaux sont intouchables, et respectez-les.",
+          relatedSlugs: ["twilight-real-estate-marrakech", "24h-delivery-workflow", "wedding-films-marrakech"],
+        },
+        {
+          slug: "real-estate-video-conversion",
+          title: "Vidéo immobilière qui convertit : un montage de 90 secondes qui a multiplié par 3 les vues",
+          excerpt: "Nous avons A/B testé 9 montages vidéo sur la même villa à Marrakech. La version 90 secondes a surperformé le cut de 3 minutes par 3x. Voici la structure, la musique, et ce que nous avons coupé.",
+          date: "28 février 2026",
+          readTime: "7 min de lecture",
+          tags: ["Vidéo", "Immobilier"],
+          category: "Vidéo",
+          heroImage: "/images/work-11.png",
+          author: { name: "Youssef El Fassi", role: "Responsable vidéo", avatar: "/images/work-12.png" },
+          intro: "Nous avons été engagés pour produire une vidéo héros pour une villa de 6 chambres à Marrakech, affichée à 18 M MAD. L'agence voulait un cut cinéma de 3 minutes. Nous avons suggéré un A/B test. Après 9 montages, 6 semaines de données et 41 000 vues sur l'annonce, le cut de 90 secondes a gagné dans une marge que nous n'avions pas prévue. Voici la structure, la licence musicale et la frame exacte qui a porté la conversion.",
+          sections: [
+            {
+              body: "La villa était un shooting difficile — jardin exposé nord, pas de soleil direct, murs blancs qui cramment à midi. L'agence voulait un récit cinéma de luxe : arrivée en drone, dolly lent, piscine au coucher du soleil, interview du propriétaire. Nous avons livré cela, plus 8 autres cuts. Chacun était 30 secondes plus court que le précédent, pour finir sur une version 90 secondes que nous avons failli ne pas inclure. Les données ont raconté une autre histoire.",
+              image: "/images/work-12.png",
+              imageCaption: "Le jardin exposé nord de la villa, tenu à la main à 35 mm, 1/50 s, f/4.",
+            },
+            {
+              heading: "Les 9 montages testés",
+              body: "Le montage 1 était le cut cinéma de 3 minutes. Les montages 2 à 5 étaient des versions 2 minutes, 90 secondes, 60 secondes et 30 secondes des mêmes rushes. Les montages 6 à 9 étaient des versions 60 et 90 secondes avec une musique différente et des plans d'ouverture différents. Nous les avons passés en séquence sur la même annonce, 4 jours par montage, et tracé les vues, les demandes de visite et le temps sur page. La version 90 secondes (montage 3) a surperformé le cut de 3 minutes par 3x sur les demandes de visite.",
+              list: [
+                "Montage 1 : 3:00 — cinéma, arrivée drone, interview propriétaire",
+                "Montage 2 : 2:00 — cinéma, sans interview",
+                "Montage 3 : 1:30 — cuts rapides, pas de drone, porté par la musique (GAGNANT)",
+                "Montage 4 : 1:00 — cuts rapides, pas de drone",
+                "Montage 5 : 0:30 — un seul plan drone + cut vers l'intérieur",
+                "Montages 6-9 : variations 0:60 et 1:30 du montage 3 avec une autre musique",
+              ],
+            },
+            {
+              heading: "La structure 90 secondes",
+              body: "Le cut gagnant suivait une structure en 5 temps : 0:00-0:08 plan large héros qui pose la propriété, 0:08-0:30 tour intérieur rapide (12 cuts, 1,8 s de moyenne), 0:30-0:50 plans lifestyle (piscine, jardin, table du dîner), 0:50-1:10 le hook (la frame qui a fait pleurer l'agent — un dolly en contre-plongée dans le couloir en cèdre), 1:10-1:30 l'appel (prix, contact, call to action). La musique était une licence Artlist de 90 secondes, 118 BPM, piano mélancolique avec un soft beat drop à 0:50.",
+              pullquote: "La frame qui a porté la conversion, c'était un dolly de 2 secondes en contre-plongée. Tout le reste, c'était de l'échafaudage.",
+            },
+            {
+              heading: "Ce que nous avons coupé",
+              body: "Nous avons coupé l'arrivée en drone. Nous avons coupé l'interview du propriétaire. Nous avons coupé le plan de la piscine au coucher du soleil. Nous avons coupé le dolly lent. Nous avons coupé toute frame de plus de 2,5 secondes. Le cut de 90 secondes est, par construction, épuisant. Le spectateur est censé sentir qu'il a vu toute la propriété, et c'est le cas — mais à un tempo qui respecte son temps. La leçon que nous avons tirée de cet A/B test est désormais intégrée à chaque vidéo immobilière que nous produisons : couper plus vite que ce qui semble juste.",
+              image: "/images/work-13.png",
+              imageCaption: "Le couloir en cèdre — la frame de 2 secondes qui a converti 3x.",
+            },
+          ],
+          outro: "Nous avons reproduit cet A/B test sur 4 autres annonces depuis. La version 90 secondes a gagné à chaque fois, dans une marge de 1,8x à 3,4x sur les demandes de visite. Les données sont sans ambiguïté — les acheteurs sur le marché de Marrakech ne veulent pas un cinéma de 3 minutes. Ils veulent savoir si la propriété vaut une visite, en moins de 2 minutes. Si vous chiffrez une vidéo immobilière, demandez à l'agence quel est le taux cible de demandes de visite, et calez la durée de la vidéo en fonction.",
+          relatedSlugs: ["twilight-real-estate-marrakech", "vertical-cuts", "24h-delivery-workflow"],
+        },
+        {
+          slug: "atlas-winter",
+          title: "Dans les coulisses : photographier l'Atlas en hiver",
+          excerpt: "Un reportage de terrain depuis un shooting de 4 jours dans l'Atlas en janvier — cols gelés, soleil bas, brouillard dans les vallées, et le matériel qui est rentré sans une égratignure.",
+          date: "18 janvier 2026",
+          readTime: "4 min de lecture",
+          tags: ["Excursions", "Terrain"],
+          category: "Excursions",
+          heroImage: "/images/work-14.png",
+          author: { name: "Sofia Bennani", role: "Directrice de la photographie", avatar: "/images/work-15.png" },
+          intro: "Le col du Tizi n'Tichka en janvier est un autre pays. Les cols ferment sans prévenir, le soleil passe sous la crête dès 16 h, et le brouillard dans les vallées rend chaque plan drone un coup de dés. Nous avons fait nos valises pour 4 jours, prévu 3, et tourné 6. Voici le reportage de terrain, le matériel qui a survécu, et le drone qui n'a pas tenu.",
+          sections: [
+            {
+              body: "Le shooting était pour un tour-opérateur — une campagne de 4 jours pour promouvoir les excursions hivernales dans l'Atlas. Le brief était simple : 30 stills, 5 courtes vidéos, drone quand c'est possible, et une histoire qui rende l'Atlas accueillant en janvier. La réalité, c'était -8 °C au col, des rafales à 60 km/h, et un drone qui est rentré avec un bras fissuré au jour 2.",
+              image: "/images/work-15.png",
+              imageCaption: "Le col du Tizi n'Tichka, jour 2, -8 °C, rafales à 60 km/h. À la main, 24 mm, 1/250 s.",
+            },
+            {
+              heading: "Jour 1 — la vallée",
+              body: "Nous avons commencé dans la vallée de l'Ourika, à 45 minutes de Marrakech. Le matin était clair, la lumière était dorée, les marchés berbères étaient déjà installés. Nous avons shooté le marché en 90 minutes, puis roulé jusqu'à Setti Fatma pour les cascades. Les cascades étaient partiellement gelées — une première pour notre équipe. Le drone est monté 12 minutes, a obtenu 4 plans héros, et s'est posé avant que le vent ne se lève. À 15 h, la lumière était partie, le brouillard est arrivé, et nous étions de retour au riad pour un tagine chaud et une revue des cartes du jour.",
+              list: [
+                "Jour 1 : vallée de l'Ourika, cascades de Setti Fatma, 14 stills, 1 clip vidéo",
+                "Jour 2 : col du Tizi n'Tichka, kasbah de Telouet, 9 stills, drone fissuré",
+                "Jour 3 : Aït Benhaddou, Ouarzazate, 12 stills, 2 clips vidéo",
+                "Jour 4 : Atlas Studios, retour à Marrakech, 8 stills, 2 clips vidéo",
+              ],
+            },
+            {
+              heading: "Le drone qui n'a pas tenu",
+              body: "Jour 2, col du Tizi n'Tichka. Nous avons fait décoller le Mavic 3 au sommet pour un plan large des lacets. Le vent était à 60 km/h en soutenu, avec des rafales à 80. Nous avons eu 2 clips, 1 still, et une alerte RTH batterie faible à 9 % — le drone s'est posé en auto, à 30 m du point de décollage, avec un bras avant fissuré. La réparation a coûté 2 400 MAD. La leçon : en altitude en janvier, le vent n'est pas une suggestion.",
+              pullquote: "Si le vent dépasse 50 km/h, le drone reste dans la voiture. À chaque fois.",
+            },
+            {
+              heading: "Ce que nous avons emporté",
+              body: "Le kit qui a survécu : 2 boîtiers Sony A7R V, 16-35 mm f/2,8 GM, 24-70 mm f/2,8 GM, 70-200 mm f/2,8 GM, 3 batteries de rechange par boîtier, 6 cartes SD, 1 SSD portable. Le kit qui n'a pas tenu : le Mavic 3 (bras fissuré), 1 polariseur circulaire (condensation dans le brouillard), 1 paire de gants (perdue à Aït Benhaddou). Nous emportons désormais 2 bras de drone de rechange dans le sac Atlas. Nous n'en avons pas encore eu besoin, mais le jour où ça arrivera, on sera prêts.",
+              image: "/images/work-16.png",
+              imageCaption: "La vue depuis la kasbah de Telouet, jour 2, 20 minutes avant que le vent n'arrive.",
+            },
+          ],
+          outro: "L'Atlas en janvier, c'est le shooting le plus difficile que nous faisons de l'année. C'est aussi le plus gratifiant. La lumière dure 30 minutes au lieu de 3 heures, les foules sont parties, et la neige sur les cols est une frame différente toutes les 20 minutes. Nous referons ce shooting d'excursion en 2027 — mêmes dates, même itinéraire, même riad. Si vous voulez nous rejoindre en tant que client ou co-shooter, écrivez-nous en novembre.",
+          relatedSlugs: ["drone-permit-checklist-morocco", "golden-hour-schedule", "vertical-cuts"],
+        },
+        {
+          slug: "24h-delivery-workflow",
+          title: "Workflow de post-prod : comment on livre une annonce de 60 photos en 24 heures",
+          excerpt: "Lightroom, Capture One, presets, batchs et un template de livraison fixe. Le pipeline exact que nous lançons quand une agence a besoin d'une annonce complète dès le lendemain matin.",
+          date: "5 décembre 2025",
+          readTime: "6 min de lecture",
+          tags: ["Workflow", "Immobilier"],
+          category: "Workflow",
+          heroImage: "/images/work-17.png",
+          author: { name: "Lina Ouazzani", role: "Responsable éclairage", avatar: "/images/work-18.png" },
+          intro: "La livraison en 24 heures, c'est la demande la plus fréquente des agences immobilières à Marrakech. C'est aussi le service le plus cher que nous proposons. Voici le pipeline exact, la stack logicielle, les presets et le template de livraison qui nous permettent de tourner une annonce de 60 photos en 24 heures sans compromettre la qualité.",
+          sections: [
+            {
+              body: "La livraison en 24 heures coûte 35 % de plus que le délai standard de 3 jours. La plupart des agences la réservent 2 à 3 fois par trimestre, quand une annonce va être mise en ligne et que le photographe l'a shootée tard. La contrainte est dure : photos à minuit, post-prod à 6 h, livraison à 9 h. Nous avons fait tourner ce pipeline 47 fois en 2025. Nous avons raté le délai une seule fois — et une seule, sur une annonce de luxe à 110 photos pendant une coupure de courant.",
+              image: "/images/work-18.png",
+              imageCaption: "Le studio à 4 h du matin pendant un turnaround 24 heures. Trois éditeurs, deux écrans chacun, une cafetière pleine.",
+            },
+            {
+              heading: "Le pipeline en 6 étapes",
+              body: "Étape 1 : l'import. Le photographe vide les cartes dans un dossier projet unique, organisé par adresse du bien. Étape 2 : la sélection — nous utilisons Photo Mechanic pour la première passe, 60 photos par minute, pas de note pour l'instant, juste une étoile pour les keepers. Étape 3 : le match colorimétrique — nous passons les 60 keepers dans un stack de presets fixes sous Lightroom, puis nous corrigeons à la main les 8 à 12 frames qui ont besoin d'une seconde passe. Étape 4 : l'export — 4 096 px sur la grande longueur, sRGB, JPEG 80 %. Étape 5 : la livraison — nous uploadons dans un dossier client fixe, envoyons un seul e-mail, et marquons le projet terminé dans notre CRM. Étape 6 : la facture — la facture part automatiquement, le projet est clos.",
+              list: [
+                "Étape 1 : import via Photo Mechanic, 1 dossier par bien",
+                "Étape 2 : tri à 60 photos/min, étoile sur les keepers",
+                "Étape 3 : match colorimétrique Lightroom, 8-12 frames retouchées à la main",
+                "Étape 4 : export 4 096 px, sRGB, JPEG 80 %",
+                "Étape 5 : upload dossier client, envoi e-mail de livraison",
+                "Étape 6 : projet marqué terminé, facturation agence",
+              ],
+            },
+            {
+              heading: "Les presets",
+              body: "Nous utilisons un stack fixe de 4 presets — base, heure bleue, intérieur, et piscine. Le preset base est notre défaut pour les 80 % de frames qui ont juste besoin d'un match colorimétrique. Le preset heure bleue ajoute 200 K de chaleur et remonte les ombres de 8 %. Le preset intérieur baisse les hautes lumières de 15 % et ajoute une petite courbe de contraste. Le preset piscine refroidit l'eau de 300 K et ajoute un petit bump de clarté sur le carrelage. Chaque preset a été construit en interne sur 18 mois, et chaque preset est verrouillé — nous ne modifions pas les presets au niveau du projet.",
+              pullquote: "Si vous modifiez le preset au niveau du projet, vous n'avez pas un preset. Vous avez une habitude.",
+            },
+            {
+              heading: "Le template de livraison",
+              body: "Le template d'e-mail fait 4 paragraphes, fixes. Paragraphe 1 : merci pour le brief, le projet est livré. Paragraphe 2 : liens vers la galerie, les proofs basse définition, et le téléchargement haute définition. Paragraphe 3 : les conditions de licence standard (usage personnel, usage agence, pas de sous-licence à un tiers sans autorisation écrite). Paragraphe 4 : une seule ligne qui demande un feedback et un lien d'avis Google. Le template est signé par l'éditeur qui a fait le tri, pas par le photographe. L'agence sait exactement à qui demander, et nous savons exactement qui possède la livraison.",
+              image: "/images/work-19.png",
+              imageCaption: "Le panneau d'export Lightroom, 60 frames en file, 4 h 47, à 8 minutes de la livraison.",
+            },
+          ],
+          outro: "La livraison en 24 heures est un service que nous avons construit pour les agences qui en avaient le plus besoin. Ce n'est pas un service que nous recommandons pour chaque shoot — le surcoût est réel, la pression sur l'équipe est réelle, et la marge est plus fine que notre délai standard. Mais pour les annonces qui en ont besoin, c'est le service photo 24 heures le plus fiable de Marrakech. Si vous avez besoin d'un turnaround 24 heures, envoyez le brief avant 16 h, et nous livrons avant 9 h le lendemain matin.",
+          relatedSlugs: ["twilight-real-estate-marrakech", "real-estate-video-conversion", "lit-14th-century-riad"],
+        },
+        {
+          slug: "wedding-films-marrakech",
+          title: "Films de mariage à Marrakech : à quoi s'attendre le jour J",
+          excerpt: "Un planning pour les couples — de la nuit du henné au brunch d'au revoir. Trois caméras, un producteur, et les moments qui valent un deuxième photographe.",
+          date: "9 octobre 2025",
+          readTime: "5 min de lecture",
+          tags: ["Événements"],
+          category: "Événements",
+          heroImage: "/images/work-20.png",
+          author: { name: "Youssef El Fassi", role: "Responsable vidéo", avatar: "/images/work-21.png" },
+          intro: "Les mariages à Marrakech durent trois jours. La nuit du henné est la répétition, le nikah est la cérémonie légale, et le grand mariage est la production. En tant qu'équipe vidéo, nous sommes présents pour les trois, plus le brunch d'au revoir le quatrième jour. Voici le planning, le matériel, et les trois moments qui font le film.",
+          sections: [
+            {
+              body: "Le film de mariage standard à Marrakech dure 12 à 18 minutes, monté à partir de 8 à 12 heures de rushes filmés sur 3 à 4 jours. Le brief est presque toujours le même : cinéma, porté par la musique, moments de famille prioritaires, drone quand c'est possible, et un cut social de 60 secondes pour le montage du jour même. Le tarif va de 65 000 à 120 000 MAD selon la taille de l'équipe. L'équipe, c'est toujours 2 à 3 vidéastes plus un producteur.",
+              image: "/images/work-21.png",
+              imageCaption: "La nuit du henné, jour 1, à la main à 35 mm, à la lumière des bougies, 1/50 s f/1,8.",
+            },
+            {
+              heading: "Le planning",
+              body: "Jour 1 — nuit du henné. Nous arrivons à 19 h, installons deux caméras, et filmons la cérémonie du henné, la danse de la famille et les cadeaux. Jour 2 — le nikah. Nous sommes en place à 10 h, filmons la signature, les prières familiales, et le déjeuner plus intime en comité restreint. Jour 3 — le grand mariage. C'est le jour de la production. Nous arrivons à 14 h pour l'installation, filmons les portraits du couple à 16 h, la cérémonie à 18 h, les discours à 20 h, et la piste de danse jusqu'à minuit. Jour 4 — le brunch d'au revoir. Deux heures, une caméra, les remerciements et les cadeaux.",
+              list: [
+                "Jour 1 (Henné) : 19h-1h, 2 caméras, 1 enregistreur audio",
+                "Jour 2 (Nikah) : 10h-15h, 2 caméras, 1 enregistreur audio",
+                "Jour 3 (Mariage) : 14h-1h, 3 caméras, 1 drone, 1 enregistreur audio",
+                "Jour 4 (Brunch) : 11h-13h, 1 caméra, 1 enregistreur audio",
+              ],
+            },
+            {
+              heading: "Les trois moments qui font le film",
+              body: "Moment 1 : le first look. Nous recommandons toujours un first look en privé avant la cérémonie — 20 minutes, deux caméras, pas de famille. Le rush, c'est 90 secondes du moment le plus cinéma de la journée. Moment 2 : le toast du père. Nous plantons un micro canon sur la table et un 35 mm sur trépied. Le toast fait toujours 2 à 3 minutes, et le montage garde toujours les 60 dernières secondes. Moment 3 : le plan drone au coucher du soleil. Nous faisons décoller le drone 30 minutes avant la cérémonie, obtenons 4 plans larges du lieu, et nous atterrissons avant l'arrivée du premier invité.",
+              pullquote: "Le plan drone n'est pas la tête d'affiche. Le toast du père, oui. Toujours couper vers le toast d'abord.",
+            },
+            {
+              heading: "Le montage du jour même",
+              body: "Le cut social de 60 secondes est le livrable sous la plus forte pression que nous produisons. Il est filmé, monté et projeté à la réception du mariage — généralement 4 à 6 heures après la dernière danse. L'équipe qui filme le montage du jour même est une unité séparée de deux personnes qui ne touche pas au film principal. Le montage est shot-list driven, music-locked, et étalonné en 30 minutes. Le couple le voit pour la première fois sur un écran de 4 m à 1 h du matin. Nous avons produit 14 montages du jour même en 2025. À chaque fois, le couple a pleuré.",
+              image: "/images/work-22.png",
+              imageCaption: "Le montage du jour même de 60 secondes, projeté à 1 h du matin, 30 minutes après la livraison.",
+            },
+          ],
+          outro: "Les mariages à Marrakech sont parmi les événements les plus cinéma que nous filmons. La lumière, l'architecture, les familles, l'arc sur trois jours — chaque mariage est un film différent. Si vous préparez un mariage à Marrakech et que vous voulez une équipe vidéo qui l'a fait plus de 30 fois, envoyez-nous un brief 4 à 6 mois à l'avance. Nous sommes complets 9 à 12 mois à l'avance sur la haute saison (mars-juin, septembre-novembre).",
+          relatedSlugs: ["real-estate-video-conversion", "vertical-cuts", "atlas-winter"],
+        },
+        {
+          slug: "vertical-cuts",
+          title: "Du souk à votre fil : des cuts verticaux qui performent vraiment",
+          excerpt: "Pourquoi nous coupons vertical d'abord, les règles de recadrage 9:16 que nous utilisons, et les durées spécifiques par plateforme qui voyagent le plus loin sur Instagram et TikTok.",
+          date: "22 août 2025",
+          readTime: "5 min de lecture",
+          tags: ["Vidéo", "Social"],
+          category: "Vidéo",
+          heroImage: "/images/work-23.png",
+          author: { name: "Youssef El Fassi", role: "Responsable vidéo", avatar: "/images/work-24.png" },
+          intro: "La vidéo verticale n'est plus une pensée après coup. 73 % des vues vidéo que nous générons en 2025 sont sur mobile, dans un cadre 9:16, sur Instagram ou TikTok. Nous avons reconstruit nos pipelines de tournage, de montage et de livraison autour du cut vertical d'abord. Voici la règle de recadrage, les durées spécifiques par plateforme, et la seule erreur que nous voyons encore dans 90 % des films de mariage que l'on nous demande de réparer.",
+          sections: [
+            {
+              body: "Le basculement vers le vertical s'est fait en 2023. En 2024, 50 % de nos vues vidéo sociales étaient verticales. En 2025, c'est 73 %. Nous avons pris la décision de couper vertical d'abord en janvier 2025 — ce qui veut dire que les décisions de cadrage sur le terrain sont désormais prises pour le cadre 9:16, le 16:9 devenant le livrable secondaire. C'est l'inverse de comment on tournait les 6 années précédentes.",
+              image: "/images/work-24.png",
+              imageCaption: "Un test de recadrage 9:16 depuis un shooting dans un riad à Marrakech — frame originale, frame croppée, frame recadrée.",
+            },
+            {
+              heading: "Les règles de recadrage",
+              body: "Règle 1 : shootez plus large que vous ne le pensez. Nous filmons désormais les mariages au 24 mm au lieu du 35 mm, l'immobilier au 16 mm au lieu du 24 mm. Plus la frame originale est large, plus vous pouvez recadrer en 9:16 et en 16:9. Règle 2 : gardez le sujet au tiers central. Le crop 9:16 est une tranche verticale — si le sujet est sur le tiers gauche ou droit, le crop vertical le coupera. Règle 3 : protégez les yeux. La ligne des yeux dans un cadre 9:16 est le tiers supérieur. Si la ligne des yeux est au centre d'un cadre 16:9, le crop vertical coupera le front.",
+              list: [
+                "Règle 1 : shootez plus large — 24 mm pour les mariages, 16 mm pour l'immobilier",
+                "Règle 2 : sujet au tiers central du cadre 16:9",
+                "Règle 3 : protégez la ligne des yeux — gardez-la au tiers supérieur",
+                "Règle 4 : ne coupez jamais sur un mouvement — laissez le mouvement jouer en 16:9, puis recadrez",
+              ],
+            },
+            {
+              heading: "Les durées spécifiques par plateforme",
+              body: "Instagram Reels : 15 à 30 secondes pour la découverte, 60 à 90 secondes pour la rétention. TikTok : 21 à 34 secondes pour l'algorithme, 60 secondes pour le storytelling. YouTube Shorts : 30 à 45 secondes pour la recherche. Pinterest : 6 à 15 secondes pour la boucle. Le même cut vertical fonctionne rarement sur les quatre plateformes. Nous livrons 4 cuts par shooting — 30 s, 60 s, 90 s et 3 min — et le client choisit la plateforme. Le surcoût des cuts additionnels est de 1 200 MAD par shooting, facturé en forfait.",
+              pullquote: "Le même cut vertical n'est pas une stratégie. C'est un compromis.",
+            },
+            {
+              heading: "L'unique erreur que nous voyons dans 90 % des films de mariage",
+              body: "Les cuts verticaux sont livrés en 9:16 letterboxés dans un cadre 16:9. Le spectateur voit des barres noires en haut et en bas, et l'engagement chute de 40 % dans les 3 premières secondes. La solution, c'est de recadrer — pas de cropper. Le crop tire le centre du cadre 16:9 dans une fenêtre 9:16. Le recadrage tire le centre du cadre 16:9 dans une fenêtre 9:16 ET ajuste le timing, l'échelle et la position du sujet. Ça prend 4x plus de temps. C'est la seule manière de livrer un cut vertical qui tient.",
+              image: "/images/work-25.png",
+              imageCaption: "Le test de recadrage 9:16, comparaison 3 frames : originale, croppée, recadrée.",
+            },
+          ],
+          outro: "Le vertical, c'est le défaut maintenant. L'horizontal, c'est le deuxième livrable. Si vous commandez une vidéo en 2026 et que l'équipe à qui vous parlez shoote toujours horizontal d'abord, demandez-leur de vous détailler leur process de cut vertical. Si la réponse est 'on crop en post', continuez à chercher. Vertical d'abord, c'est une décision de tournage, pas une décision de montage.",
+          relatedSlugs: ["real-estate-video-conversion", "wedding-films-marrakech", "atlas-winter"],
+        },
+        {
+          slug: "golden-hour-schedule",
+          title: "Marrakech à l'heure dorée : un planning toute l'année",
+          excerpt: "Heures de lever et de coucher du soleil à Marrakech, mois par mois, plus la fenêtre exacte de 30 minutes pour laquelle on réserve un shooting à n'importe quelle semaine de l'année.",
+          date: "14 juin 2025",
+          readTime: "3 min de lecture",
+          tags: ["Terrain", "Conseils"],
+          category: "Terrain",
+          heroImage: "/images/work-26.png",
+          author: { name: "Sofia Bennani", role: "Directrice de la photographie", avatar: "/images/work-2.png" },
+          intro: "Marrakech est à 31,6° N, 7,9° O. L'heure dorée se décale de 90 minutes sur l'année. La fenêtre de 30 minutes pour laquelle nous réservons un shooting change toutes les 2 à 3 semaines. Voici le planning que nous utilisons en interne, les heures de lever et de coucher du soleil, et les décalages semaine par année que nous appliquons à chaque confirmation de réservation envoyée.",
+          sections: [
+            {
+              body: "L'heure dorée à Marrakech est courte. La fenêtre fait 28 à 34 minutes selon le mois. Nous réservons les shootings pour commencer 12 minutes avant le coucher du soleil officiel, durer 30 minutes, et finir 6 minutes après le coucher. En été (mai-août), la fenêtre est plus proche de 28 minutes. En hiver (novembre-février), elle s'étire à 34. Le planning minute par minute est dans notre template de réservation interne — nous partageons ici la version que nous utilisons pour les confirmations client.",
+              image: "/images/work-2.png",
+              imageCaption: "Un rooftop à Marrakech, 14 minutes après le coucher du soleil, octobre, 24 mm tilt-shift.",
+            },
+            {
+              heading: "Lever / coucher par mois",
+              body: "Janvier : 7h25 / 17h50. Février : 7h05 / 18h20. Mars : 6h35 / 18h45. Avril : 6h00 / 19h10. Mai : 5h30 / 19h35. Juin : 5h15 / 19h55. Juillet : 5h25 / 19h50. Août : 5h45 / 19h25. Septembre : 6h05 / 18h45. Octobre : 6h25 / 18h05. Novembre : 6h50 / 17h35. Décembre : 7h15 / 17h30. Le coucher le plus tôt est à la mi-décembre (17h30). Le coucher le plus tardif est à la mi-juin (19h55). Le décalage de 90 minutes est la raison pour laquelle le planning de réservation est une cible mouvante.",
+              list: [
+                "Janvier : heure dorée 17h20-17h50",
+                "Avril : heure dorée 18h40-19h10",
+                "Juillet : heure dorée 19h25-19h55",
+                "Octobre : heure dorée 17h35-18h05",
+                "Décembre : heure dorée 17h00-17h30",
+              ],
+            },
+            {
+              heading: "Le décalage semaine par année",
+              body: "Nous appliquons un décalage de 2 semaines à l'heure officielle du coucher du soleil. Le crépuscule civil (soleil à 6° sous l'horizon) est en retard de 2 à 3 minutes par semaine sur le coucher calendaire. La dérive cumulée est de 30 à 45 minutes à la mi-été. Le décalage que nous appliquons : semaines 1 à 10, pas de décalage. Semaines 11 à 22, -3 minutes. Semaines 23 à 34, -6 minutes. Semaines 35 à 48, -3 minutes. Semaines 49 à 52, pas de décalage. Le résultat est une fenêtre de 30 minutes qui est fiable, semaine par année, peu importe quand le shooting est réservé.",
+              pullquote: "Le crépuscule civil est en retard sur le coucher calendaire. Si vous ne corrigez pas, vous manquez la lumière.",
+            },
+            {
+              heading: "Ce que nous réservons",
+              body: "Nous réservons la fenêtre de 30 minutes 8 à 12 semaines à l'avance. La fenêtre d'hiver (décembre-janvier) est la plus demandée — nous avons vendu les week-ends d'hiver 2025 dès octobre 2024. La fenêtre d'été (juin-août) est la plus flexible — nous pouvons généralement réserver 2 à 3 semaines à l'avance. Les fenêtres de printemps et d'automne sont les plus fiables côté météo — ciel dégagé, températures douces, pas de brouillard. Si vous réservez un shooting à Marrakech, envoyez-nous une plage de dates 6 à 8 semaines à l'avance, et nous recommanderons la fenêtre optimale de 30 minutes pour cette semaine-là.",
+              image: "/images/work-3.png",
+              imageCaption: "Les remparts de la médina, octobre, 22 minutes après le coucher du soleil, à la main, 35 mm, 1/8 s.",
+            },
+          ],
+          outro: "L'heure dorée est une cible mouvante, et c'est précisément ce qui rend le planning utile. Cela fait 8 ans que nous photographions Marrakech, et nous continuons à affiner les décalages de réservation. La version ci-dessus est la build 2025. Nous publierons la build 2026 en janvier. Si vous voulez une copie du planning annuel complet en un seul PDF, écrivez-nous et nous vous l'envoyons par e-mail.",
+          relatedSlugs: ["twilight-real-estate-marrakech", "atlas-winter", "drone-permit-checklist-morocco"],
+        },
+      ],
+    },
+    cta: {
+      heading: "Vous voulez recevoir nos notes ?",
+      body: "Une note de terrain courte par mois — une seule idée, une seule photo, un seul enseignement. Pas de spam, pas de drama.",
+      ctaLabel: "S'abonner",
+      ctaHref: "/contact?subject=newsletter",
+    },
+  },
+
+  blogPost: {
+    backLabel: "Retour à tous les articles",
+    backToAllLabel: "Toutes les notes de terrain",
+    shareLabel: "Partager",
+    shareOnXLabel: "X / Twitter",
+    shareOnLinkedInLabel: "LinkedIn",
+    copyLinkLabel: "Copier le lien",
+    bookSessionLabel: "Réserver une séance",
+    relatedHeading: "Plus depuis le terrain",
+    allPostsLabel: "Tous les articles",
+    notFoundTitle: "Article introuvable",
+    notFoundBody: "Cette note de terrain n'est pas dans nos archives. Retournez à l'index du blog pour en lire d'autres.",
+    backToBlogLabel: "Retour au blog",
+  },
+
+  notFound: {
+    title: "Page introuvable",
+    body:
+      "L'image que vous cherchez n'est pas dans la galerie. Retournez à l'accueil ou parcourez le portfolio.",
+    ctaLabel: "Retour à l'accueil",
+  },
+};
