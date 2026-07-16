@@ -589,6 +589,31 @@
     .img-zoom > img, .img-zoom > video {
       transform: none !important;
     }
+    .section-divider-line {
+      animation: none !important;
+      transform: scaleX(1) !important;
+    }
+  }
+
+  /* Section divider */
+  @keyframes divider-expand {
+    from {
+      transform: scaleX(0);
+    }
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  .section-divider-line {
+    height: 1px;
+    background: oklab(0 0 0 / 0.1);
+    transform: scaleX(0);
+    transform-origin: center;
+  }
+
+  .section-divider-line[data-revealed="true"] {
+    animation: divider-expand 1s var(--ease-snappy) both;
   }
 }
 
