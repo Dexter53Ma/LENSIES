@@ -157,13 +157,13 @@ export default function Partners({ data }: PartnersProps) {
             {data.trustedByLabel}
           </span>
           <div className="grid grid-cols-3 items-center gap-x-32 gap-y-32 border-y border-foreground/10 py-32 sm:grid-cols-4 md:grid-cols-7 md:gap-x-24 md:py-40">
-            <LogoItem Icon={SiAirbnb} name="Airbnb" color="#FF5A5F" />
-            <LogoItem Icon={SiBookingdotcom} name="Booking.com" color="#003580" />
-            <LogoItem Icon={SiExpedia} name="Expedia" color="#FFD000" />
-            <LogoItem Icon={SiTripadvisor} name="Tripadvisor" color="#00AF87" />
-            <LogoItem Icon={SiMarriott} name="Marriott" color="#A60F2D" />
-            <LogoItem Icon={SiHilton} name="Hilton" color="#0F4D92" />
-            <TextLogoItem name="Sahara" />
+            <Reveal delay={0}><LogoItem Icon={SiAirbnb} name="Airbnb" color="#FF5A5F" /></Reveal>
+            <Reveal delay={1}><LogoItem Icon={SiBookingdotcom} name="Booking.com" color="#003580" /></Reveal>
+            <Reveal delay={2}><LogoItem Icon={SiExpedia} name="Expedia" color="#FFD000" /></Reveal>
+            <Reveal delay={3}><LogoItem Icon={SiTripadvisor} name="Tripadvisor" color="#00AF87" /></Reveal>
+            <Reveal delay={4}><LogoItem Icon={SiMarriott} name="Marriott" color="#A60F2D" /></Reveal>
+            <Reveal delay={5}><LogoItem Icon={SiHilton} name="Hilton" color="#0F4D92" /></Reveal>
+            <Reveal delay={6}><TextLogoItem name="Sahara" /></Reveal>
           </div>
         </Reveal>
 
