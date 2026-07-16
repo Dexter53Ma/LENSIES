@@ -80,6 +80,7 @@ interface RevealProps {
   rootMargin?: string;
   once?: boolean;
   id?: string;
+  href?: string;
 }
 
 const variantClass: Record<Variant, string> = {

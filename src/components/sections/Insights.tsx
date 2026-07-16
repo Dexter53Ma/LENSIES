@@ -77,14 +77,13 @@ export default function Insights() {
           style={{ scrollbarWidth: "none" }}
         >
           {articles.map((a, i) => (
-            <a
+            <Reveal
               key={a.href}
+              as="a"
+              variant="rise"
+              delay={(i > 8 ? 8 : i) as 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8}
               href={a.href}
               className="hover-zoom group flex w-[20rem] shrink-0 snap-start flex-col gap-20 sm:w-[24rem] md:w-[36rem]"
-              style={{
-                animation: "reveal-rise 0.8s var(--ease-snappy) both",
-                animationDelay: `${i * 0.05}s`,
-              }}
             >
               <div className="img-zoom relative aspect-[4/3] w-full overflow-hidden rounded-[1.2rem] bg-cream">
                 <img
@@ -120,7 +119,7 @@ export default function Insights() {
                   {a.title}
                 </h3>
               </article>
-            </a>
+            </Reveal>
           ))}
         </div>
       </div>
