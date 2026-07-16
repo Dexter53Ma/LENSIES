@@ -532,6 +532,28 @@
     }
   }
 
+  /* TextReveal component styles */
+  @keyframes text-word-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(1rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .text-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+
+  .text-word[data-revealed="true"] {
+    animation: text-word-reveal 0.5s var(--ease-snappy) both;
+  }
+
   /* No-scroll lock for menu */
   body.menu-open {
     overflow: hidden;
@@ -556,6 +578,11 @@
     }
     .reveal, .reveal-fade, .reveal-rise, .reveal-scale,
     .reveal-slide-right, .reveal-slide-left {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+    .text-word {
+      animation: none !important;
       opacity: 1 !important;
       transform: none !important;
     }
