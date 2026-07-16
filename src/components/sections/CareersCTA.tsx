@@ -12,7 +12,7 @@ export default function CareersCTA({ data }: CareersCTAProps) {
   return (
     <section className="relative flex w-full items-center justify-center bg-white px-24 py-120 text-foreground md:px-90">
       <div className="relative flex w-full max-w-[120rem] flex-col items-center gap-32 text-center">
-        <Reveal>
+        <Reveal variant="scale">
           <h2
             className="font-display text-balance text-foreground"
             style={{
@@ -24,12 +24,12 @@ export default function CareersCTA({ data }: CareersCTAProps) {
             {data.heading}
           </h2>
         </Reveal>
-        <Reveal delay={1}>
+        <Reveal variant="rise" delay={1}>
           <p className="max-w-[64rem] text-pretty font-body text-[1.4rem] font-medium leading-[1.4] text-foreground/80 md:text-[1.8rem]">
             {data.body}
           </p>
         </Reveal>
-        <Reveal delay={2}>
+        <Reveal variant="up" delay={2}>
           <a href={data.ctaHref} className="pill pill-pink mt-12 inline-flex items-center gap-8">
             <span>{data.ctaLabel}</span>
             <ArrowRightIcon className="size-12" />
