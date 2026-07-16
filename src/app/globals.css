@@ -298,6 +298,44 @@
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-0.6rem); }
   }
+  @keyframes hero-title-enter {
+    from {
+      opacity: 0;
+      transform: translateY(4rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes hero-body-enter {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes hero-cta-enter {
+    from {
+      opacity: 0;
+      transform: translateY(2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes hero-pioneer-stagger {
+    from {
+      opacity: 0;
+      transform: translateY(1.2rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
   /* Reveal primitives - applied to elements that should animate in on view */
   .reveal {
@@ -464,6 +502,34 @@
   }
   .img-fade-in {
     animation: img-fade-in 0.6s var(--ease-snappy) both;
+  }
+
+  /* Hero entrance animations */
+  .hero-title-enter {
+    animation: hero-title-enter 0.8s var(--ease-snappy) 0.2s both;
+  }
+
+  .hero-body-enter {
+    animation: hero-body-enter 0.6s var(--ease-snappy) 0.5s both;
+  }
+
+  .hero-cta-enter {
+    animation: hero-cta-enter 0.6s var(--ease-snappy) 0.7s both;
+  }
+
+  .hero-pioneer-enter {
+    animation: hero-pioneer-stagger 0.5s var(--ease-snappy) both;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hero-title-enter,
+    .hero-body-enter,
+    .hero-cta-enter,
+    .hero-pioneer-enter {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
+    }
   }
 
   /* No-scroll lock for menu */

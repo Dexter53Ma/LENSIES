@@ -51,16 +51,17 @@ export default function Hero({ data }: HeroProps) {
 
       <div className="relative z-10 mx-auto flex h-full w-full max-w-[123rem] flex-col items-start justify-end gap-24 overflow-hidden px-24 pb-40 sm:px-40 md:overflow-visible md:px-90 md:pb-90">
         <div ref={pioneersRef} className="flex flex-col items-start gap-4 md:gap-8">
-          {data.pioneering.map((word) => (
+          {data.pioneering.map((word, i) => (
             <span
               key={word}
               data-pioneer
-              className="font-display text-cream"
+              className="hero-pioneer-enter font-display text-cream"
               style={{
                 fontSize: "clamp(2.4rem, 6.4vw, 6.4rem)",
                 lineHeight: 1,
                 letterSpacing: "-0.03em",
                 transition: "opacity 0.4s var(--ease-snappy)",
+                animationDelay: `${0.1 + i * 0.12}s`,
               }}
             >
               {word}
@@ -69,7 +70,7 @@ export default function Hero({ data }: HeroProps) {
         </div>
 
         <h1
-          className="font-display text-balance text-cream"
+          className="hero-title-enter font-display text-balance text-cream"
           style={{
             fontSize: "clamp(4rem, 11vw, 15rem)",
             lineHeight: 0.85,
@@ -80,14 +81,14 @@ export default function Hero({ data }: HeroProps) {
         </h1>
 
         <div className="flex w-full flex-col items-start justify-between gap-24 md:flex-row md:items-end">
-          <p className="max-w-full text-pretty font-body text-[1.4rem] font-medium leading-[1.45] text-cream/85 sm:max-w-[44rem] md:text-[1.6rem]">
+          <p className="hero-body-enter max-w-full text-pretty font-body text-[1.4rem] font-medium leading-[1.45] text-cream/85 sm:max-w-[44rem] md:text-[1.6rem]">
             {data.body}
           </p>
           <button
             type="button"
             onClick={scrollDown}
             aria-label={data.scrollDownLabel}
-            className="magnetic group flex shrink-0 items-center gap-12 self-start rounded-full border border-cream/30 px-20 py-12 text-cream transition-all duration-500 hover:scale-105 hover:border-pink hover:bg-pink hover:text-white md:self-end"
+            className="hero-cta-enter magnetic group flex shrink-0 items-center gap-12 self-start rounded-full border border-cream/30 px-20 py-12 text-cream transition-all duration-500 hover:scale-105 hover:border-pink hover:bg-pink hover:text-white md:self-end"
           >
             <span className="font-body text-[1.3rem] font-medium">{data.scrollDownLabel}</span>
             <ArrowDownIcon className="size-12 transition-transform duration-500 group-hover:translate-y-2" />
