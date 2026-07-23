@@ -173,11 +173,11 @@
     transition: transform 0.4s var(--ease-snappy), background-color 0.3s var(--ease-snappy);
   }
   .pill-pink {
-    background: var(--color-pink);
+    background: #d4235a;
     color: #fff;
   }
   .pill-pink:hover {
-    background: #ff4782;
+    background: #c91e50;
     transform: scale(1.02);
   }
   .pill-light {

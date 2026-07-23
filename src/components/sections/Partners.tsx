@@ -343,7 +343,7 @@ function TextLogoItem({ name }: { name: string }) {
 
 function Stars({ rating }: { rating: number }) {
   return (
-    <div className="flex items-center gap-4" aria-label={`${rating} out of 5 stars`}>
+    <div role="img" aria-label={`${rating} out of 5 stars`} className="flex items-center gap-4">
       {Array.from({ length: 5 }).map((_, i) => (
         <StarIcon
           key={i}

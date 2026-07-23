@@ -129,6 +129,7 @@ export default function Header() {
       {/* Megamenu overlay */}
       <div
         aria-hidden={!open}
+        inert={!open || undefined}
         className="fixed inset-0 z-[490] overflow-hidden bg-foreground text-cream"
         style={{
           opacity: open ? 1 : 0,

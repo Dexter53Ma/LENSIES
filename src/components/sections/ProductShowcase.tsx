@@ -67,7 +67,7 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
                 <span className="rounded-full border border-current/15 px-12 py-4">
                   {data.eyebrow}
                 </span>
-                <span className="font-mono text-foreground/50">
+                <span className="font-mono text-foreground/60">
                   {String(active + 1).padStart(2, "0")}/{String(cards.length).padStart(2, "0")}
                 </span>
               </div>
