@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import Image from "next/image";
 import { ArrowRightIcon, ArrowUpRight } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
 import type { ProductShowcaseData } from "@/i18n/types";
@@ -127,7 +128,7 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
                   }`}
                 >
                   {card.imageSrc ? (
-                    <img src={card.imageSrc} alt={card.title} width={1080} height={810} loading="lazy" decoding="async" className="size-full object-cover" />
+                    <Image src={card.imageSrc} alt={card.title} fill sizes="(max-width: 768px) 100vw, 60vw" loading="lazy" decoding="async" className="size-full object-cover" />
                   ) : card.videoSrc ? (
                     <video
                       autoPlay
@@ -188,7 +189,7 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
               >
                 <div className="img-zoom relative aspect-[4/3] w-full overflow-hidden rounded-[1.6rem] bg-cream">
                   {card.imageSrc ? (
-                    <img src={card.imageSrc} alt={card.title} width={1080} height={810} loading="lazy" decoding="async" className="size-full object-cover" />
+                    <Image src={card.imageSrc} alt={card.title} fill sizes="100vw" loading="lazy" decoding="async" className="size-full object-cover" />
                   ) : card.videoSrc ? (
                     <video
                       autoPlay

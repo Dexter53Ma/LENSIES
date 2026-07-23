@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { Reveal } from "@/components/reveal";
 import { ArrowLeftIcon, ArrowRightIcon, CloseIcon, ArrowUpRight } from "@/components/icons";
@@ -122,11 +123,11 @@ export default function MasonryGallery() {
           >
             <div className="grid grid-cols-1 md:grid-cols-12">
               <div className="img-zoom relative aspect-[4/3] overflow-hidden md:col-span-8 md:aspect-auto md:h-full">
-                <img
+                <Image
                   src={featured.src}
                   alt={featured.title}
-                  width={1080}
-                  height={810}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 66vw"
                   fetchPriority="high"
                   decoding="async"
                   className="size-full object-cover transition-transform duration-700 group-hover:scale-[1.04]"
@@ -195,11 +196,11 @@ export default function MasonryGallery() {
                 aria-label={`${data.zoomBadgeLabel}: ${project.title}`}
               >
                 <div className={`relative w-full ${ASPECT_CLASS[project.aspect]}`}>
-                    <img
+                    <Image
                       src={project.src}
                       alt={project.title}
-                      width={640}
-                      height={640}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       loading="lazy"
                       decoding="async"
                       fetchPriority="low"

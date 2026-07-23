@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { MenuIcon, CloseIcon, ArrowUpRight } from "@/components/icons";
 import { CalendarIcon } from "@/components/icons-extended";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -70,7 +71,7 @@ export default function Header() {
                 aria-label={t.header.logoAriaLabel}
                 className="flex h-full w-auto shrink-0 items-center text-foreground"
               >
-                <img
+                <Image
                   src="/images/logo.png"
                   alt="Lensies"
                   width={120}
@@ -78,6 +79,7 @@ export default function Header() {
                   decoding="async"
                   fetchPriority="high"
                   className="h-32 w-auto sm:h-36"
+                  sizes="80px"
                 />
               </a>
 
@@ -235,13 +237,14 @@ export default function Header() {
                     }}
                   />
                 ) : (
-                  <img
+                  <Image
                     src={NAV[activeIdx].image}
                     alt={NAV[activeIdx].label}
                     width={640}
                     height={480}
                     loading="lazy"
                     decoding="async"
+                    sizes="(max-width: 768px) 100vw, 400px"
                     className="size-full object-cover"
                     style={{
                       animation: "reveal-scale 0.5s var(--ease-snappy)",

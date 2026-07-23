@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowUpRight, ArrowLeftIcon } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
@@ -119,13 +120,14 @@ export default function BlogPostView({ post, related }: BlogPostViewProps) {
 
             <div className="mt-8 flex flex-wrap items-center justify-between gap-16 border-t border-foreground/10 pt-20">
               <div className="flex items-center gap-16">
-                <img
+                <Image
                   src={post.author.avatar}
                   alt={post.author.name}
                   width={56}
                   height={56}
                   decoding="async"
                   className="size-56 rounded-full object-cover"
+                  sizes="56px"
                 />
                 <div className="flex flex-col gap-2">
                   <span className="font-body text-[1.4rem] font-semibold text-foreground">
@@ -177,13 +179,14 @@ export default function BlogPostView({ post, related }: BlogPostViewProps) {
 
               {section.image ? (
                 <figure className="my-32 overflow-hidden rounded-[1.6rem]">
-                  <img
+                  <Image
                     src={section.image}
                     alt={section.imageCaption ?? ""}
                     width={960}
                     height={640}
                     loading="lazy"
                     decoding="async"
+                    sizes="(max-width: 768px) 100vw, 80vw"
                     className="aspect-[3/2] w-full object-cover"
                   />
                   {section.imageCaption ? (
@@ -315,11 +318,11 @@ export default function BlogPostView({ post, related }: BlogPostViewProps) {
                     className="hover-zoom group flex h-full flex-col gap-20 overflow-hidden rounded-[1.6rem] border border-foreground/10 bg-white transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_3rem_6rem_-2rem_oklab(0_0_0_/0.15)]"
                   >
                     <div className="img-zoom relative aspect-[4/3] w-full overflow-hidden">
-                      <img
+                      <Image
                         src={p.heroImage}
                         alt={p.title}
-                        width={640}
-                        height={480}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         loading="lazy"
                         decoding="async"
                         className="size-full object-cover transition-transform duration-700 group-hover:scale-105"

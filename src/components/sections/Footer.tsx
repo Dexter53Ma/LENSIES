@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { InstagramIcon, LinkedInIcon, YouTubeIcon, XIcon } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
 import { useT } from "@/i18n/provider";
@@ -43,7 +44,7 @@ export default function Footer({
       <div className="relative z-10 mx-auto flex w-full max-w-[123rem] flex-col gap-48 px-24 py-80 sm:gap-64 md:px-90 md:py-120">
         <Reveal className="flex flex-col gap-32 md:flex-row md:items-start md:justify-between">
           <div className="flex flex-col gap-20">
-            <img
+            <Image
               src="/images/logo.png"
               alt="Lensies"
               width={156}
@@ -51,6 +52,7 @@ export default function Footer({
               loading="lazy"
               decoding="async"
               className="h-110 w-auto md:h-130"
+              sizes="130px"
             />
             <p className="max-w-full text-pretty font-body text-[1.3rem] font-medium leading-[1.5] text-white/85 sm:max-w-[44rem] sm:text-[1.4rem] md:text-[1.5rem]">
               {t.footer.taglineTemplate}{" "}

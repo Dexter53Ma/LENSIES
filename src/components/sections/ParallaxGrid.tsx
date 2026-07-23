@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 import { useSharedScroll } from "@/components/use-shared-scroll";
 import type { ParallaxGridData } from "@/i18n/types";
@@ -118,11 +119,11 @@ export default function ParallaxGrid({ data }: ParallaxGridProps) {
                   style={{ opacity: cell.opacity ?? 1 }}
                 >
                   {cell.hasImage && cell.src ? (
-                    <img
+                    <Image
                       src={cell.src}
                       alt=""
-                      width={640}
-                      height={640}
+                      fill
+                      sizes="(max-width: 768px) 50vw, 133px"
                       loading="lazy"
                       decoding="async"
                       fetchPriority="low"
@@ -151,11 +152,11 @@ export default function ParallaxGrid({ data }: ParallaxGridProps) {
           delay={2}
           className="img-zoom relative aspect-square w-[calc(133/1440*100vw)] overflow-hidden rounded-[1.2rem] bg-cream"
         >
-          <img
+          <Image
             src={previewImage}
             alt=""
-            width={640}
-            height={640}
+            fill
+            sizes="(max-width: 768px) 50vw, 133px"
             loading="lazy"
             decoding="async"
             fetchPriority="low"
@@ -181,7 +182,7 @@ export default function ParallaxGrid({ data }: ParallaxGridProps) {
               delay={((i % 4) + 1) as 1 | 2 | 3 | 4}
               className="img-zoom relative aspect-square w-full overflow-hidden rounded-[1.2rem] bg-cream"
             >
-              <img src={src} alt="" width={640} height={640} loading="lazy" decoding="async" fetchPriority="low" className="size-full object-cover" />
+              <Image src={src} alt="" fill sizes="50vw" loading="lazy" decoding="async" fetchPriority="low" className="size-full object-cover" />
             </Reveal>
           ))}
         </div>

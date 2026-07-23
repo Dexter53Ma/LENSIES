@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import { ArrowLeftIcon, ArrowRightIcon } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
 import { useT } from "@/i18n/provider";
@@ -86,11 +87,11 @@ export default function Insights() {
               className="hover-zoom group flex w-[20rem] shrink-0 snap-start flex-col gap-20 sm:w-[24rem] md:w-[36rem]"
             >
               <div className="img-zoom relative aspect-[4/3] w-full overflow-hidden rounded-[1.2rem] bg-cream">
-                <img
+                <Image
                   src={a.image}
                   alt={a.title}
-                  width={576}
-                  height={432}
+                  fill
+                  sizes="(max-width: 640px) 200px, (max-width: 768px) 240px, 360px"
                   loading="lazy"
                   decoding="async"
                   className="size-full object-cover transition-transform duration-700"

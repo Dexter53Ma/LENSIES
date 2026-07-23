@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 import { useSharedScroll } from "@/components/use-shared-scroll";
 import type { FeatureTabsData } from "@/i18n/types";
@@ -41,11 +42,11 @@ export default function FeatureTabs({ data }: FeatureTabsProps) {
           <div className="relative flex flex-1 flex-col md:h-full md:max-w-[52.7rem]">
             <div className="flex items-start md:h-screen md:items-center md:sticky md:top-0">
               <div className="img-zoom relative aspect-[4/5] w-full overflow-hidden rounded-[1.2rem] bg-cream">
-                <img
+                <Image
                   src={image}
                   alt={data.imageAlt ?? data.heading}
-                  width={1080}
-                  height={1350}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   decoding="async"
                   fetchPriority="high"
                   className="size-full object-cover"
