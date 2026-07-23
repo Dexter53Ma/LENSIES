@@ -3,8 +3,6 @@ import { Resend } from "resend";
 
 export const runtime = "nodejs";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 interface ContactBody {
   name?: string;
   email?: string;
@@ -26,6 +24,7 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Name, email, and message are required." }, { status: 400 });
   }
 
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const from = process.env.RESEND_FROM ?? "Lensies <contact@lensies.com>";
   const to = process.env.RESEND_TO ?? "contact@lensies.com";
 
