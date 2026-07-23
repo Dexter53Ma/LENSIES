@@ -37,7 +37,7 @@ export default function Hero({ data }: HeroProps) {
       className="relative h-screen w-full overflow-hidden bg-foreground text-cream"
     >
       <HeroVideo
-        videoId={data.youtubeId}
+        videoSrc={data.videoSrc}
         className="pointer-events-none absolute top-1/2 left-1/2 h-[56.25vw] w-[100vw] min-h-[100vh] min-w-[177.78vh] -translate-x-1/2 -translate-y-1/2"
       />
       <div

@@ -287,7 +287,7 @@ export const fr: DeepPartial<Dictionary> = {
       title: "Marrakech, photographiée honnêtement.",
       body: "Lensies est un studio basé à Marrakech, spécialisé en photographie immobilière, vidéographie, drone, événements et expériences sur mesure à travers le Maroc.",
       scrollDownLabel: "Défiler vers le bas",
-      youtubeId: "h64HW1hbyyk",
+      videoSrc: "/videos/hero video.mp4",
     },
     platforms: { eyebrow: "Listé sur" },
     parallax: {
@@ -464,7 +464,7 @@ export const fr: DeepPartial<Dictionary> = {
       title: "Nous filmons ce que nous aimons, là où nous vivons.",
       body: "Lensies est un studio créatif construit par des photographes, des opérateurs drone et des conteurs. Nous montrons Marrakech sous son vrai jour depuis huit ans.",
       scrollDownLabel: "Défiler vers le bas",
-      youtubeId: "h64HW1hbyyk",
+      videoSrc: "/videos/hero video.mp4",
     },
     cta: {
       heading: "Envie de tourner avec nous ?",
@@ -480,7 +480,7 @@ export const fr: DeepPartial<Dictionary> = {
       title: "Immobilier, vidéo, drone, événements, excursions, 3D.",
       body: "Choisissez un service ou composez un pack. Nous staffons, filmons, montons et livrons — sous un même toit, une seule facture, une seule deadline.",
       scrollDownLabel: "Défiler vers le bas",
-      youtubeId: "h64HW1hbyyk",
+      videoSrc: "/videos/hero video.mp4",
     },
     cta: {
       heading: "Besoin d'un projet sur mesure ?",
@@ -595,7 +595,7 @@ export const fr: DeepPartial<Dictionary> = {
       title: "Des tarifs simples.",
       body: "Immobilier, riads, villas, événements et drone. Un studio, une facture, une seule deadline. Choisissez un pack ou demandez un devis sur mesure sous 24 heures.",
       scrollDownLabel: "Défiler vers le bas",
-      youtubeId: "h64HW1hbyyk",
+      videoSrc: "/videos/hero video.mp4",
     },
     data: {
       eyebrow: "Tarifs",
@@ -736,7 +736,7 @@ export const fr: DeepPartial<Dictionary> = {
       title: "Dites-nous quoi filmer.",
       body: "Immobilier, vidéo, drone, événements, excursions — ou quelque chose que nous n'avons pas encore fait. Nous répondons sous 24 heures, en semaine.",
       scrollDownLabel: "Défiler vers le bas",
-      youtubeId: "h64HW1hbyyk",
+      videoSrc: "/videos/hero video.mp4",
     },
     parallax: {
       title: "Un petit studio à Guéliz, Marrakech.",
@@ -809,7 +809,7 @@ export const fr: DeepPartial<Dictionary> = {
       title: "Ce que nous apprenons en chemin.",
       body: "Coulisses de nos shootings à Marrakech, guides de photographie immobilière, conseils drone et les petits détails qui font la différence.",
       scrollDownLabel: "Défiler vers le bas",
-      youtubeId: "h64HW1hbyyk",
+      videoSrc: "/videos/hero video.mp4",
     },
     data: {
       eyebrow: "Notes de terrain",
