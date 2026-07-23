@@ -45,14 +45,14 @@ export default function SafetyHero({ data }: SafetyHeroProps) {
         poster="/images/parallax-11.jpg"
         src={videoSrc}
         className="absolute inset-0 size-full object-cover"
-        style={{ willChange: "transform", transition: "transform 0.4s linear" }}
+        style={{ willChange: "transform", transition: "transform 0.12s linear" }}
       />
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "linear-gradient(oklab(0 0 0 / 0.65) 0%, oklab(0 0 0 / 0.2) 50%, rgba(0,0,0,0) 100%)",
+            "linear-gradient(rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%), linear-gradient(oklab(0 0 0 / 0.65) 0%, oklab(0 0 0 / 0.2) 50%, rgba(0,0,0,0) 100%)",
         }}
       />
 

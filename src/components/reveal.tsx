@@ -1,6 +1,11 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type ElementType, type ReactNode } from "react";
+import { useRef, type CSSProperties, type ElementType, type ReactNode } from "react";
+import {
+  motion,
+  useInView,
+  type Variants,
+} from "framer-motion";
 
 type Variant = "up" | "fade" | "rise" | "scale" | "slide-right" | "slide-left";
 
@@ -8,66 +13,61 @@ interface UseRevealOptions {
   threshold?: number;
   rootMargin?: string;
   once?: boolean;
-  /**
-   * Hard ceiling (ms) after which the element is forced visible even if
-   * the IntersectionObserver never fires. This is a safety net for:
-   *   • observer-not-supported browsers,
-   *   • synthetic scroll (test runners, headless tools),
-   *   • sections that are taller than the viewport and get observed
-   *     off-screen at the bottom of the document.
-   * Default: 1500 ms.
-   */
   fallbackMs?: number;
 }
 
 export function useReveal<T extends Element = HTMLDivElement>(options: UseRevealOptions = {}) {
-  const { threshold = 0.15, rootMargin = "0px 0px -10% 0px", once = true, fallbackMs = 1500 } = options;
+  const { threshold = 0.15, rootMargin = "0px 0px -10% 0px", once = true } = options;
   const ref = useRef<T>(null);
-  const [revealed, setRevealed] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const reveal = () => {
-      setRevealed(true);
-      el.setAttribute("data-revealed", "true");
-    };
-    if (typeof IntersectionObserver === "undefined") {
-      reveal();
-      return;
-    }
-    const io = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            reveal();
-            if (once) io.unobserve(entry.target);
-          } else if (!once) {
-            setRevealed(false);
-            el.removeAttribute("data-revealed");
-          }
-        }
-      },
-      { threshold, rootMargin }
-    );
-    io.observe(el);
-    const raf = requestAnimationFrame(() => {
-      const rect = el.getBoundingClientRect();
-      const vh = window.innerHeight || document.documentElement.clientHeight;
-      if (rect.top < vh && rect.bottom > 0) reveal();
-    });
-    const t = window.setTimeout(() => {
-      reveal();
-    }, fallbackMs);
-    return () => {
-      io.disconnect();
-      cancelAnimationFrame(raf);
-      clearTimeout(t);
-    };
-  }, [threshold, rootMargin, once, fallbackMs]);
-
-  return { ref, revealed };
+  const isInView = useInView(ref, { amount: threshold, margin: rootMargin as any, once });
+  return { ref, revealed: isInView };
 }
+
+const variantVariants: Record<Variant, Variants> = {
+  up: {
+    hidden: { opacity: 0, y: 60 },
+    visible: { opacity: 1, y: 0 },
+  },
+  fade: {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  },
+  rise: {
+    hidden: { opacity: 0, y: 24 },
+    visible: { opacity: 1, y: 0 },
+  },
+  scale: {
+    hidden: { opacity: 0, scale: 0.92 },
+    visible: { opacity: 1, scale: 1 },
+  },
+  "slide-right": {
+    hidden: { opacity: 0, x: -80 },
+    visible: { opacity: 1, x: 0 },
+  },
+  "slide-left": {
+    hidden: { opacity: 0, x: 80 },
+    visible: { opacity: 1, x: 0 },
+  },
+};
+
+const springTransition = {
+  type: "spring" as const,
+  stiffness: 80,
+  damping: 20,
+  mass: 0.8,
+};
+
+const delayMap: Record<number, number> = {
+  0: 0,
+  1: 0.08,
+  2: 0.16,
+  3: 0.24,
+  4: 0.32,
+  5: 0.4,
+  6: 0.48,
+  7: 0.56,
+  8: 0.64,
+};
 
 interface RevealProps {
   as?: ElementType;
@@ -83,17 +83,8 @@ interface RevealProps {
   href?: string;
 }
 
-const variantClass: Record<Variant, string> = {
-  up: "reveal",
-  fade: "reveal-fade",
-  rise: "reveal-rise",
-  scale: "reveal-scale",
-  "slide-right": "reveal-slide-right",
-  "slide-left": "reveal-slide-left",
-};
-
 export function Reveal({
-  as: Tag = "div",
+  as,
   variant = "up",
   delay = 0,
   className = "",
@@ -104,17 +95,22 @@ export function Reveal({
   once = true,
   ...rest
 }: RevealProps) {
-  const { ref, revealed } = useReveal<HTMLElement>({ threshold, rootMargin, once });
-  const delayClass = delay > 0 ? ` delay-${delay}` : "";
+  const MotionTag = motion.create(as || "div");
   return (
-    <Tag
-      ref={ref as unknown as React.Ref<HTMLElement>}
-      className={`${variantClass[variant]}${delayClass} ${className}`}
-      data-revealed={revealed ? "true" : undefined}
+    <MotionTag
+      className={className}
       style={style}
+      variants={variantVariants[variant]}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: threshold, margin: rootMargin as any, once }}
+      transition={{
+        ...springTransition,
+        delay: delayMap[delay] ?? delay * 0.08,
+      }}
       {...rest}
     >
       {children}
-    </Tag>
+    </MotionTag>
   );
 }

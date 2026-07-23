@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import Hero from "@/components/sections/Hero";
-import ParallaxGrid from "@/components/sections/ParallaxGrid";
-import FeatureTabs from "@/components/sections/FeatureTabs";
-import ProductShowcase from "@/components/sections/ProductShowcase";
-import SafetyHero from "@/components/sections/SafetyHero";
-import Partners from "@/components/sections/Partners";
+import ServiceCards from "@/components/sections/ServiceCards";
+import ProcessTimeline from "@/components/sections/ProcessTimeline";
+import ServicePortfolio from "@/components/sections/ServicePortfolio";
 import CareersCTA from "@/components/sections/CareersCTA";
+import SectionDivider from "@/components/section-divider";
 import { getServerLocale } from "@/i18n/server";
 import { getDictionary } from "@/i18n/get-dictionary";
 import { buildMetadata } from "@/i18n/metadata";
@@ -22,11 +21,13 @@ export default async function ServicesPage() {
   return (
     <>
       <Hero data={t.hero} />
-      <ParallaxGrid data={t.parallax} />
-      <FeatureTabs data={t.features} />
-      <ProductShowcase data={t.showcase} />
-      <SafetyHero data={t.safety} />
-      <Partners data={t.partners} />
+      <SectionDivider />
+      <ServiceCards data={t.serviceCards} />
+      <SectionDivider />
+      <ProcessTimeline data={t.process} />
+      <SectionDivider />
+      <ServicePortfolio />
+      <SectionDivider />
       <CareersCTA data={t.cta} />
     </>
   );

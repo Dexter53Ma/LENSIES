@@ -1,11 +1,11 @@
 "use client";
 
-import { LinkedInIcon, YouTubeIcon, XIcon } from "@/components/icons";
+import { InstagramIcon, LinkedInIcon, YouTubeIcon, XIcon } from "@/components/icons";
 import { Reveal } from "@/components/reveal";
 import { useT } from "@/i18n/provider";
 
 const ICON_MAP = {
-  instagram: LinkedInIcon,
+  instagram: InstagramIcon,
   youtube: YouTubeIcon,
   x: XIcon,
 } as const;

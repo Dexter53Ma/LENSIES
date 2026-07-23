@@ -135,18 +135,6 @@
     padding-left: 2.4rem;
     padding-right: 2.4rem;
   }
-  @media (min-width: 768px) {
-    .container-x {
-      padding-left: 2.4rem;
-      padding-right: 2.4rem;
-    }
-  }
-  @media (min-width: 1024px) {
-    .container-x {
-      padding-left: 2.4rem;
-      padding-right: 2.4rem;
-    }
-  }
 
   .section-y {
     padding-top: var(--padding-y);
@@ -340,44 +328,44 @@
   /* Reveal primitives - applied to elements that should animate in on view */
   .reveal {
     opacity: 0;
-    will-change: opacity, transform;
   }
   .reveal[data-revealed="true"] {
+    will-change: opacity, transform;
     animation: reveal-up 0.9s var(--ease-snappy) forwards;
   }
   .reveal-fade {
     opacity: 0;
-    will-change: opacity;
   }
   .reveal-fade[data-revealed="true"] {
+    will-change: opacity;
     animation: reveal-fade 1.1s var(--ease-snappy) forwards;
   }
   .reveal-rise {
     opacity: 0;
-    will-change: opacity, transform;
   }
   .reveal-rise[data-revealed="true"] {
+    will-change: opacity, transform;
     animation: reveal-rise 0.8s var(--ease-snappy) forwards;
   }
   .reveal-scale {
     opacity: 0;
-    will-change: opacity, transform;
   }
   .reveal-scale[data-revealed="true"] {
+    will-change: opacity, transform;
     animation: reveal-scale 1s var(--ease-snappy) forwards;
   }
   .reveal-slide-right {
     opacity: 0;
-    will-change: opacity, transform;
   }
   .reveal-slide-right[data-revealed="true"] {
+    will-change: opacity, transform;
     animation: reveal-slide-right 0.9s var(--ease-snappy) forwards;
   }
   .reveal-slide-left {
     opacity: 0;
-    will-change: opacity, transform;
   }
   .reveal-slide-left[data-revealed="true"] {
+    will-change: opacity, transform;
     animation: reveal-slide-left 0.9s var(--ease-snappy) forwards;
   }
 
@@ -521,17 +509,6 @@
     animation: hero-pioneer-stagger 0.5s var(--ease-snappy) both;
   }
 
-  @media (prefers-reduced-motion: reduce) {
-    .hero-title-enter,
-    .hero-body-enter,
-    .hero-cta-enter,
-    .hero-pioneer-enter {
-      animation: none !important;
-      opacity: 1 !important;
-      transform: none !important;
-    }
-  }
-
   /* TextReveal component styles */
   @keyframes text-word-reveal {
     from {
@@ -592,6 +569,14 @@
     .section-divider-line {
       animation: none !important;
       transform: scaleX(1) !important;
+    }
+    .hero-title-enter,
+    .hero-body-enter,
+    .hero-cta-enter,
+    .hero-pioneer-enter {
+      animation: none !important;
+      opacity: 1 !important;
+      transform: none !important;
     }
   }
 

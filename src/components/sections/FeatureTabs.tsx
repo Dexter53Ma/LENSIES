@@ -31,8 +31,7 @@ export default function FeatureTabs({ data }: FeatureTabsProps) {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-background text-foreground md:[height:200vh]"
-      style={{ height: "auto" }}
+      className="relative w-full bg-background text-foreground h-auto md:h-[200vh]"
     >
       <div className="absolute top-[25vh] left-0 hidden h-[25vh] w-[0.1rem] bg-foreground/15 md:block" />
       <div className="absolute top-[100vh] left-0 hidden h-[200vh] w-[0.1rem] bg-foreground/15 md:block" />

@@ -70,7 +70,7 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
                   {String(active + 1).padStart(2, "0")}/{String(cards.length).padStart(2, "0")}
                 </span>
               </div>
-              <a href="/our-ai" className="pill pill-pink inline-flex items-center gap-8">
+              <a href="/portfolio" className="pill pill-pink inline-flex items-center gap-8">
                 <span>{data.seeFullPictureLabel}</span>
                 <ArrowUpRight className="size-12" />
               </a>
@@ -127,13 +127,14 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
                   }`}
                 >
                   {card.imageSrc ? (
-                    <img src={card.imageSrc} alt={card.title} className="size-full object-cover" />
+                    <img src={card.imageSrc} alt={card.title} width={1080} height={810} loading="lazy" decoding="async" className="size-full object-cover" />
                   ) : card.videoSrc ? (
                     <video
                       autoPlay
                       loop
                       muted
                       playsInline
+                      poster="/images/parallax-9.jpg"
                       src={card.videoSrc}
                       className="size-full object-cover"
                     />
@@ -194,6 +195,7 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
                       loop
                       muted
                       playsInline
+                      poster="/images/parallax-9.jpg"
                       src={card.videoSrc}
                       className="size-full object-cover"
                     />

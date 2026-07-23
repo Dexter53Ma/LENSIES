@@ -49,7 +49,7 @@ export default function Insights() {
             </p>
           </Reveal>
           <Reveal delay={1} className="flex items-center gap-12">
-            <a href="/insights" className="pill pill-pink inline-flex items-center gap-8">
+            <a href="/blog" className="pill pill-pink inline-flex items-center gap-8">
               <span>{data.viewAllLabel}</span>
             </a>
             <button

@@ -108,6 +108,91 @@ export interface CareersCTAData {
   ctaHref: string;
 }
 
+export interface AboutStoryData {
+  heading: string;
+  body: string;
+  image: string;
+  imageAlt: string;
+}
+
+export interface TeamMember {
+  name: string;
+  role: string;
+  bio: string;
+  photo: string;
+}
+
+export interface TeamGridData {
+  heading: string;
+  members: TeamMember[];
+}
+
+export interface GearItem {
+  name: string;
+  description: string;
+  image: string;
+}
+
+export interface GearShowcaseData {
+  heading: string;
+  items: GearItem[];
+}
+
+export interface ValueItem {
+  icon: string;
+  heading: string;
+  body: string;
+}
+
+export interface ValuesGridData {
+  items: ValueItem[];
+}
+
+export interface ServiceItem {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+  href: string;
+}
+
+export interface ServiceCardsData {
+  heading: string;
+  items: ServiceItem[];
+}
+
+export interface ProcessStep {
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface ProcessTimelineData {
+  heading: string;
+  steps: ProcessStep[];
+}
+
+export interface PricingComparisonRow {
+  feature: string;
+  values: string[];
+}
+
+export interface PricingComparisonData {
+  heading: string;
+  tierNames: string[];
+  rows: PricingComparisonRow[];
+}
+
+export interface PricingFAQItem {
+  question: string;
+  answer: string;
+}
+
+export interface PricingFAQData {
+  heading: string;
+  items: PricingFAQItem[];
+}
+
 export interface PricingFeature {
   text: string;
   highlight?: boolean;
@@ -405,20 +490,16 @@ export type Dictionary = {
   };
   about: {
     hero: HeroData;
-    parallax: ParallaxGridData;
-    features: FeatureTabsData;
-    showcase: ProductShowcaseData;
-    safety: SafetyHeroData;
-    partners: PartnersData;
+    story: AboutStoryData;
+    team: TeamGridData;
+    gear: GearShowcaseData;
+    values: ValuesGridData;
     cta: CareersCTAData;
   };
   services: {
     hero: HeroData;
-    parallax: ParallaxGridData;
-    features: FeatureTabsData;
-    showcase: ProductShowcaseData;
-    safety: SafetyHeroData;
-    partners: PartnersData;
+    serviceCards: ServiceCardsData;
+    process: ProcessTimelineData;
     cta: CareersCTAData;
   };
   portfolio: {
@@ -429,6 +510,8 @@ export type Dictionary = {
   pricing: {
     hero: HeroData;
     data: PricingData;
+    comparison: PricingComparisonData;
+    faq: PricingFAQData;
     cta: CareersCTAData;
   };
   contact: {
