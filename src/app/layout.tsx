@@ -29,7 +29,12 @@ const neueHaas = localFont({
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getServerLocale();
   const dict = getDictionary(locale);
-  return buildMetadata(dict.meta, { locale });
+  return {
+    ...buildMetadata(dict.meta, { locale }),
+    icons: {
+      icon: "/images/favicon.png",
+    },
+  };
 }
 
 export default async function RootLayout({
