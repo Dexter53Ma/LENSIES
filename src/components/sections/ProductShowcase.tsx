@@ -135,10 +135,12 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
                       loop
                       muted
                       playsInline
-                      poster="/images/parallax-9.jpg"
+                      poster="/images/parallax-9.webp"
                       src={card.videoSrc}
                       className="size-full object-cover"
-                    />
+                    >
+                      <track kind="captions" src="" label="No audio" />
+                    </video>
                   ) : null}
                 </div>
                 </div>
@@ -196,10 +198,12 @@ export default function ProductShowcase({ data }: ProductShowcaseProps) {
                       loop
                       muted
                       playsInline
-                      poster="/images/parallax-9.jpg"
+                      poster="/images/parallax-9.webp"
                       src={card.videoSrc}
                       className="size-full object-cover"
-                    />
+                    >
+                      <track kind="captions" src="" label="No audio" />
+                    </video>
                   ) : null}
                 </div>
                 <div className="flex flex-col gap-12">

@@ -30,11 +30,13 @@ export default function Footer({
         loop
         muted
         playsInline
-        preload="metadata"
-        poster={posterSrc ?? "/images/parallax-9.jpg"}
+        preload="none"
+        poster={posterSrc ?? "/images/parallax-9.webp"}
         src={videoSrc}
         className="absolute inset-0 size-full object-cover"
-      />
+      >
+        <track kind="captions" src="" label="No audio" />
+      </video>
       <div
         aria-hidden
         className="absolute top-0 right-0 left-0 h-[2px] bg-pink"

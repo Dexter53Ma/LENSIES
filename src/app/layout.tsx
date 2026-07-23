@@ -54,7 +54,7 @@ export default async function RootLayout({
     >
       <head>
         <link rel="preload" href="/images/logo.png" as="image" />
-        <link rel="preload" href="/images/feature-safe.jpg" as="image" />
+        <link rel="preload" href="/images/feature-safe.webp" as="image" type="image/webp" />
         <noscript>
           <style>{`.reveal,.reveal-fade,.reveal-rise,.reveal-scale,.reveal-slide-right,.reveal-slide-left{opacity:1!important;transform:none!important;animation:none!important;}`}</style>
         </noscript>

@@ -10,7 +10,7 @@ export interface FeatureTabsProps {
   data: FeatureTabsData;
 }
 
-const DEFAULT_IMAGE = "/images/feature-safe.jpg";
+const DEFAULT_IMAGE = "/images/feature-safe.webp";
 
 export default function FeatureTabs({ data }: FeatureTabsProps) {
   const features = data.features;

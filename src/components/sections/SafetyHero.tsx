@@ -42,11 +42,13 @@ export default function SafetyHero({ data }: SafetyHeroProps) {
         muted
         playsInline
         preload="metadata"
-        poster="/images/parallax-11.jpg"
+        poster="/images/parallax-11.webp"
         src={videoSrc}
         className="absolute inset-0 size-full object-cover"
         style={{ willChange: "transform", transition: "transform 0.12s linear" }}
-      />
+      >
+        <track kind="captions" src="" label="No audio" />
+      </video>
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
