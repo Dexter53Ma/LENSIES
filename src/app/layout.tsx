@@ -55,8 +55,8 @@ export default async function RootLayout({
       <head>
         <link rel="preload" href="/images/logo.png" as="image" />
         <link rel="preload" href="/images/feature-safe.jpg" as="image" />
-        <link rel="dns-prefetch" href="https://www.youtube.com" />
-        <link rel="preconnect" href="https://www.youtube.com" />
+        <link rel="dns-prefetch" href="https://www.youtube-nocookie.com" />
+        <link rel="preconnect" href="https://www.youtube-nocookie.com" />
         <noscript>
           <style>{`.reveal,.reveal-fade,.reveal-rise,.reveal-scale,.reveal-slide-right,.reveal-slide-left{opacity:1!important;transform:none!important;animation:none!important;}`}</style>
         </noscript>
