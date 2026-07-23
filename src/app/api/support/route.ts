@@ -7,7 +7,7 @@ const SYSTEM_PROMPT = `You are the Lensies Studio concierge — a friendly, know
 Lensies facts (use these when relevant):
 - Studio: Gueliz, Marrakech 40000, Morocco
 - Email: contact@lensies.com · Press: Press@lensies.com
-- Phone / WhatsApp: +212 620 137 771
+- Phone / WhatsApp: +212 621 947 493
 - Hours: Mon–Sat, 9:00–19:00 (GMT+1)
 - Founded: 2017 · Team: 4 core people, plus trusted local collaborators
 - Services: Real Estate, Drone & Aerial, Video & Cinematic, Events, Tours/Experiences, 3D tours
@@ -21,7 +21,7 @@ Pricing (MAD, excl. VAT, quotes valid 30 days):
 
 All packages include commercial usage rights, online gallery, and a 24-hour quote response. Multi-day, multi-location, and quarterly retainers are quoted on request.
 
-Tone: warm, concise, professional. Default to short answers (2–4 sentences). Use lists when comparing options. When the user wants to book, send them to /contact or WhatsApp +212 620 137 771. If asked something outside Lensies, say so politely and offer to put them in touch with the team.`;
+Tone: warm, concise, professional. Default to short answers (2–4 sentences). Use lists when comparing options. When the user wants to book, send them to /contact or WhatsApp +212 621 947 493. If asked something outside Lensies, say so politely and offer to put them in touch with the team.`;
 
 type IncomingMessage = { role: "user" | "assistant" | "system"; content: string };
 
@@ -47,7 +47,7 @@ function fallbackAnswer(prompt: string): string {
     return "Lensies pricing (MAD, excl. VAT):\n• Appartement — 1,000\n• Riads — 1,500\n• Villa — 2,000\n• Events — 3,000–5,000\n• Drone Tour Pack — 4,500\n\nAll packages include commercial usage rights and a 24h quote response. Want a custom quote? Email contact@lensies.com or tap /contact.";
   }
   if (p.includes("book") || p.includes("contact") || p.includes("reach") || p.includes("email") || p.includes("phone")) {
-    return "You can reach Lensies at contact@lensies.com or +212 620 137 771 (WhatsApp). Studio hours: Mon–Sat, 9–19 (GMT+1), Gueliz, Marrakech. For a quick brief, use the form on /contact.";
+    return "You can reach Lensies at contact@lensies.com or +212 621 947 493 (WhatsApp). Studio hours: Mon–Sat, 9–19 (GMT+1), Gueliz, Marrakech. For a quick brief, use the form on /contact.";
   }
   if (p.includes("drone") || p.includes("aerial")) {
     return "Lensies drone work is shot on DJI Mavic 3 Pro in 4K HDR, with a licensed pilot and all Moroccan permits handled. Aerial-only packages start at 4,500 MAD. Fly-inside-medina requests need a 10–15 day permit — share the location and I'll confirm.";
@@ -58,7 +58,7 @@ function fallbackAnswer(prompt: string): string {
   if (p.includes("service") || p.includes("what do you") || p.includes("offer")) {
     return "Lensies covers real estate photography, drone & aerial, video & cinematic, events, tours/experiences, and 3D tours — all under one studio in Marrakech. Pick a single craft or bundle a shoot day. Tell me what you're working on and I'll suggest the right package.";
   }
-  return "I'm the Lensies concierge — ask me about services, pricing, delivery, or how to book. For anything specific, the team replies within 24h at contact@lensies.com or +212 620 137 771.";
+  return "I'm the Lensies concierge — ask me about services, pricing, delivery, or how to book. For anything specific, the team replies within 24h at contact@lensies.com or +212 621 947 493.";
 }
 
 export async function POST(req: Request) {

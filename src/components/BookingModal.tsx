@@ -148,6 +148,29 @@ export default function BookingModal({ open, onClose, preselectedService }: Book
   const submit = (e: FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+
+    const serviceName = selectedService ? `${selectedService.name} — ${selectedService.price}` : form.service;
+    const dateStr = form.date
+      ? form.date.toLocaleDateString(t.locale === "fr" ? "fr-FR" : "en-GB", { day: "numeric", month: "long", year: "numeric" })
+      : "";
+    const budgetLabel = budgets.find((b) => b.id === form.budget)?.label ?? form.budget;
+
+    const lines = [
+      "Hi Lensies! I'd like to book a shoot.",
+      "",
+      `Service: ${serviceName}`,
+      `Location: ${form.location}`,
+      `Project Type: ${form.projectType}`,
+      `Date: ${dateStr} · ${form.time}`,
+      `Budget: ${budgetLabel}`,
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Phone: ${form.phone}`,
+      form.notes ? `Notes: ${form.notes}` : "",
+    ].filter(Boolean);
+
+    const text = encodeURIComponent(lines.join("\n"));
+    window.open(`https://wa.me/212621947493?text=${text}`, "_blank", "noopener");
   };
 
   const selectedService = services.find((s) => s.id === form.service);

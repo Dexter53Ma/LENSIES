@@ -151,7 +151,7 @@ export const en: Dictionary = {
     inputPlaceholder: "Ask anything about Lensies…",
     sendLabel: "Send message",
     errorFallback:
-      "Sorry — the assistant is offline right now. Email contact@lensies.com or WhatsApp +212 620 137 771 and the team will reply within 24 hours.",
+      "Sorry — the assistant is offline right now. Email contact@lensies.com or WhatsApp +212 621 947 493 and the team will reply within 24 hours.",
     emptyReply:
       "I couldn't reach the assistant just now. Please try again or email contact@lensies.com.",
     suggestions: [
@@ -445,79 +445,89 @@ export const en: Dictionary = {
       scrollDownLabel: "Scroll down",
       youtubeId: "h64HW1hbyyk",
     },
-    parallax: {
-      title: "Eight years on rooftops, in riads, and behind the lens.",
-      body: "Real estate, riads, hotels, brands, weddings, tours. We've shot the obvious angles and a few that aren't. Below: a small cross-section of the work.",
+    story: {
+      heading: "Our Story",
+      body: "Founded in 2017 on a medina rooftop with a single camera and a stubborn belief that Marrakech deserves better photography. Eight years later, we're a full crew — directors of photography, drone pilots, editors, and producers — still based in Gueliz, still shooting the same city we fell in love with. We started with real estate. We added drone. Then video. Then events. Each craft grew because a client asked for it, not because a business plan demanded it. The result is a studio that does six things well, under one roof, with one invoice and one deadline.",
+      image: "/images/work-3.png",
+      imageAlt: "Lensies studio in Gueliz, Marrakech",
     },
-    features: {
-      heading: "How we work.",
-      intro: "Three principles that shape every shoot — from the first brief to the final delivery.",
-      features: [
+    team: {
+      heading: "The Team",
+      members: [
         {
-          label: "Craft",
-          description: "Every frame is a decision. We sweat the small stuff so the work feels effortless on the other end.",
+          name: "Sofia Bennani",
+          role: "Director of Photography",
+          bio: "Eight years of Marrakech light. Shoots real estate, hospitality, and the occasional wedding. Built the preset stack.",
+          photo: "/images/work-3.png",
         },
         {
-          label: "Local",
-          description: "We live here, we shoot here. Our knowledge of light, riads, and rooftops is earned, not rented from a stock library.",
+          name: "Karim Tazi",
+          role: "Drone Lead",
+          bio: "Licensed pilot, 500+ flights over the medina. Knows every no-fly zone in Morocco by heart.",
+          photo: "/images/work-6.png",
         },
         {
-          label: "Honest",
-          description: "We polish, we don't fabricate. What you see in the final gallery is what the buyer will see in person.",
+          name: "Lina Ouazzani",
+          role: "Lighting Lead",
+          bio: "Heritage riads, hotel launches, studio work. The reason the tile looks like tile and not plastic.",
+          photo: "/images/work-9.png",
+        },
+        {
+          name: "Youssef El Fassi",
+          role: "Video Lead",
+          bio: "Brand films, wedding cinema, social cuts. Cuts faster than feels right — and the data agrees.",
+          photo: "/images/work-12.png",
         },
       ],
     },
-    showcase: {
-      eyebrow: "Our AI",
-      seeFullPictureLabel: "See the full picture",
-      mobileTitle: "One platform. Endless possibilities.",
-      cards: [
+    gear: {
+      heading: "The Kit",
+      items: [
         {
-          id: "team",
-          eyebrow: "Team",
-          title: "Four people, one city.",
-          body: "A small crew that shoots together almost every week. Director of photography, real estate lead, drone pilot, and event & tours producer. We sub in trusted local collaborators for the big jobs.",
-          imageSrc: "/images/work-3.png",
-          ctaLabel: "Meet the team",
-          ctaHref: "#team",
-          align: "left",
+          name: "Sony A7R V",
+          description: "61MP full-frame. Our primary body for real estate and editorial.",
+          image: "/images/work-5.png",
         },
         {
-          id: "gear",
-          eyebrow: "Gear",
-          title: "Right tool, right job.",
-          body: "Sony A7R V bodies, G-Master glass, DJI Mavic 3 Pro drones, Ronin gimbals, Aputure lights, Profoto strobes. We own it, we maintain it, we bring backups.",
-          imageSrc: "/images/work-5.png",
-          ctaLabel: "See the kit",
-          ctaHref: "#gear",
-          align: "right",
+          name: "DJI Mavic 3 Pro",
+          description: "4K HDR, 4/3 sensor. The drone that flies every Marrakech job.",
+          image: "/images/work-4.png",
         },
         {
-          id: "process",
-          eyebrow: "Process",
-          title: "Brief, shoot, deliver, repeat.",
-          body: "Same workflow on every job: written brief, scout, shoot, edit, review, deliver. No surprises, no missing shots, no missed deadlines.",
-          imageSrc: "/images/work-7.png",
-          ctaLabel: "Our workflow",
-          ctaHref: "#process",
-          align: "left",
+          name: "DJI Ronin 4D",
+          description: "Gimbal-stabilized video. Walkthroughs, brand films, event coverage.",
+          image: "/images/work-8.png",
+        },
+        {
+          name: "Aputure 600D",
+          description: "Daylight-balanced LED. The key light for every interior shoot.",
+          image: "/images/work-7.png",
+        },
+        {
+          name: "Profoto B10X",
+          description: "Compact strobe. Heritage work, detail shots, and the riads that need finesse.",
+          image: "/images/work-10.png",
         },
       ],
     },
-    safety: {
-      heading: "Eight years in, still obsessed with the light.",
-      body: "From a single camera on a medina rooftop in 2017 to a full crew in 2025. We grew without losing the part that made the early work good: being on location, at the right hour, with the right people.",
-      ctaLabel: "See our work",
-      ctaHref: "/portfolio",
-    },
-    partners: {
-      eyebrow: "Who trusts us",
-      heading: "Eight years, built on word of mouth.",
-      intro: "Most of our work comes from clients who hired us once and never left. Here's what some of them have said about the studio.",
-      trustedByLabel: "Featured on",
-      becomePartnerLabel: "Become a partner",
-      previousLabel: "Previous testimonial",
-      nextLabel: "Next testimonial",
+    values: {
+      items: [
+        {
+          icon: "craft",
+          heading: "Craft",
+          body: "Every frame is a decision. We sweat the small stuff so the work feels effortless on the other end.",
+        },
+        {
+          icon: "local",
+          heading: "Local",
+          body: "We live here, we shoot here. Our knowledge of light, riads, and rooftops is earned, not rented.",
+        },
+        {
+          icon: "honest",
+          heading: "Honest",
+          body: "We polish, we don't fabricate. What you see in the final gallery is what the buyer will see in person.",
+        },
+      ],
     },
     cta: {
       heading: "Want to shoot with us?",
@@ -535,79 +545,82 @@ export const en: Dictionary = {
       scrollDownLabel: "Scroll down",
       youtubeId: "h64HW1hbyyk",
     },
-    parallax: {
-      title: "Built for Marrakech briefs.",
-      body: "Real estate agencies, hotel groups, tour operators, and brands. Below: the six crafts we run every week, in the field, in Marrakech.",
-    },
-    features: {
-      heading: "The three we run every week.",
-      intro: "Real estate, drone, and video are the bulk of our calendar. The other three — events, experiences, and 3D — round out the year.",
-      features: [
+    serviceCards: {
+      heading: "What We Do",
+      items: [
         {
-          label: "Real Estate",
-          description: "Twilight, golden hour, interiors. HDR + flash, fully edited, MLS-ready in 24 hours. The standard for Marrakech agencies.",
+          id: "real-estate",
+          name: "Real Estate",
+          description: "Twilight, golden hour, interiors. HDR + flash, fully edited, MLS-ready in 24 hours.",
+          image: "/images/work-2.png",
+          href: "/portfolio?category=Real+Estate",
         },
         {
-          label: "Drone & Aerial",
-          description: "Licensed pilots. Roof-to-rooftop coverage, real estate aerials, landscape plates. 4K HDR, all permits handled.",
+          id: "drone",
+          name: "Drone & Aerial",
+          description: "Licensed pilots. 4K HDR, roof-to-rooftop coverage, all permits handled.",
+          image: "/images/work-4.png",
+          href: "/portfolio?category=Tours",
         },
         {
-          label: "Video & Cinematic",
-          description: "Brand films, walkthroughs, social cuts. 4K, gimbal-stabilized, color-graded. Ready for site, social, and screens.",
-        },
-      ],
-    },
-    showcase: {
-      eyebrow: "Our AI",
-      seeFullPictureLabel: "See the full picture",
-      mobileTitle: "One platform. Endless possibilities.",
-      cards: [
-        {
-          id: "real-estate-package",
-          eyebrow: "Real Estate",
-          title: "Listing Package.",
-          body: "40-80 edited photos, drone aerials, twilight or golden hour, 24-48h delivery. From riads to $20M villas.",
-          imageSrc: "/images/work-2.png",
-          ctaLabel: "Get a quote",
-          ctaHref: "/contact",
-          align: "left",
+          id: "video",
+          name: "Video & Cinematic",
+          description: "Brand films, walkthroughs, social cuts. 4K, gimbal-stabilized, color-graded.",
+          image: "/images/work-5.png",
+          href: "/portfolio?category=Brand",
         },
         {
-          id: "drone-package",
-          eyebrow: "Drone & Aerial",
-          title: "Aerial Package.",
-          body: "4K HDR drone footage, top-down plates, 2-4 hour shoot window. Permits included.",
-          imageSrc: "/images/work-4.png",
-          ctaLabel: "Book a flight",
-          ctaHref: "/contact",
-          align: "right",
+          id: "events",
+          name: "Events",
+          description: "Weddings, corporate events, intimate gatherings. Multi-camera, full-day coverage.",
+          image: "/images/work-6.png",
+          href: "/portfolio?category=Events",
         },
         {
-          id: "video-package",
-          eyebrow: "Video",
-          title: "Brand Film Package.",
-          body: "Half-day shoot, 60s master edit, 30s + 15s social cuts, vertical re-edits. Music-licensed, color-graded.",
-          imageSrc: "/images/work-8.png",
-          ctaLabel: "View reels",
-          ctaHref: "/portfolio",
-          align: "left",
+          id: "tours",
+          name: "Tours & Experiences",
+          description: "Desert camps, Atlas treks, medina walks. Reportage + aerials, delivered in 48 hours.",
+          image: "/images/work-8.png",
+          href: "/portfolio?category=Tours",
+        },
+        {
+          id: "3d",
+          name: "3D Virtual Tours",
+          description: "Matterport 3D scans, dollhouse views, floor plans. For listings that need immersion.",
+          image: "/images/work-7.png",
+          href: "/contact",
         },
       ],
     },
-    safety: {
-      heading: "Six crafts, one studio, one deadline.",
-      body: "From a single photo to a 12-camera wedding. The same crew, the same standards, the same on-time delivery. Most projects ship inside 48 hours.",
-      ctaLabel: "Get a custom quote",
-      ctaHref: "/contact",
-    },
-    partners: {
-      eyebrow: "Who trusts us",
-      heading: "Trusted by the people who book us back.",
-      intro: "Repeat clients across real estate, hospitality, and tours. Here's what they say after the first project.",
-      trustedByLabel: "Listed on",
-      becomePartnerLabel: "Become a partner",
-      previousLabel: "Previous testimonial",
-      nextLabel: "Next testimonial",
+    process: {
+      heading: "How We Work",
+      steps: [
+        {
+          title: "Brief",
+          description: "Tell us the project, the location, the dates, and what you need delivered.",
+          icon: "brief",
+        },
+        {
+          title: "Scout",
+          description: "We visit the location, plan the shots, confirm the light windows.",
+          icon: "scout",
+        },
+        {
+          title: "Shoot",
+          description: "The crew arrives, the gear rolls, the work happens.",
+          icon: "shoot",
+        },
+        {
+          title: "Edit",
+          description: "Color grading, retouching, review. Same editor on every job.",
+          icon: "edit",
+        },
+        {
+          title: "Deliver",
+          description: "Gallery link, download, done. Most projects ship inside 48 hours.",
+          icon: "deliver",
+        },
+      ],
     },
     cta: {
       heading: "Need something custom?",
@@ -852,6 +865,49 @@ export const en: Dictionary = {
       ctaLabel: "Request a custom quote",
       ctaHref: "/contact",
     },
+    comparison: {
+      heading: "Compare Packages",
+      tierNames: ["Appartement", "Riads", "Villa", "Events", "Drone Tour"],
+      rows: [
+        { feature: "Photos", values: ["20", "30", "40", "60–80", "30+"] },
+        { feature: "Video tour", values: ["—", "—", "3–5 min", "Highlight reel", "2–4 min"] },
+        { feature: "Drone aerials", values: ["—", "—", "Weather permitting", "Outdoor events", "Included"] },
+        { feature: "Delivery", values: ["24h", "12h express", "Same-day avail.", "48h", "48–72h"] },
+        { feature: "Express option", values: ["—", "12h", "Same-day", "Same-day preview", "—"] },
+        { feature: "Coverage", values: ["Half-day", "Half-day", "Full-day", "4–8 hours", "2–4 hours"] },
+        { feature: "Gallery", values: ["Online", "Online + download", "Online + download", "Online + USB", "Online"] },
+        { feature: "Usage rights", values: ["Commercial", "Commercial", "Commercial", "Commercial", "Commercial"] },
+      ],
+    },
+    faq: {
+      heading: "Frequently Asked Questions",
+      items: [
+        {
+          question: "Are prices inclusive of VAT?",
+          answer: "All prices are displayed excluding VAT. VAT will be added at the applicable rate (20% for most services) on the final invoice.",
+        },
+        {
+          question: "Are there travel fees outside Marrakech?",
+          answer: "Shoots within Marrakech city limits have no travel fee. For locations outside the city (Atlas, Agafay, Essaouira), we add a travel surcharge based on distance and crew time.",
+        },
+        {
+          question: "Can I reschedule or cancel?",
+          answer: "Rescheduling up to 48 hours before the shoot is free. Cancellations within 48 hours incur a 50% fee. Same-day cancellations are non-refundable.",
+        },
+        {
+          question: "What are the payment terms?",
+          answer: "50% deposit to confirm the booking, 50% on delivery. For events, full payment is due 7 days before the event date.",
+        },
+        {
+          question: "Do you offer bulk or multi-project discounts?",
+          answer: "Yes. Agencies and developers with recurring shoots get 10–15% off after the third booking. Contact us for a custom retainer quote.",
+        },
+        {
+          question: "What if I need to cancel on the day?",
+          answer: "Same-day cancellations are non-refundable due to crew and equipment reservation. We recommend our rescheduling policy as a flexible alternative.",
+        },
+      ],
+    },
   },
 
   contact: {
@@ -897,10 +953,10 @@ export const en: Dictionary = {
     info: [
       { label: "Studio", value: "Gueliz, Marrakech 40000, Morocco" },
       { label: "Email", value: "contact@lensies.com", href: "mailto:contact@lensies.com" },
-      { label: "Phone", value: "+212 620 137 771", href: "tel:+212620137771" },
+      { label: "Phone", value: "+212 621 947 493", href: "tel:+212621947493" },
       { label: "Hours", value: "Mon — Sat · 9:00 — 19:00 (GMT+1)" },
     ],
-    ctaBody: "contact@lensies.com · +212 620 137 771 · Gueliz, Marrakech. We answer.",
+    ctaBody: "contact@lensies.com · +212 621 947 493 · Gueliz, Marrakech. We answer.",
     safety: {
       heading: "A small studio. A short reply time.",
       body: "Most briefs get a written reply inside 24 hours, weekdays. We pick up the phone too — if you need us, we answer.",
@@ -909,7 +965,7 @@ export const en: Dictionary = {
     },
     cta: {
       heading: "Or just drop a line.",
-      body: "contact@lensies.com · +212 620 137 771 · Gueliz, Marrakech. We answer.",
+      body: "contact@lensies.com · +212 621 947 493 · Gueliz, Marrakech. We answer.",
       ctaLabel: "View services",
       ctaHref: "/services",
     },

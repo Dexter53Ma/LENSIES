@@ -152,7 +152,7 @@ export const fr: DeepPartial<Dictionary> = {
     inputPlaceholder: "Demandez tout sur Lensies…",
     sendLabel: "Envoyer le message",
     errorFallback:
-      "Désolé — l'assistant est hors ligne. Envoyez un e-mail à contact@lensies.com ou un WhatsApp au +212 620 137 771, l'équipe vous répondra sous 24 heures.",
+      "Désolé — l'assistant est hors ligne. Envoyez un e-mail à contact@lensies.com ou un WhatsApp au +212 621 947 493, l'équipe vous répondra sous 24 heures.",
     emptyReply:
       "Je n'arrive pas à joindre l'assistant. Réessayez ou écrivez à contact@lensies.com.",
     suggestions: [
@@ -466,85 +466,6 @@ export const fr: DeepPartial<Dictionary> = {
       scrollDownLabel: "Défiler vers le bas",
       youtubeId: "h64HW1hbyyk",
     },
-    parallax: {
-      title: "Huit ans sur les toits, dans les riads et derrière l'objectif.",
-      body: "Immobilier, riads, hôtels, marques, mariages, excursions. Nous avons photographié les angles évidents et quelques-uns qui ne le sont pas. Ci-dessous : un petit échantillon du travail.",
-    },
-    features: {
-      heading: "Notre manière de travailler.",
-      intro:
-        "Trois principes qui guident chaque shooting — du premier brief à la livraison finale.",
-      features: [
-        {
-          label: "Savoir-faire",
-          description:
-            "Chaque image est une décision. Nous soignons les détails pour que le travail paraisse simple à l'arrivée.",
-        },
-        {
-          label: "Local",
-          description:
-            "Nous vivons ici, nous filmons ici. Notre connaissance de la lumière, des riads et des toits est acquise, pas louée à une banque d'images.",
-        },
-        {
-          label: "Honnête",
-          description:
-            "Nous retouchons, nous n'inventons pas. Ce que vous voyez dans la galerie finale est ce que l'acheteur verra en personne.",
-        },
-      ],
-    },
-    showcase: {
-      eyebrow: "Notre IA",
-      seeFullPictureLabel: "Voir l'image complète",
-      mobileTitle: "Une plateforme. Des possibilités infinies.",
-      cards: [
-        {
-          id: "team",
-          eyebrow: "Équipe",
-          title: "Quatre personnes, une ville.",
-          body: "Une petite équipe qui tourne ensemble presque chaque semaine. Directeur de la photographie, responsable immobilier, pilote drone, et producteur événements & excursions. Nous faisons appel à des collaborateurs locaux de confiance pour les gros projets.",
-          imageSrc: "/images/work-3.png",
-          ctaLabel: "Rencontrer l'équipe",
-          ctaHref: "#team",
-          align: "left",
-        },
-        {
-          id: "gear",
-          eyebrow: "Équipement",
-          title: "Le bon outil, pour le bon usage.",
-          body: "Boîtiers Sony A7R V, optiques G-Master, drones DJI Mavic 3 Pro, gimbal Ronin, éclairages Aputure, strobes Profoto. Nous en sommes propriétaires, nous les entretenons, nous amenons des backups.",
-          imageSrc: "/images/work-5.png",
-          ctaLabel: "Voir le matériel",
-          ctaHref: "#gear",
-          align: "right",
-        },
-        {
-          id: "process",
-          eyebrow: "Processus",
-          title: "Brief, tournage, livraison, recommence.",
-          body: "Le même workflow à chaque mission : brief écrit, repérage, tournage, montage, relecture, livraison. Pas de surprises, pas de plans manquants, pas de délais ratés.",
-          imageSrc: "/images/work-7.png",
-          ctaLabel: "Notre workflow",
-          ctaHref: "#process",
-          align: "left",
-        },
-      ],
-    },
-    safety: {
-      heading: "Huit ans plus tard, toujours obsédés par la lumière.",
-      body: "D'un seul appareil photo sur un toit de la médina en 2017 à une équipe complète en 2025. Nous avons grandi sans perdre ce qui faisait la force de nos premières images : être sur place, à la bonne heure, avec les bonnes personnes.",
-      ctaLabel: "Voir notre travail",
-      ctaHref: "/portfolio",
-    },
-    partners: {
-      eyebrow: "Ils nous font confiance",
-      heading: "Huit ans, bâti sur le bouche-à-oreille.",
-      intro:
-        "La majorité de notre travail vient de clients qui nous ont engagés une fois et ne sont jamais partis. Voici ce que certains d'entre eux disent du studio.",
-      trustedByLabel: "Présent sur",
-      becomePartnerLabel: "Devenir partenaire",
-      previousLabel: "Témoignage précédent",
-      nextLabel: "Témoignage suivant",
-    },
     cta: {
       heading: "Envie de tourner avec nous ?",
       body: "Nous recrutons des photographes et opérateurs drone freelances pour la haute saison. Envoyez un portfolio, nous le gardons en archive.",
@@ -560,85 +481,6 @@ export const fr: DeepPartial<Dictionary> = {
       body: "Choisissez un service ou composez un pack. Nous staffons, filmons, montons et livrons — sous un même toit, une seule facture, une seule deadline.",
       scrollDownLabel: "Défiler vers le bas",
       youtubeId: "h64HW1hbyyk",
-    },
-    parallax: {
-      title: "Pensé pour les briefs marrakchis.",
-      body: "Agences immobilières, groupes hôteliers, tours-opérateurs, marques. Ci-dessous : les six métiers que nous exerçons chaque semaine, sur le terrain, à Marrakech.",
-    },
-    features: {
-      heading: "Les trois que nous exerçons chaque semaine.",
-      intro:
-        "L'immobilier, le drone et la vidéo occupent l'essentiel de notre agenda. Les trois autres — événements, expériences et 3D — complètent l'année.",
-      features: [
-        {
-          label: "Immobilier",
-          description:
-            "Heure bleue, heure dorée, intérieurs. HDR + flash, entièrement retouchés, prêts MLS en 24 heures. La référence pour les agences de Marrakech.",
-        },
-        {
-          label: "Drone & Aérien",
-          description:
-            "Pilotes brevetés. Couverture de toit à toit, prises aériennes immobilières, paysages. 4K HDR, autorisations gérées.",
-        },
-        {
-          label: "Vidéo & Cinéma",
-          description:
-            "Films de marque, visites virtuelles, cuts sociaux. 4K, stabilisé gimbal, étalonné. Prêt pour le web, les réseaux et les écrans.",
-        },
-      ],
-    },
-    showcase: {
-      eyebrow: "Notre IA",
-      seeFullPictureLabel: "Voir l'image complète",
-      mobileTitle: "Une plateforme. Des possibilités infinies.",
-      cards: [
-        {
-          id: "real-estate-package",
-          eyebrow: "Immobilier",
-          title: "Pack Annonce.",
-          body: "40 à 80 photos retouchées, prises drone, heure bleue ou heure dorée, livraison 24-48 h. Des riads aux villas à 20 M$.",
-          imageSrc: "/images/work-2.png",
-          ctaLabel: "Demander un devis",
-          ctaHref: "/contact",
-          align: "left",
-        },
-        {
-          id: "drone-package",
-          eyebrow: "Drone & Aérien",
-          title: "Pack Aérien.",
-          body: "Images drone 4K HDR, plans top-down, fenêtre de tournage de 2 à 4 heures. Autorisations incluses.",
-          imageSrc: "/images/work-4.png",
-          ctaLabel: "Réserver un vol",
-          ctaHref: "/contact",
-          align: "right",
-        },
-        {
-          id: "video-package",
-          eyebrow: "Vidéo",
-          title: "Pack Film de Marque.",
-          body: "Demi-journée de tournage, master 60 s, cuts sociaux 30 s et 15 s, re-edits verticaux. Musique licenciée, étalonnée.",
-          imageSrc: "/images/work-8.png",
-          ctaLabel: "Voir les reels",
-          ctaHref: "/portfolio",
-          align: "left",
-        },
-      ],
-    },
-    safety: {
-      heading: "Six métiers, un seul studio, une seule deadline.",
-      body: "D'une seule photo à un mariage à 12 caméras. La même équipe, les mêmes exigences, la même ponctualité. La plupart des projets sont livrés en moins de 48 heures.",
-      ctaLabel: "Demander un devis sur mesure",
-      ctaHref: "/contact",
-    },
-    partners: {
-      eyebrow: "Ils nous font confiance",
-      heading: "La confiance de ceux qui reviennent.",
-      intro:
-        "Des clients fidèles dans l'immobilier, l'hôtellerie et les excursions. Voici ce qu'ils disent après le premier projet.",
-      trustedByLabel: "Listé sur",
-      becomePartnerLabel: "Devenir partenaire",
-      previousLabel: "Témoignage précédent",
-      nextLabel: "Témoignage suivant",
     },
     cta: {
       heading: "Besoin d'un projet sur mesure ?",
@@ -943,10 +785,10 @@ export const fr: DeepPartial<Dictionary> = {
     info: [
       { label: "Studio", value: "Guéliz, Marrakech 40000, Maroc" },
       { label: "E-mail", value: "contact@lensies.com", href: "mailto:contact@lensies.com" },
-      { label: "Téléphone", value: "+212 620 137 771", href: "tel:+212620137771" },
+      { label: "Téléphone", value: "+212 621 947 493", href: "tel:+212621947493" },
       { label: "Horaires", value: "Lun — Sam · 9:00 — 19:00 (GMT+1)" },
     ],
-    ctaBody: "contact@lensies.com · +212 620 137 771 · Guéliz, Marrakech. On vous répond.",
+    ctaBody: "contact@lensies.com · +212 621 947 493 · Guéliz, Marrakech. On vous répond.",
     safety: {
       heading: "Un petit studio. Un délai de réponse court.",
       body: "La plupart des briefs reçoivent une réponse écrite sous 24 heures, en semaine. Nous décrochons aussi au téléphone — si vous avez besoin de nous, on vous répond.",
@@ -955,7 +797,7 @@ export const fr: DeepPartial<Dictionary> = {
     },
     cta: {
       heading: "Ou écrivez-nous simplement.",
-      body: "contact@lensies.com · +212 620 137 771 · Guéliz, Marrakech. On vous répond.",
+      body: "contact@lensies.com · +212 621 947 493 · Guéliz, Marrakech. On vous répond.",
       ctaLabel: "Voir les services",
       ctaHref: "/services",
     },
