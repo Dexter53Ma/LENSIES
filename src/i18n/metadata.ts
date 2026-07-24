@@ -67,12 +67,8 @@ export function buildMetadata(
       googleBot: { index: true, follow: true },
     },
     icons: {
-      icon: [
-        { url: "/seo/favicon.png", sizes: "any", type: "image/png" },
-        { url: "/seo/favicon-32.png", sizes: "32x32", type: "image/png" },
-        { url: "/seo/favicon-192.png", sizes: "192x192", type: "image/png" },
-      ],
-      apple: [{ url: "/seo/favicon-192.png", sizes: "192x192" }],
+      icon: "/images/favicon.png",
+      apple: [{ url: "/images/favicon.png", sizes: "192x192" }],
     },
   };
 }

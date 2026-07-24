@@ -91,10 +91,10 @@ export default function Header() {
                 <button
                   type="button"
                   onClick={() => setBookingOpen(true)}
-                  className="magnetic group hidden h-34 items-center gap-6 self-center rounded-full bg-foreground px-14 text-white transition-all duration-500 hover:scale-[1.04] hover:bg-pink md:flex md:h-36 md:px-18"
+                  className="magnetic group flex size-36 items-center justify-center self-center rounded-full bg-foreground text-white transition-all duration-500 hover:scale-[1.04] hover:bg-pink sm:size-40 md:h-36 md:w-auto md:gap-6 md:px-18"
                 >
                   <CalendarIcon className="h-12 w-12 md:h-14 md:w-14" />
-                  <span className="font-body text-[1.1rem] font-semibold tracking-[0.02em] md:text-[1.2rem]">
+                  <span className="hidden font-body text-[1.1rem] font-semibold tracking-[0.02em] md:inline md:text-[1.2rem]">
                     {t.header.bookButton}
                   </span>
                 </button>

@@ -31,16 +31,6 @@ export async function generateMetadata(): Promise<Metadata> {
   const dict = getDictionary(locale);
   return {
     ...buildMetadata(dict.meta, { locale }),
-    icons: {
-      icon: [
-        { url: "/images/favicon.png", sizes: "any", type: "image/png" },
-        { url: "/seo/favicon.ico", sizes: "32x32" },
-        { url: "/seo/favicon-16.png", sizes: "16x16", type: "image/png" },
-        { url: "/seo/favicon-32.png", sizes: "32x32", type: "image/png" },
-        { url: "/seo/favicon-96.png", sizes: "96x96", type: "image/png" },
-        { url: "/seo/favicon-192.png", sizes: "192x192", type: "image/png" },
-      ],
-    },
   };
 }
 
