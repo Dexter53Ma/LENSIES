@@ -98,7 +98,7 @@ export default async function RootLayout({
                 name: "Morocco",
               },
               sameAs: [
-                "https://instagram.com/lensies.ma",
+                "https://www.instagram.com/lensiesrealestate",
                 "https://youtube.com/@lensies",
                 "https://x.com/lensies",
                 "https://share.google/Tu1iMQpouuJuXSQdb",

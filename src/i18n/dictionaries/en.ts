@@ -131,7 +131,7 @@ export const en: Dictionary = {
       { label: "Terms of Service", href: "/terms" },
     ],
     socials: [
-      { label: "Instagram", href: "https://instagram.com/lensies.ma", kind: "instagram" },
+      { label: "Instagram", href: "https://www.instagram.com/lensiesrealestate", kind: "instagram" },
       { label: "YouTube", href: "https://youtube.com/@lensies", kind: "youtube" },
       { label: "X", href: "https://x.com/lensies", kind: "x" },
     ],
@@ -638,14 +638,14 @@ export const en: Dictionary = {
     hero: {
       pioneering: ["Selected", "Work.", "Marrakech."],
       title: "What we've been shooting.",
-      body: "A cross-section of recent projects across real estate, hospitality, events, tours, and brand. Hover, click, request a private gallery link.",
+      body: "A cross-section of recent projects across real estate, hospitality, events, tours, and brand. Over 400 villas shot, 500+ drone flights, 200+ events covered since 2017. Hover, click, request a private gallery link.",
       scrollDownLabel: "Scroll down",
       videoSrc: "/videos/hero-video.mp4",
     },
     data: {
       eyebrow: "Portfolio",
       title: "What we've been shooting.",
-      body: "A cross-section of recent projects across real estate, hospitality, events, tours, and brand. Hover for the brief, click to zoom and explore.",
+      body: "Real estate, riads, hotels, brands, weddings, tours. We've shot the obvious angles and a few that aren't. Each project includes the brief, location, client, and a short description of the shoot. Over 60 projects across five categories — Real Estate, Hospitality, Tours, Brand, and Events. Every image is shot on location in Morocco, edited in-house, and delivered within 48 hours. We work with Marrakech's top agencies, hotels, and tour operators. Click any frame to zoom and explore the full resolution.",
       projectCountLabel: "projects",
       zoomHint: "Click any frame to zoom.",
       featuredLabel: "Featured",

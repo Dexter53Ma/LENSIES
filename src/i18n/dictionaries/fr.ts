@@ -132,7 +132,7 @@ export const fr: DeepPartial<Dictionary> = {
       { label: "Conditions d'utilisation", href: "/terms" },
     ],
     socials: [
-      { label: "Instagram", href: "https://instagram.com/lensies.ma", kind: "instagram" },
+      { label: "Instagram", href: "https://www.instagram.com/lensiesrealestate", kind: "instagram" },
       { label: "YouTube", href: "https://youtube.com/@lensies", kind: "youtube" },
       { label: "X", href: "https://x.com/lensies", kind: "x" },
     ],
@@ -659,12 +659,12 @@ export const fr: DeepPartial<Dictionary> = {
     hero: {
       pioneering: ["Sélection", "de travaux.", "Marrakech."],
       title: "Ce que nous avons filmé.",
-      body: "Un échantillon de projets récents en immobilier, hôtellerie, événements, excursions et marque. Survolez pour le brief, cliquez pour zoomer et explorer.",
+      body: "Un échantillon de projets récents en immobilier, hôtellerie, événements, excursions et marque. Plus de 400 villas photographiées, plus de 500 vols de drone, plus de 200 événements couverts depuis 2017. Survolez, cliquez, demandez un lien galerie privé.",
     },
     data: {
       eyebrow: "Portfolio",
       title: "Ce que nous avons filmé.",
-      body: "Un échantillon de projets récents en immobilier, hôtellerie, événements, excursions et marque. Survolez pour le brief, cliquez pour zoomer et explorer.",
+      body: "Immobilier, riads, hôtels, marques, mariages, excursions. Nous avons photographié les angles évidents et quelques-uns qui ne le sont pas. Chaque projet comprend le brief, le lieu, le client et une courte description du shooting. Plus de 60 projets dans cinq catégories — Immobilier, Hôtellerie, Excursions, Marque et Événements. Chaque image est prise sur place au Maroc, retouchée en interne et livrée sous 48 heures. Nous travaillons avec les agences, hôtels et tours-opérateurs les plus réputés de Marrakech. Cliquez sur une image pour zoomer et explorer en résolution complète.",
       projectCountLabel: "projets",
       zoomHint: "Cliquez sur une image pour zoomer.",
       featuredLabel: "À la une",
