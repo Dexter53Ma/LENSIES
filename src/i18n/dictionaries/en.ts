@@ -1091,22 +1091,22 @@ export const en: Dictionary = {
           excerpt:
             "Restoration-grade zellige, no drilling, no tape, no gels. A walkthrough of the 3-light setup we used to shoot a 14th-century courtyard — and the small compromises that made it work.",
           date: "March 22, 2026",
-          readTime: "5 min read",
+          readTime: "7 min read",
           tags: ["Lighting", "Case Study"],
           category: "Case Study",
           heroImage: "/images/work-8.png",
           author: { name: "Lina Ouazzani", role: "Lighting Lead", avatar: "/images/work-9.png" },
           intro:
-            "The owner spent 11 years restoring this riad. The zellige in the central courtyard was laid by a master craftsman from Fez. The rule was clear: no drill holes, no gaffer tape on the tilework, no gels that would leave residue. We had one night and three lights. Here is exactly what we did.",
+            "The owner spent 11 years restoring this riad. The zellige in the central courtyard was laid by a master craftsman from Fez. The rule was clear: no drill holes, no gaffer tape on the tilework, no gels that would leave residue. We had one night and three lights. Here is exactly what we did. Heritage shoots are the most technical work we do. The lighting has to be invisible — the viewer should see the space, not the light. The biggest mistake is over-lighting. The moment you add a fourth light, the space starts to feel like a set. We have shot 6 restoration-grade riads in the last two years, and the rule is always the same: as few lights as possible, as long as the result holds.",
           sections: [
             {
-              body: "The riad is built around a 9m x 6m central courtyard with a fountain in the middle, four orange trees, and the original zellige floor from the 14th century restoration. The walls are hand-tadelakt in two colours. There is one original cedar beam that we were instructed to shoot as if it were a museum piece. The owner is a client of ours, and the second we walked in, we knew this was a shoot we could not mess up.",
+              body: "The riad is built around a 9m x 6m central courtyard with a fountain in the middle, four orange trees, and the original zellige floor from the 14th century restoration. The walls are hand-tadelakt in two colours. There is one original cedar beam that we were instructed to shoot as if it were a museum piece. The owner is a client of ours, and the second we walked in, we knew this was a shoot we could not mess up. The courtyard has no artificial light — the only light source during the day is the open sky above. At night, the courtyard is pitch black. We needed to simulate the warm late-afternoon light that would have hit the courtyard 4 hours earlier, and we needed to do it without touching any surface with tape, gel, or drill.",
               image: "/images/work-9.png",
               imageCaption: "The central courtyard, single light, 1/8s exposure, before the second light went up.",
             },
             {
               heading: "The 3-light setup",
-              body: "Light 1 was a Profoto B10X bounced off a 1.2m octabox, positioned at the western entrance, simulating the warm late-afternoon sun that would have hit the courtyard 4 hours earlier. Light 2 was an Aputure 600D with a fresnel attachment, mounted on a 4m stand behind the eastern arch, providing a cool rim light on the orange trees. Light 3 was a small Astera tube tucked into the fountain basin, providing the reflection on the water that sells the courtyard in the edit.",
+              body: "Light 1 was a Profoto B10X bounced off a 1.2m octabox, positioned at the western entrance, simulating the warm late-afternoon sun that would have hit the courtyard 4 hours earlier. Light 2 was an Aputure 600D with a fresnel attachment, mounted on a 4m stand behind the eastern arch, providing a cool rim light on the orange trees. Light 3 was a small Astera tube tucked into the fountain basin, providing the reflection on the water that sells the courtyard in the edit. The Profoto B10X was set to 4500K — warm, but not orange. The Aputure 600D was set to 6500K — cool, simulating the sky reflection on the tiles. The Astera tube was set to 3200K — warm, simulating the fountain water catching the last light.",
               list: [
                 "Light 1: Profoto B10X + 1.2m octabox, western entrance, 4500K",
                 "Light 2: Aputure 600D + fresnel, 4m stand, eastern arch, 6500K",
@@ -1116,18 +1116,22 @@ export const en: Dictionary = {
             },
             {
               heading: "What we did NOT do",
-              body: "We did not drill. We did not tape. We did not put a gel on the tilework. Every light stand had a rubber foot. Every cable was run along the perimeter of the courtyard, not across the floor. We used two MagMod MagGrip clamps on the cedar beam — they were removed at the end of the shoot and inspected by the owner before we left. The 1/15s shutter speed was the maximum we allowed to avoid any motion blur on the water reflection.",
+              body: "We did not drill. We did not tape. We did not put a gel on the tilework. Every light stand had a rubber foot. Every cable was run along the perimeter of the courtyard, not across the floor. We used two MagMod MagGrip clamps on the cedar beam — they were removed at the end of the shoot and inspected by the owner before we left. The 1/15s shutter speed was the maximum we allowed to avoid any motion blur on the water reflection. The Phase One IQ4 at ISO 50 gives us 15 stops of dynamic range, which is enough to hold the highlights in the tadelakt and the shadows in the zellige in a single exposure. We did not need HDR merging — the single frame held.",
               pullquote: "If the owner can't tell you were there, you did it right.",
             },
             {
               heading: "The result",
-              body: "The deliverable was 24 frames, 6 of which became the listing for the riad. The riad sold in 11 days, 4 days under asking. The owner credited the photography in the thank-you note. We framed one of the prints and gave it to him as a year-end gift. That print is the only marketing image we have ever printed and hung, and it is the most photographed frame we have ever shot.",
+              body: "The deliverable was 24 frames, 6 of which became the listing for the riad. The riad sold in 11 days, 4 days under asking. The owner credited the photography in the thank-you note. We framed one of the prints and gave it to him as a year-end gift. That print is the only marketing image we have ever printed and hung, and it is the most photographed frame we have ever shot. The 6 listing frames were: 1) the courtyard wide, 2) the fountain detail, 3) the cedar beam, 4) the zellige floor, 5) the orange tree, and 6) the tadelakt wall. Each frame was shot at a different time of the simulated light — the courtyard wide at 4500K, the fountain at 3200K, the cedar beam at 6500K. The result is a set of images that feel like they were shot at different times of day, but were all shot in the same 3-hour window.",
               image: "/images/work-10.png",
               imageCaption: "The final frame, 1/15s, f/8, ISO 50, three lights, no drill holes.",
             },
+            {
+              heading: "The lessons",
+              body: "Lesson 1: ask the owner what the off-limits materials are before you quote. The zellige was the constraint — if we had known about it on the day, we would have had to rethink the entire setup. Lesson 2: bring rubber feet for every light stand. The zellige is soft — a metal foot will scratch it. Lesson 3: run cables along the perimeter, not across the floor. The courtyard is 9m x 6m — the cable run is 30m. We carry 50m of cable for exactly this reason. Lesson 4: inspect the space before you leave. The owner inspected the cedar beam and found no marks. If there had been a mark, we would have had to pay for restoration. The cost of a cedar beam restoration in a 14th-century riad is 15,000-30,000 MAD.",
+            },
           ],
           outro:
-            "Lighting a heritage property is about restraint. The biggest mistake is over-lighting — the moment you add a fourth light, the space starts to feel like a set. We have shot 6 restoration-grade riads in the last two years, and the rule is always the same: as few lights as possible, as long as the result holds. If you are quoting a heritage shoot, ask the owner what the off-limits materials are, and respect them.",
+            "Lighting a heritage property is about restraint. The biggest mistake is over-lighting — the moment you add a fourth light, the space starts to feel like a set. We have shot 6 restoration-grade riads in the last two years, and the rule is always the same: as few lights as possible, as long as the result holds. If you are quoting a heritage shoot, ask the owner what the off-limits materials are, and respect them. The most important thing we learned from this shoot: the best heritage photography is invisible. The viewer should see the space, not the light. If the light is visible, you have failed.",
           relatedSlugs: ["twilight-real-estate-marrakech", "24h-delivery-workflow", "wedding-films-marrakech"],
         },
         {
@@ -1183,22 +1187,22 @@ export const en: Dictionary = {
           excerpt:
             "A field report from a 4-day Atlas shoot in January — frozen passes, low sun, fog in the valleys, and the gear that came home without a scratch.",
           date: "January 18, 2026",
-          readTime: "4 min read",
+          readTime: "7 min read",
           tags: ["Tours", "Field"],
           category: "Tours",
           heroImage: "/images/work-14.png",
           author: { name: "Sofia Bennani", role: "Director of Photography", avatar: "/images/work-15.png" },
           intro:
-            "The Tizi n'Tichka pass in January is a different country. The passes close without warning, the sun is below the ridgeline by 4pm, and the fog in the valleys makes every drone shot a coin flip. We packed for 4 days, planned for 3, and shot 6. Here is the field report, the gear that survived, and the drone that did not.",
+            "The Tizi n'Tichka pass in January is a different country. The passes close without warning, the sun is below the ridgeline by 4pm, and the fog in the valleys makes every drone shot a coin flip. We packed for 4 days, planned for 3, and shot 6. Here is the field report, the gear that survived, and the drone that did not. The Atlas in winter is the hardest shoot we do all year. It is also the one we learn the most from. Every year, we refine the kit, the route, and the timing. This is the 2026 version.",
           sections: [
             {
-              body: "The shoot was for a tour operator — a 4-day campaign to promote winter Atlas tours. The brief was simple: 30 stills, 5 short videos, drone where possible, and a story that made the Atlas look inviting in January. The reality was -8°C at the pass, 60km/h gusts, and a drone that came home with a cracked arm on day 2.",
+              body: "The shoot was for a tour operator — a 4-day campaign to promote winter Atlas tours. The brief was simple: 30 stills, 5 short videos, drone where possible, and a story that made the Atlas look inviting in January. The reality was -8°C at the pass, 60km/h gusts, and a drone that came home with a cracked arm on day 2. The client wanted winter content — snow on the peaks, frozen waterfalls, empty trails. We got all of that, plus a cracked drone arm and a case of mild frostbite on two fingers. The Atlas in January is not a gentle shoot.",
               image: "/images/work-15.png",
               imageCaption: "The Tizi n'Tichka pass, day 2, -8°C, 60km/h gusts. Hand-held, 24mm, 1/250s.",
             },
             {
               heading: "Day 1 — the valley",
-              body: "We started in the Ourika Valley, 45 minutes from Marrakech. The morning was clear, the light was golden, the Berber markets were already set up. We shot the market in 90 minutes, then drove to Setti Fatma for the waterfalls. The falls were partially frozen — a first for our team. The drone came up for 12 minutes, got 4 hero shots, and landed before the wind picked up. By 3pm the light was gone, the fog rolled in, and we were back at the riad for a hot tagine and a review of the day's cards.",
+              body: "We started in the Ourika Valley, 45 minutes from Marrakech. The morning was clear, the light was golden, the Berber markets were already set up. We shot the market in 90 minutes, then drove to Setti Fatma for the waterfalls. The falls were partially frozen — a first for our team. The drone came up for 12 minutes, got 4 hero shots, and landed before the wind picked up. By 3pm the light was gone, the fog rolled in, and we were back at the riad for a hot tagine and a review of the day's cards. The Ourika Valley in January is underrated — the light is softer, the air is cleaner, and the tourists are gone. We shot 14 stills and 1 video clip in 6 hours.",
               list: [
                 "Day 1: Ourika Valley, Setti Fatma waterfalls, 14 stills, 1 video clip",
                 "Day 2: Tizi n'Tichka pass, Telouet kasbah, 9 stills, drone cracked",
@@ -1208,18 +1212,22 @@ export const en: Dictionary = {
             },
             {
               heading: "The drone that didn't",
-              body: "Day 2, the Tizi n'Tichka pass. We launched the Mavic 3 at the summit for a wide shot of the switchbacks. The wind was 60km/h sustained, with gusts to 80. We got 2 clips, 1 still, and a low-battery RTH warning at 9% — the drone landed in auto, 30m from the launch point, with a cracked front arm. The repair cost 2,400 MAD. The lesson: at altitude in January, the wind is not a suggestion.",
+              body: "Day 2, the Tizi n'Tichka pass. We launched the Mavic 3 at the summit for a wide shot of the switchbacks. The wind was 60km/h sustained, with gusts to 80. We got 2 clips, 1 still, and a low-battery RTH warning at 9% — the drone landed in auto, 30m from the launch point, with a cracked front arm. The repair cost 2,400 MAD. The lesson: at altitude in January, the wind is not a suggestion. The Tizi n'Tichka pass is 2,260m above sea level. At that altitude, the air is thinner, the battery drains 30% faster, and the wind is a different animal. We now carry a handheld anemometer and we do not launch above 40km/h. The drone that cracked was a Mavic 3 Pro Cine — the Cine version has a heavier camera, which makes it more vulnerable to gusts. We now use the standard Mavic 3 for altitude work.",
               pullquote: "If the wind is over 50km/h, the drone stays in the car. Every time.",
             },
             {
               heading: "What we packed",
-              body: "The kit that survived: 2x Sony A7R V bodies, 16-35mm f/2.8 GM, 24-70mm f/2.8 GM, 70-200mm f/2.8 GM, 3x spare batteries per body, 6x SD cards, 1x portable SSD. The kit that didn't: the Mavic 3 (cracked arm), 1x circular polariser (fog condensation), 1x pair of gloves (lost at Aït Benhaddou). We now carry 2x spare drone arms in the Atlas kit bag. We have not needed them yet, but the day we do, we will.",
+              body: "The kit that survived: 2x Sony A7R V bodies, 16-35mm f/2.8 GM, 24-70mm f/2.8 GM, 70-200mm f/2.8 GM, 3x spare batteries per body, 6x SD cards, 1x portable SSD. The kit that didn't: the Mavic 3 (cracked arm), 1x circular polariser (fog condensation), 1x pair of gloves (lost at Aït Benhaddou). We now carry 2x spare drone arms in the Atlas kit bag. We have not needed them yet, but the day we do, we will. The cold-weather kit additions: 1x hand warmers (12-pack), 1x spare set of gloves, 1x thermal camera cover (the Sony A7R V battery drains 40% faster at -8°C), 1x insulated water bottle. The thermal camera cover is a game-changer — it keeps the battery warm and the sensor stable.",
               image: "/images/work-16.png",
               imageCaption: "The view from Telouet kasbah, day 2, 20 minutes before the wind hit.",
             },
+            {
+              heading: "Day 3 and 4 — the recovery",
+              body: "Day 3 was Aït Benhaddou — the UNESCO kasbah that has been used in every desert film since Lawrence of Arabia. The morning light hit the kasbah at 7:15am and we shot for 3 hours straight. The drone stayed in the car — the wind was still gusting to 50km/h. We got 12 stills and 2 video clips, including a tracking shot along the river that became the hero frame for the campaign. Day 4 was Atlas Studios in Ouarzazate — a 2-hour shoot inside the studio lot, then the drive back to Marrakech. The total deliverable was 43 stills, 5 video clips, and a 90-second recap cut. The client used 28 of the stills and all 5 clips. The campaign launched in March and the tour operator reported a 40% increase in winter bookings.",
+            },
           ],
           outro:
-            "The Atlas in January is the hardest shoot we do all year. It is also the most rewarding. The light is 30 minutes long instead of 3 hours, the crowds are gone, and the snow on the passes is a different frame every 20 minutes. We are running this tour shoot again in 2027 — same dates, same route, same riad. If you want to join us as a client or a co-shoot, drop us a line in November.",
+            "The Atlas in January is the hardest shoot we do all year. It is also the most rewarding. The light is 30 minutes long instead of 3 hours, the crowds are gone, and the snow on the passes is a different frame every 20 minutes. We are running this tour shoot again in 2027 — same dates, same route, same riad. If you want to join us as a client or a co-shoot, drop us a line in November. The most important thing we learned from this shoot: the Atlas in winter is not a photography trip, it is an expedition. The gear that survives is the gear that is packed for -20°C, not 0°C. The drone that fails is the drone that is launched at altitude without checking the wind. The photographer who gets the shot is the photographer who arrives 2 hours early and waits.",
           relatedSlugs: ["drone-permit-checklist-morocco", "golden-hour-schedule", "vertical-cuts"],
         },
         {
@@ -1228,22 +1236,22 @@ export const en: Dictionary = {
           excerpt:
             "Lightroom, Capture One, presets, batch edits, and a fixed delivery template. The exact pipeline we run when an agency needs a full listing back the next morning.",
           date: "December 5, 2025",
-          readTime: "6 min read",
+          readTime: "8 min read",
           tags: ["Workflow", "Real Estate"],
           category: "Workflow",
           heroImage: "/images/work-17.png",
           author: { name: "Lina Ouazzani", role: "Lighting Lead", avatar: "/images/work-18.png" },
           intro:
-            "The 24-hour delivery is the most common ask we get from Marrakech real estate agencies. It is also the most expensive service we offer. Here is the exact pipeline, the software stack, the presets, and the delivery template that lets us turn a 60-photo listing around in 24 hours without compromising on quality.",
+            "The 24-hour delivery is the most common ask we get from Marrakech real estate agencies. It is also the most expensive service we offer. Here is the exact pipeline, the software stack, the presets, and the delivery template that lets us turn a 60-photo listing around in 24 hours without compromising on quality. The 24-hour delivery is not a rush job — it is a pipeline. The pipeline has 6 steps, and every step is documented, templated, and repeatable. The reason we can deliver in 24 hours is not because we work faster — it is because we do not make decisions at the project level. Every decision is made in advance.",
           sections: [
             {
-              body: "The 24-hour delivery costs 35% more than the standard 3-day turnaround. Most agencies book it 2-3 times per quarter, when a listing is going live and the photographer has shot it late. The constraint is hard: photos by midnight, edit by 6am, delivery by 9am. We have run this pipeline 47 times in 2025. We have missed the deadline once — and only once, on a 110-photo luxury listing during a power cut.",
+              body: "The 24-hour delivery costs 35% more than the standard 3-day turnaround. Most agencies book it 2-3 times per quarter, when a listing is going live and the photographer has shot it late. The constraint is hard: photos by midnight, edit by 6am, delivery by 9am. We have run this pipeline 47 times in 2025. We have missed the deadline once — and only once, on a 110-photo luxury listing during a power cut. The 35% premium covers the overtime, the dedicated editor, and the priority queue. The standard 3-day turnaround is the default — the 24-hour delivery is the exception. But for the agencies that need it, it is the difference between a listing going live on Monday and a listing going live on Thursday.",
               image: "/images/work-18.png",
               imageCaption: "The studio at 4am during a 24-hour turnaround. Three editors, two screens each, one pot of coffee.",
             },
             {
               heading: "The 6-step pipeline",
-              body: "Step 1 is the import. The shooter dumps the cards into a single project folder, organised by property address. Step 2 is the cull — we use Photo Mechanic for the first pass, 60 photos per minute, no rating yet, just a star for the keepers. Step 3 is the colour match — we run the 60 keepers through a fixed preset stack in Lightroom, then hand-correct the 8-12 frames that need a second pass. Step 4 is the export — 4096px on the long edge, sRGB, 80% JPEG quality. Step 5 is the delivery — we upload to a fixed client folder, send a single email, and mark the project done in our CRM.",
+              body: "Step 1 is the import. The shooter dumps the cards into a single project folder, organised by property address. Step 2 is the cull — we use Photo Mechanic for the first pass, 60 photos per minute, no rating yet, just a star for the keepers. Step 3 is the colour match — we run the 60 keepers through a fixed preset stack in Lightroom, then hand-correct the 8-12 frames that need a second pass. Step 4 is the export — 4096px on the long edge, sRGB, 80% JPEG quality. Step 5 is the delivery — we upload to a fixed client folder, send a single email, and mark the project done in our CRM. Step 6 is the invoice — we send the invoice within 24 hours of delivery, and the agency pays within 30 days.",
               list: [
                 "Step 1: Import via Photo Mechanic, 1 folder per property",
                 "Step 2: Cull at 60 photos/min, star the keepers",
@@ -1255,18 +1263,22 @@ export const en: Dictionary = {
             },
             {
               heading: "The presets",
-              body: "We use a fixed stack of 4 presets — base, twilight, interior, and pool. The base preset is our default for the 80% of frames that just need a colour match. The twilight preset adds 200K of warmth and lifts the shadows by 8%. The interior preset pulls the highlights down by 15% and adds a small contrast curve. The pool preset cools the water by 300K and adds a tiny clarity bump on the tiles. Every preset was built in-house over 18 months, and every preset is locked — we do not edit the presets at the project level.",
+              body: "We use a fixed stack of 4 presets — base, twilight, interior, and pool. The base preset is our default for the 80% of frames that just need a colour match. The twilight preset adds 200K of warmth and lifts the shadows by 8%. The interior preset pulls the highlights down by 15% and adds a small contrast curve. The pool preset cools the water by 300K and adds a tiny clarity bump on the tiles. Every preset was built in-house over 18 months, and every preset is locked — we do not edit the presets at the project level. The presets are tested on 200+ frames before they are locked. The testing process: shoot a reference frame, apply the preset, compare to the reference, adjust, repeat. The goal is a 90% match on the first pass. The remaining 10% is hand-corrected.",
               pullquote: "If you are changing the preset at the project level, you do not have a preset. You have a habit.",
             },
             {
               heading: "The delivery template",
-              body: "The email template is 4 paragraphs, fixed. Paragraph 1: thank you for the brief, the project is delivered. Paragraph 2: links to the gallery, the low-res proofs, and the high-res download. Paragraph 3: the standard licence terms (personal use, agency use, no third-party sublicensing without written permission). Paragraph 4: a single line asking for feedback and a Google review link. The template is signed by the editor who did the cull, not the photographer. The agency knows exactly who to ask for, and we know exactly who owns the delivery.",
+              body: "The email template is 4 paragraphs, fixed. Paragraph 1: thank you for the brief, the project is delivered. Paragraph 2: links to the gallery, the low-res proofs, and the high-res download. Paragraph 3: the standard licence terms (personal use, agency use, no third-party sublicensing without written permission). Paragraph 4: a single line asking for feedback and a Google review link. The template is signed by the editor who did the cull, not the photographer. The agency knows exactly who to ask for, and we know exactly who owns the delivery. The delivery email is sent at 9am, regardless of when the edit was finished. If the edit is done at 4am, the email is queued for 9am. The agency expects the email at 9am, and we deliver at 9am.",
               image: "/images/work-19.png",
               imageCaption: "The Lightroom export panel, 60 frames queued, 4:47am, 8 minutes from delivery.",
             },
+            {
+              heading: "The quality check",
+              body: "Before the email is sent, the editor runs a 10-point quality check: 1) All 60 frames are exported. 2) No frames are duplicated. 3) No frames are missing. 4) White balance is consistent across the set. 5) Exposure is consistent across the set. 6) No blown highlights on windows. 7) No crushed shadows on interiors. 8) Verticals are vertical. 9) Horizon is straight. 10) No dust spots on the sensor. The quality check takes 10 minutes. It catches 90% of the errors that would otherwise generate a callback. The callback rate on our 24-hour delivery is 2% — 1 in 50 listings. The callback rate on the standard 3-day turnaround is 5%. The 24-hour delivery is, paradoxically, higher quality than the standard turnaround, because the pipeline is more disciplined.",
+            },
           ],
           outro:
-            "The 24-hour delivery is a service we built for the agencies that needed it most. It is not a service we recommend for every shoot — the price premium is real, the strain on the team is real, and the margin is thinner than our standard turnaround. But for the listings that need it, it is the most reliable 24-hour photo service in Marrakech. If you need a 24-hour turnaround, send the brief before 4pm, and we will deliver by 9am the next morning.",
+            "The 24-hour delivery is a service we built for the agencies that needed it most. It is not a service we recommend for every shoot — the price premium is real, the strain on the team is real, and the margin is thinner than our standard turnaround. But for the listings that need it, it is the most reliable 24-hour photo service in Marrakech. If you need a 24-hour turnaround, send the brief before 4pm, and we will deliver by 9am the next morning. The most important thing we learned from running this pipeline 47 times: the constraint is not the edit — it is the import. The import takes 20 minutes, and it is the step that most photographers skip. We do not skip it. The import is the foundation of the pipeline, and the pipeline is the foundation of the delivery.",
           relatedSlugs: ["twilight-real-estate-marrakech", "real-estate-video-conversion", "lit-14th-century-riad"],
         },
         {
@@ -1275,22 +1287,22 @@ export const en: Dictionary = {
           excerpt:
             "A timeline for couples — from the henna night to the send-off brunch. Three cameras, one producer, and the moments worth a second shooter.",
           date: "October 9, 2025",
-          readTime: "5 min read",
+          readTime: "8 min read",
           tags: ["Events"],
           category: "Events",
           heroImage: "/images/work-20.png",
           author: { name: "Youssef El Fassi", role: "Video Lead", avatar: "/images/work-21.png" },
           intro:
-            "Marrakech weddings are three days long. The henna night is the rehearsal, the nikah is the legal ceremony, and the grand wedding is the production. As a videography team, we are present for all three, plus the send-off brunch on day four. This is the timeline, the gear, and the three moments that make the film.",
+            "Marrakech weddings are three days long. The henna night is the rehearsal, the nikah is the legal ceremony, and the grand wedding is the production. As a videography team, we are present for all three, plus the send-off brunch on day four. This is the timeline, the gear, and the three moments that make the film. We have shot 30+ weddings in Marrakech — from intimate 50-person riad celebrations to 500-person palatial productions. The brief is almost always the same: cinematic, music-driven, family moments prioritised, drone where possible, and a 60-second social cut for the same-day edit. The fee is 65,000-120,000 MAD depending on the team size.",
           sections: [
             {
-              body: "The standard Marrakech wedding film is 12-18 minutes, cut from 8-12 hours of footage shot over 3-4 days. The brief is almost always the same: cinematic, music-driven, family moments prioritised, drone where possible, and a 60-second social cut for the same-day edit. The fee is 65,000-120,000 MAD depending on the team size. The team is always 2-3 videographers plus a producer.",
+              body: "The standard Marrakech wedding film is 12-18 minutes, cut from 8-12 hours of footage shot over 3-4 days. The brief is almost always the same: cinematic, music-driven, family moments prioritised, drone where possible, and a 60-second social cut for the same-day edit. The fee is 65,000-120,000 MAD depending on the team size. The team is always 2-3 videographers plus a producer. The producer is the most important person on the team — they manage the timeline, the family, and the logistics. Without a producer, the videographers are guessing. With a producer, the videographers are shooting.",
               image: "/images/work-21.png",
               imageCaption: "The henna night, day 1, hand-held at 35mm, candle-lit, 1/50s f/1.8.",
             },
             {
               heading: "The timeline",
-              body: "Day 1 — henna night. We arrive at 7pm, set up two cameras, and shoot through the henna ceremony, the family dance, and the gift giving. Day 2 — the nikah. We are in position by 10am, shoot the signing, the family prayers, and the smaller family-only lunch. Day 3 — the grand wedding. This is the production day. We arrive at 2pm for the setup, shoot the couple portraits at 4pm, the ceremony at 6pm, the speeches at 8pm, and the dance floor until midnight. Day 4 — the send-off brunch. Two hours, one camera, the thank-yous and the gifts.",
+              body: "Day 1 — henna night. We arrive at 7pm, set up two cameras, and shoot through the henna ceremony, the family dance, and the gift giving. The henna night is the most intimate day — the family is relaxed, the lighting is warm, and the footage is the most candid. Day 2 — the nikah. We are in position by 10am, shoot the signing, the family prayers, and the smaller family-only lunch. The nikah is the legal ceremony — it is short (30-45 minutes) and emotional. Day 3 — the grand wedding. This is the production day. We arrive at 2pm for the setup, shoot the couple portraits at 4pm, the ceremony at 6pm, the speeches at 8pm, and the dance floor until midnight. Day 4 — the send-off brunch. Two hours, one camera, the thank-yous and the gifts.",
               list: [
                 "Day 1 (Henna): 7pm-1am, 2 cameras, 1 audio recorder",
                 "Day 2 (Nikah): 10am-3pm, 2 cameras, 1 audio recorder",
@@ -1300,18 +1312,22 @@ export const en: Dictionary = {
             },
             {
               heading: "The three moments that make the film",
-              body: "Moment 1 is the first look. We always recommend a private first look before the ceremony — 20 minutes, two cameras, no family. The footage is 90 seconds of the most cinematic moment of the day. Moment 2 is the father's toast. We plant a shotgun mic on the table and a 35mm on a tripod. The toast is always 2-3 minutes, and the edit always keeps the last 60 seconds. Moment 3 is the drone shot at sunset. We launch the drone 30 minutes before the ceremony, get 4 wide shots of the venue, and land before the first guest arrives.",
+              body: "Moment 1 is the first look. We always recommend a private first look before the ceremony — 20 minutes, two cameras, no family. The footage is 90 seconds of the most cinematic moment of the day. The first look is the one moment where the couple is alone, the emotion is real, and the light is usually perfect. We shoot it on a 35mm and an 85mm, both hand-held, both at f/1.8. Moment 2 is the father's toast. We plant a shotgun mic on the table and a 35mm on a tripod. The toast is always 2-3 minutes, and the edit always keeps the last 60 seconds. The father's toast is the moment that makes the film — it is the one piece of audio that anchors the entire edit. Moment 3 is the drone shot at sunset. We launch the drone 30 minutes before the ceremony, get 4 wide shots of the venue, and land before the first guest arrives.",
               pullquote: "The drone shot is not the headline. The father's toast is. Always cut to the toast first.",
             },
             {
               heading: "The same-day edit",
-              body: "The 60-second social cut is the highest-pressure deliverable we produce. It is shot, edited, and projected at the wedding reception — usually 4-6 hours after the last dance. The team that shoots the same-day edit is a separate two-person unit that does not touch the main film. The edit is shot-list driven, music-locked, and graded in 30 minutes. The couple sees it for the first time on a 4m screen at 1am. We have produced 14 same-day edits in 2025. Every one of them made the couple cry.",
+              body: "The 60-second social cut is the highest-pressure deliverable we produce. It is shot, edited, and projected at the wedding reception — usually 4-6 hours after the last dance. The team that shoots the same-day edit is a separate two-person unit that does not touch the main film. The edit is shot-list driven, music-locked, and graded in 30 minutes. The couple sees it for the first time on a 4m screen at 1am. We have produced 14 same-day edits in 2025. Every one of them made the couple cry. The same-day edit is not a highlight reel — it is a proof of concept. It shows the couple that the footage is beautiful, the story is there, and the full film will be worth the wait. The cost of the same-day edit is 15,000 MAD on top of the main package, and it is the most popular add-on we offer.",
               image: "/images/work-22.png",
               imageCaption: "The 60-second same-day edit, projected at 1am, 30 minutes after delivery.",
             },
+            {
+              heading: "The gear",
+              body: "We shoot weddings on Sony A7R V bodies — 2-3 bodies depending on the team size. The lenses are 24mm f/1.4 GM, 35mm f/1.4 GM, 85mm f/1.4 GM, and a 70-200mm f/2.8 GM for the ceremony. The drone is a Mavic 3 Pro, flown only during the daylight hours and only with property permission. Audio is captured on Zoom F6 recorders with Sennheiser MKH 416 shotgun mics. The edit is cut on DaVinci Resolve, graded in-house, and delivered in 4K. The total footage per wedding is 400-600GB, spread across 6-8 SD cards. The edit takes 3-4 weeks, and we deliver a private Vimeo link plus a USB drive.",
+            },
           ],
           outro:
-            "Marrakech weddings are some of the most cinematic events we shoot. The light, the architecture, the families, the three-day arc — every wedding is a different film. If you are planning a wedding in Marrakech and you want a videography team that has done this 30+ times, send us a brief 4-6 months out. We book up 9-12 months in advance for the high season (March-June, September-November).",
+            "Marrakech weddings are some of the most cinematic events we shoot. The light, the architecture, the families, the three-day arc — every wedding is a different film. If you are planning a wedding in Marrakech and you want a videography team that has done this 30+ times, send us a brief 4-6 months out. We book up 9-12 months in advance for the high season (March-June, September-November). The most important advice we give every couple: book the videographer before the venue. The best venues in Marrakech — La Mamounia, Royal Mansour, Selman — are booked 12-18 months out. The videographer should be booked at the same time. If you wait until the venue is confirmed, the best teams will already be taken.",
           relatedSlugs: ["real-estate-video-conversion", "vertical-cuts", "atlas-winter"],
         },
         {
@@ -1320,22 +1336,22 @@ export const en: Dictionary = {
           excerpt:
             "Why we cut vertical-first, the 9:16 reframing rules we use, and the platform-specific lengths that travel furthest on Instagram and TikTok.",
           date: "August 22, 2025",
-          readTime: "5 min read",
+          readTime: "7 min read",
           tags: ["Video", "Social"],
           category: "Video",
           heroImage: "/images/work-23.png",
           author: { name: "Youssef El Fassi", role: "Video Lead", avatar: "/images/work-24.png" },
           intro:
-            "Vertical video is no longer an afterthought. 73% of the video views we generate in 2025 are on mobile, in a 9:16 frame, on Instagram or TikTok. We have rebuilt our shooting, editing, and delivery pipelines around the vertical cut first. Here is the reframing rule, the platform-specific lengths, and the one mistake we still see in 90% of the wedding films we are brought in to fix.",
+            "Vertical video is no longer an afterthought. 73% of the video views we generate in 2025 are on mobile, in a 9:16 frame, on Instagram or TikTok. We have rebuilt our shooting, editing, and delivery pipelines around the vertical cut first. Here is the reframing rule, the platform-specific lengths, and the one mistake we still see in 90% of the wedding films we are brought in to fix. The shift to vertical is the biggest change in our workflow since we added drone in 2019. It is not a trend — it is the new default. If your videographer is still shooting horizontal-first, they are delivering a product that will underperform on every platform that matters.",
           sections: [
             {
-              body: "The shift to vertical happened in 2023. In 2024, 50% of our social-driven video views were vertical. In 2025, it is 73%. We made the decision to cut vertical-first in January 2025 — meaning the framing decisions on set are now made for the 9:16 frame, with the 16:9 frame as the secondary deliverable. This is the opposite of how we shot for the previous 6 years.",
+              body: "The shift to vertical happened in 2023. In 2024, 50% of our social-driven video views were vertical. In 2025, it is 73%. We made the decision to cut vertical-first in January 2025 — meaning the framing decisions on set are now made for the 9:16 frame, with the 16:9 frame as the secondary deliverable. This is the opposite of how we shot for the previous 6 years. The impact on our shooting style has been significant. We now shoot wider, keep subjects centred, and protect the upper third of the frame. The 16:9 crop from a vertical-first frame is not as tight as a dedicated 16:9 frame, but the vertical cut is dramatically better.",
               image: "/images/work-24.png",
               imageCaption: "A 9:16 reframing test from a Marrakech riad shoot — original frame, cropped frame, reflowed frame.",
             },
             {
               heading: "The reframing rules",
-              body: "Rule 1: shoot wider than you think. We now shoot weddings on a 24mm instead of a 35mm, real estate on a 16mm instead of a 24mm. The wider the original frame, the more 9:16 and 16:9 you can crop into. Rule 2: keep the subject in the centre third. The 9:16 crop is a vertical slice — if the subject is on the left or right third, the vertical crop will cut them out. Rule 3: protect the eyes. The eye line in a 9:16 frame is the upper third. If the eye line is at the centre of a 16:9 frame, the vertical crop will crop the forehead.",
+              body: "Rule 1: shoot wider than you think. We now shoot weddings on a 24mm instead of a 35mm, real estate on a 16mm instead of a 24mm. The wider the original frame, the more 9:16 and 16:9 you can crop into. Rule 2: keep the subject in the centre third. The 9:16 crop is a vertical slice — if the subject is on the left or right third, the vertical crop will cut them out. Rule 3: protect the eyes. The eye line in a 9:16 frame is the upper third. If the eye line is at the centre of a 16:9 frame, the vertical crop will crop the forehead. Rule 4: never crop on motion — let the motion play out in 16:9, then crop. The worst vertical cuts are the ones where the subject walks out of frame because the editor cropped too tight on a moving shot.",
               list: [
                 "Rule 1: shoot wider — 24mm for weddings, 16mm for real estate",
                 "Rule 2: subject in the centre third of the 16:9 frame",
@@ -1345,18 +1361,22 @@ export const en: Dictionary = {
             },
             {
               heading: "The platform-specific lengths",
-              body: "Instagram Reels: 15-30 seconds for discovery, 60-90 seconds for retention. TikTok: 21-34 seconds for the algorithm, 60 seconds for storytelling. YouTube Shorts: 30-45 seconds for search. Pinterest: 6-15 seconds for the loop. The same vertical cut rarely works on all four platforms. We deliver 4 cuts per shoot — 30s, 60s, 90s, and 3-min — and the client picks the platform. The cost of the extra cuts is 1,200 MAD per shoot, billed as a flat fee.",
+              body: "Instagram Reels: 15-30 seconds for discovery, 60-90 seconds for retention. TikTok: 21-34 seconds for the algorithm, 60 seconds for storytelling. YouTube Shorts: 30-45 seconds for search. Pinterest: 6-15 seconds for the loop. The same vertical cut rarely works on all four platforms. We deliver 4 cuts per shoot — 30s, 60s, 90s, and 3-min — and the client picks the platform. The cost of the extra cuts is 1,200 MAD per shoot, billed as a flat fee. The 30-second cut is the most important — it is the one that gets shared, saved, and re-posted. The 90-second cut is the one that builds followers. The 3-minute cut is the one that gets watched once and forgotten. We invest the most time in the 30-second cut.",
               pullquote: "The same vertical cut is not a strategy. It is a compromise.",
             },
             {
               heading: "The one mistake we see in 90% of the wedding films",
-              body: "Vertical cuts are delivered as 9:16 letterboxes inside a 16:9 frame. The viewer sees black bars on the top and bottom, and the engagement drops 40% in the first 3 seconds. The fix is to reframe — not crop. The crop pulls the centre of the 16:9 frame into a 9:16 window. The reframe pulls the centre of the 16:9 frame into a 9:16 window AND adjusts the timing, the scale, and the subject position. It takes 4x longer. It is the only way to deliver a vertical cut that holds up.",
+              body: "Vertical cuts are delivered as 9:16 letterboxes inside a 16:9 frame. The viewer sees black bars on the top and bottom, and the engagement drops 40% in the first 3 seconds. The fix is to reframe — not crop. The crop pulls the centre of the 16:9 frame into a 9:16 window. The reframe pulls the centre of the 16:9 frame into a 9:16 window AND adjusts the timing, the scale, and the subject position. It takes 4x longer. It is the only way to deliver a vertical cut that holds up. We reframe every vertical cut by hand — no automated tools, no batch processing. The hand-reframe takes 30-45 minutes per minute of footage. The automated crop takes 5 minutes. The difference in quality is visible in the first 3 seconds.",
               image: "/images/work-25.png",
               imageCaption: "The 9:16 reframing test, 3-frame comparison: original, cropped, reflowed.",
             },
+            {
+              heading: "The vertical-first shooting checklist",
+              body: "Before every shoot, we run a 5-point vertical checklist: 1) Camera on tripod, 9:16 frame marked on the monitor. 2) Subject centred, eye line in the upper third. 3) Lens at 24mm or wider. 4) No motion outside the centre third. 5) No text or graphics in the outer thirds. The checklist takes 30 seconds. It saves 2 hours in the edit. We have printed it on a laminated card that lives in the camera bag. Every shooter on the team knows it by heart. The checklist was born from a wedding in 2024 where we shot the entire ceremony on a 35mm, and the vertical crop cut off the top of the officiant's head. We never made that mistake again.",
+            },
           ],
           outro:
-            "Vertical is the default now. Horizontal is the second deliverable. If you are commissioning a video in 2026 and the team you are talking to still shoots horizontal-first, ask them to walk you through their vertical cut process. If the answer is 'we crop it in post,' keep looking. Vertical-first is a shooting decision, not an editing decision.",
+            "Vertical is the default now. Horizontal is the second deliverable. If you are commissioning a video in 2026 and the team you are talking to still shoots horizontal-first, ask them to walk you through their vertical cut process. If the answer is 'we crop it in post,' keep looking. Vertical-first is a shooting decision, not an editing decision. The reframing rules above are the ones we use on every shoot. They are not perfect — every project has exceptions — but they are the foundation. If you want to see the difference between a crop and a reframe, send us a clip and we will show you both. The difference is visible in the first 3 seconds.",
           relatedSlugs: ["real-estate-video-conversion", "wedding-films-marrakech", "atlas-winter"],
         },
         {
@@ -1365,22 +1385,22 @@ export const en: Dictionary = {
           excerpt:
             "Sunrise and sunset times for Marrakech, month by month, plus the exact 30-minute window we'd book a shoot for any given week of the year.",
           date: "June 14, 2025",
-          readTime: "3 min read",
+          readTime: "8 min read",
           tags: ["Field", "Tips"],
           category: "Field",
           heroImage: "/images/work-26.png",
           author: { name: "Sofia Bennani", role: "Director of Photography", avatar: "/images/work-2.png" },
           intro:
-            "Marrakech sits at 31.6°N, 7.9°W. The golden hour shifts by 90 minutes over the year. The 30-minute window we book a shoot for changes every 2-3 weeks. This is the schedule we use internally, the sunrise and sunset times, and the week-of-year offsets we apply to every booking confirmation we send.",
+            "Marrakech sits at 31.6°N, 7.9°W. The golden hour shifts by 90 minutes over the year. The 30-minute window we book a shoot for changes every 2-3 weeks. This is the schedule we use internally, the sunrise and sunset times, and the week-of-year offsets we apply to every booking confirmation we send. After eight years of shooting in Marrakech, we have learned that the difference between a good shoot and a great shoot is often just 12 minutes of light. The golden hour is not an hour — it is a window, and the window moves. If you are booking a photographer in Marrakech and they are not asking what week you are shooting, they are not paying attention to the light.",
           sections: [
             {
-              body: "The golden hour in Marrakech is short. The window is 28-34 minutes depending on the month. We book shoots to start 12 minutes before the official sunset, run for 30 minutes, and end 6 minutes after sunset. In summer (May-August), the window is closer to 28 minutes. In winter (November-February), it stretches to 34. The exact minute-by-minute schedule is in our internal booking template — we are sharing the version we use for client confirmations here.",
+              body: "The golden hour in Marrakech is short. The window is 28-34 minutes depending on the month. We book shoots to start 12 minutes before the official sunset, run for 30 minutes, and end 6 minutes after sunset. In summer (May-August), the window is closer to 28 minutes. In winter (November-February), it stretches to 34. The exact minute-by-minute schedule is in our internal booking template — we are sharing the version we use for client confirmations here. The reason we start 12 minutes before official sunset is simple: the best light in Marrakech is not at sunset, it is in the 12 minutes before. The sky is still warm, the shadows are long, and the interior lights of the property have just come on. That 12-minute overlap — warm sky, warm interiors — is the frame that sells.",
               image: "/images/work-2.png",
               imageCaption: "A Marrakech rooftop, 14 minutes after sunset, October, 24mm tilt-shift.",
             },
             {
               heading: "Sunrise / sunset by month",
-              body: "January: 7:25 / 17:50. February: 7:05 / 18:20. March: 6:35 / 18:45. April: 6:00 / 19:10. May: 5:30 / 19:35. June: 5:15 / 19:55. July: 5:25 / 19:50. August: 5:45 / 19:25. September: 6:05 / 18:45. October: 6:25 / 18:05. November: 6:50 / 17:35. December: 7:15 / 17:30. The earliest sunset is in mid-December (17:30). The latest sunset is in mid-June (19:55). The 90-minute shift is why the booking schedule is a moving target.",
+              body: "January: 7:25 / 17:50. February: 7:05 / 18:20. March: 6:35 / 18:45. April: 6:00 / 19:10. May: 5:30 / 19:35. June: 5:15 / 19:55. July: 5:25 / 19:50. August: 5:45 / 19:25. September: 6:05 / 18:45. October: 6:25 / 18:05. November: 6:50 / 17:35. December: 7:15 / 17:30. The earliest sunset is in mid-December (17:30). The latest sunset is in mid-June (19:55). The 90-minute shift is why the booking schedule is a moving target. We track the shift weekly, not monthly — the monthly averages are useful for planning, but the weekly offsets are what we use for booking. A shoot booked for 'mid-October' could be 15 minutes off from a shoot booked for 'late October.' That 15 minutes is the difference between the hero frame and the backup frame.",
               list: [
                 "January: golden hour 17:20-17:50",
                 "April: golden hour 18:40-19:10",
@@ -1391,18 +1411,22 @@ export const en: Dictionary = {
             },
             {
               heading: "The week-of-year offset",
-              body: "We apply a 2-week offset to the official sunset time. The civil twilight (sun 6° below horizon) lags the calendar sunset by 2-3 minutes per week through the year. The cumulative drift is 30-45 minutes by mid-summer. The offset we apply is: weeks 1-10 of the year, no offset. Weeks 11-22, -3 minutes. Weeks 23-34, -6 minutes. Weeks 35-48, -3 minutes. Weeks 49-52, no offset. The result is a 30-minute window that is reliable, week-of-year, regardless of when the shoot is booked.",
+              body: "We apply a 2-week offset to the official sunset time. The civil twilight (sun 6° below horizon) lags the calendar sunset by 2-3 minutes per week through the year. The cumulative drift is 30-45 minutes by mid-summer. The offset we apply is: weeks 1-10 of the year, no offset. Weeks 11-22, -3 minutes. Weeks 23-34, -6 minutes. Weeks 35-48, -3 minutes. Weeks 49-52, no offset. The result is a 30-minute window that is reliable, week-of-year, regardless of when the shoot is booked. We have tested this schedule against Photographer's Ephemeris for 3 years running, and the accuracy is within 2 minutes. The only exception is the Atlas foothills, where the mountain ridgeline cuts 8-12 minutes off the sunset. We apply a separate offset for Atlas shoots.",
               pullquote: "The civil twilight lags the calendar sunset. If you are not correcting for it, you are missing the light.",
             },
             {
               heading: "What we book",
-              body: "We book the 30-minute window 8-12 weeks in advance. The winter sunset window (December-January) is the most competitive — we sold out the 2025 winter weekends in October 2024. The summer sunset window (June-August) is the most flexible — we can usually book 2-3 weeks out. The spring and autumn windows are the most reliable for weather — clear skies, mild temperatures, no fog. If you are booking a shoot in Marrakech, send us a date range 6-8 weeks out, and we will recommend the optimal 30-minute window for that week.",
+              body: "We book the 30-minute window 8-12 weeks in advance. The winter sunset window (December-January) is the most competitive — we sold out the 2025 winter weekends in October 2024. The summer sunset window (June-August) is the most flexible — we can usually book 2-3 weeks out. The spring and autumn windows are the most reliable for weather — clear skies, mild temperatures, no fog. If you are booking a shoot in Marrakech, send us a date range 6-8 weeks out, and we will recommend the optimal 30-minute window for that week. We also track the moon phase — a full moon during golden hour adds a second light source to the sky, and we plan our drone shots around it. A new moon means a darker sky, which is better for interior shots where we want the sky to drop to black.",
               image: "/images/work-3.png",
               imageCaption: "The Medina ramparts, October, 22 minutes after sunset, hand-held, 35mm, 1/8s.",
             },
+            {
+              heading: "The sunrise shoots",
+              body: "Most of our golden hour bookings are for sunset, but the sunrise in Marrakech is equally beautiful — and often more reliable. The morning air is cleaner, the dust has settled overnight, and the light is cooler. We book sunrise shoots for properties that face east (the Atlas foothills, the Palmeraie, and the Medina ramparts). The sunrise window is the mirror of the sunset window — we start 12 minutes after official sunrise and run for 30 minutes. The challenge with sunrise shoots is the call time: a 5:15am start in June means the crew is on site at 4:30am. We charge a 20% premium for sunrise shoots, and we book them less frequently, but the results are consistently better than sunset for east-facing properties.",
+            },
           ],
           outro:
-            "The golden hour is a moving target, and the moving target is exactly what makes the schedule useful. We have been shooting Marrakech for 8 years, and we are still refining the booking offsets. The version above is the 2025 build. We will publish a 2026 build in January. If you want a copy of the full year-round schedule in a single PDF, send us a note and we will email it over.",
+            "The golden hour is a moving target, and the moving target is exactly what makes the schedule useful. We have been shooting Marrakech for 8 years, and we are still refining the booking offsets. The version above is the 2025 build. We will publish a 2026 build in January. If you want a copy of the full year-round schedule in a single PDF, send us a note and we will email it over. The most common mistake we see from visiting photographers is booking a shoot for 'sunset' without checking the week-of-year offset. The result is a shoot that starts 15 minutes late and misses the hero frame. If you are planning a shoot in Marrakech, send us your dates first — we will tell you the exact window, and we will tell you if the light will work for your brief.",
           relatedSlugs: ["twilight-real-estate-marrakech", "atlas-winter", "drone-permit-checklist-morocco"],
         },
       ],
