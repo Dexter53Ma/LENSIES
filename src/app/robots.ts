@@ -9,7 +9,7 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://lensies.ma/sitemap.xml",
-    host: "https://lensies.ma",
+    sitemap: "https://www.lensies.co/sitemap.xml",
+    host: "https://www.lensies.co",
   };
 }

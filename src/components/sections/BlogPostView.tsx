@@ -34,7 +34,7 @@ export default function BlogPostView({ post, related }: BlogPostViewProps) {
     window.scrollTo({ top: 0, behavior: "instant" as ScrollBehavior });
   }, [post.slug]);
 
-  const shareUrl = `https://lensies.ma/blog/${post.slug}`;
+  const shareUrl = `https://www.lensies.co/blog/${post.slug}`;
 
   return (
     <article className="relative w-full bg-background">

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import type { Dictionary } from "./types";
 
-const SITE_URL = "https://lensies.ma";
+const SITE_URL = "https://www.lensies.co";
 
 /**
  * Build a Next.js `Metadata` object from a dictionary's `meta` block.

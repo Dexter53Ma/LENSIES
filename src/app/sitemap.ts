@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllSlugs } from "@/lib/blog";
 import { getDictionary } from "@/i18n/get-dictionary";
 
-const BASE = "https://lensies.ma";
+const BASE = "https://www.lensies.co";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
