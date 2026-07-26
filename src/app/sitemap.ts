@@ -13,6 +13,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/pricing",
     "/blog",
     "/contact",
+    "/privacy",
+    "/terms",
   ];
   const LAST_CONTENT_UPDATE = new Date("2026-07-26");
   const staticEntries = staticRoutes.map((path) => ({

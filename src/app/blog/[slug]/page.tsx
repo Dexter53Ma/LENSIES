@@ -35,8 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       path: `/blog/${slug}`,
     }),
     other: {
-      "og:type": "article",
-      "article:published_time": post.date,
+      "article:published_time": new Date(post.date).toISOString().split("T")[0],
       "article:author": post.author.name,
     },
   };
@@ -56,7 +55,8 @@ export default async function BlogPostPage({ params }: PageProps) {
     headline: post.title,
     description: post.excerpt,
     url: `https://www.lensies.co/blog/${post.slug}`,
-    datePublished: post.date,
+    datePublished: new Date(post.date).toISOString().split("T")[0],
+    dateModified: new Date(post.date).toISOString().split("T")[0],
     author: {
       "@type": "Person",
       name: post.author.name,
@@ -65,7 +65,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     publisher: {
       "@id": "https://www.lensies.co/#localbusiness",
     },
-    image: post.heroImage,
+    image: `https://www.lensies.co${post.heroImage}`,
     mainEntityOfPage: {
       "@type": "WebPage",
       "@id": `https://www.lensies.co/blog/${post.slug}`,

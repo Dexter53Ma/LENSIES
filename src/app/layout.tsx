@@ -86,12 +86,12 @@ export default async function RootLayout({
                 latitude: 31.6295,
                 longitude: -7.9811,
               },
-              openingHoursSpecification: {
+              openingHoursSpecification: [{
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
                 opens: "09:00",
                 closes: "19:00",
-              },
+              }],
               priceRange: "$$",
               areaServed: {
                 "@type": "Country",

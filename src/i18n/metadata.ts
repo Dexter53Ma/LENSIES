@@ -40,7 +40,7 @@ export function buildMetadata(
       canonical: canonicalUrl,
     },
     openGraph: {
-      type: "website",
+      type: path?.startsWith("/blog/") ? "article" : "website",
       locale: ogLocale,
       url: canonicalUrl,
       siteName: meta.ogSiteName,
@@ -60,9 +60,6 @@ export function buildMetadata(
       title: title ?? meta.twitterTitle,
       description: desc,
       images: [ogImage],
-    },
-    other: {
-      "og:type": path?.startsWith("/blog/") ? "article" : "website",
     },
     robots: {
       index: true,
