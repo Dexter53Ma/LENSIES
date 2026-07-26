@@ -9,7 +9,9 @@ import { buildMetadata } from "@/i18n/metadata";
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getServerLocale();
   const dict = getDictionary(locale);
-  return buildMetadata(dict.meta, { title: dict.meta.pageTitle.portfolio, locale, path: "/portfolio" });
+  return {
+    ...buildMetadata(dict.meta, { title: dict.meta.pageTitle.portfolio, description: "Browse our portfolio of real estate, hospitality, drone, and event photography in Marrakech. Over 400 villas shot since 2017.", locale, path: "/portfolio" }),
+  };
 }
 
 export default async function PortfolioPage() {

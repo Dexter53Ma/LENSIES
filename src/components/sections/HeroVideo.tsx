@@ -45,7 +45,7 @@ export default function HeroVideo({ videoSrc, className }: HeroVideoProps) {
         loop
         muted
         playsInline
-        preload="auto"
+        preload="metadata"
         src={videoSrc}
         className="pointer-events-none size-full object-cover"
       />

@@ -127,6 +127,10 @@ export const fr: DeepPartial<Dictionary> = {
       { label: "Portfolio", href: "/portfolio" },
       { label: "Contact", href: "/contact" },
     ],
+    legalLinks: [
+      { label: "Politique de confidentialité", href: "/privacy" },
+      { label: "Conditions d'utilisation", href: "/terms" },
+    ],
     socials: [
       { label: "Instagram", href: "https://instagram.com/lensies.ma", kind: "instagram" },
       { label: "YouTube", href: "https://youtube.com/@lensies", kind: "youtube" },

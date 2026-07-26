@@ -55,6 +55,81 @@ export default async function RootLayout({
       <head>
         <link rel="preload" href="/images/logo.png" as="image" />
         <link rel="preload" href="/images/feature-safe.webp" as="image" type="image/webp" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "LocalBusiness",
+              "@id": "https://www.lensies.co/#localbusiness",
+              name: "Lensies",
+              alternateName: "Lensies Studio",
+              description: "Marrakech-based creative studio specializing in real estate photography, videography, drone footage, events, experiences, and curated tours across Morocco.",
+              url: "https://www.lensies.co",
+              logo: "https://www.lensies.co/images/logo.png",
+              image: "https://www.lensies.co/images/work-2.png",
+              telephone: "+212-621-947-493",
+              email: "contact@lensies.com",
+              foundingDate: "2017",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Gueliz",
+                addressLocality: "Marrakech",
+                addressRegion: "Marrakech-Safi",
+                postalCode: "40000",
+                addressCountry: "MA",
+              },
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 31.6295,
+                longitude: -7.9811,
+              },
+              openingHoursSpecification: {
+                "@type": "OpeningHoursSpecification",
+                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                opens: "09:00",
+                closes: "19:00",
+              },
+              priceRange: "$$",
+              areaServed: {
+                "@type": "Country",
+                name: "Morocco",
+              },
+              sameAs: [
+                "https://instagram.com/lensies.ma",
+                "https://youtube.com/@lensies",
+                "https://x.com/lensies",
+              ],
+              aggregateRating: {
+                "@type": "AggregateRating",
+                ratingValue: "5.0",
+                bestRating: "5",
+                ratingCount: "5",
+              },
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "@id": "https://www.lensies.co/#website",
+              name: "Lensies",
+              url: "https://www.lensies.co",
+              publisher: { "@id": "https://www.lensies.co/#localbusiness" },
+              potentialAction: {
+                "@type": "SearchAction",
+                target: {
+                  "@type": "EntryPoint",
+                  urlTemplate: "https://www.lensies.co/blog?q={search_term_string}",
+                },
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
         <script dangerouslySetInnerHTML={{ __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=

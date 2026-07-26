@@ -8,7 +8,9 @@ import { buildMetadata } from "@/i18n/metadata";
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getServerLocale();
   const dict = getDictionary(locale);
-  return buildMetadata(dict.meta, { title: dict.meta.pageTitle.blog, locale, path: "/blog" });
+  return {
+    ...buildMetadata(dict.meta, { title: dict.meta.pageTitle.blog, description: "Field notes from the Lensies crew — real estate photography tips, drone permits in Morocco, lighting techniques, and Marrakech shoot stories.", locale, path: "/blog" }),
+  };
 }
 
 export default async function BlogPage() {

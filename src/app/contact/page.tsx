@@ -12,7 +12,9 @@ import { buildMetadata } from "@/i18n/metadata";
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getServerLocale();
   const dict = getDictionary(locale);
-  return buildMetadata(dict.meta, { title: dict.meta.pageTitle.contact, locale, path: "/contact" });
+  return {
+    ...buildMetadata(dict.meta, { title: dict.meta.pageTitle.contact, description: "Book a shoot or get a custom quote. Lensies studio in Gueliz, Marrakech. Phone: +212 621 947 493. We reply within 24 hours.", locale, path: "/contact" }),
+  };
 }
 
 export default async function ContactPage() {

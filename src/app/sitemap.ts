@@ -14,8 +14,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/blog",
     "/contact",
   ];
+  const LAST_CONTENT_UPDATE = new Date("2026-07-26");
   const staticEntries = staticRoutes.map((path) => ({
     url: `${BASE}${path}`,
+    lastModified: LAST_CONTENT_UPDATE,
   }));
   const enPosts = getDictionary("en").blog.data.posts;
   const slugs = getAllSlugs();

@@ -13,7 +13,9 @@ import { buildMetadata } from "@/i18n/metadata";
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getServerLocale();
   const dict = getDictionary(locale);
-  return buildMetadata(dict.meta, { title: dict.meta.pageTitle.about, locale, path: "/about" });
+  return {
+    ...buildMetadata(dict.meta, { title: dict.meta.pageTitle.about, description: "Meet the Lensies crew — Marrakech's go-to real estate photography team. Licensed drone pilots, 4K video editors, and local creatives since 2017.", locale, path: "/about" }),
+  };
 }
 
 export default async function AboutPage() {

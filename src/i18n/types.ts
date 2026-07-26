@@ -470,6 +470,7 @@ export type Dictionary = {
     studioLabel: string;
     copyrightTemplate: string; // "© {year} Lensies Studio · Marrakech"
     aboutLinks: { label: string; href: string }[];
+    legalLinks: { label: string; href: string }[];
     socials: { label: string; href: string; kind: "instagram" | "youtube" | "x" }[];
   };
   backToTop: {

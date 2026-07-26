@@ -12,7 +12,9 @@ import { buildMetadata } from "@/i18n/metadata";
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getServerLocale();
   const dict = getDictionary(locale);
-  return buildMetadata(dict.meta, { title: dict.meta.pageTitle.pricing, locale, path: "/pricing" });
+  return {
+    ...buildMetadata(dict.meta, { title: dict.meta.pageTitle.pricing, description: "Transparent pricing for real estate photography, drone, and video packages in Marrakech. Starting from 1,000 MAD. 24-hour delivery included.", locale, path: "/pricing" }),
+  };
 }
 
 export default async function PricingPage() {

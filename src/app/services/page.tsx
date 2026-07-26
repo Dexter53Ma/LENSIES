@@ -12,7 +12,9 @@ import { buildMetadata } from "@/i18n/metadata";
 export async function generateMetadata(): Promise<Metadata> {
   const locale = await getServerLocale();
   const dict = getDictionary(locale);
-  return buildMetadata(dict.meta, { title: dict.meta.pageTitle.services, locale, path: "/services" });
+  return {
+    ...buildMetadata(dict.meta, { title: dict.meta.pageTitle.services, description: "Real estate photography, drone aerials, and cinematic video production in Marrakech. 24-hour delivery, MLS-ready files, full permit handling.", locale, path: "/services" }),
+  };
 }
 
 export default async function ServicesPage() {

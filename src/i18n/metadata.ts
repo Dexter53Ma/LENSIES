@@ -61,6 +61,9 @@ export function buildMetadata(
       description: desc,
       images: [ogImage],
     },
+    other: {
+      "og:type": path?.startsWith("/blog/") ? "article" : "website",
+    },
     robots: {
       index: true,
       follow: true,

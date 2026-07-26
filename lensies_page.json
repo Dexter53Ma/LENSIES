@@ -1,0 +1,9 @@
+﻿python : Could not find platform independent libraries <prefix>
+Au caractère Ligne:1 : 1
++ python scripts/render_page.py https://www.lensies.co/ --mode auto --j ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Could not find ...raries <prefix>:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+C:\Python314\python.exe: can't open file 'C:\\Users\\Ultrapc\\Desktop\\lensies\\scripts\\render_page.py': [Errno 2] No 
+such file or directory

@@ -126,6 +126,10 @@ export const en: Dictionary = {
       { label: "Portfolio", href: "/portfolio" },
       { label: "Contact", href: "/contact" },
     ],
+    legalLinks: [
+      { label: "Privacy Policy", href: "/privacy" },
+      { label: "Terms of Service", href: "/terms" },
+    ],
     socials: [
       { label: "Instagram", href: "https://instagram.com/lensies.ma", kind: "instagram" },
       { label: "YouTube", href: "https://youtube.com/@lensies", kind: "youtube" },

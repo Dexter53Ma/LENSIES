@@ -101,6 +101,18 @@ export default function Footer({
             {t.format(t.footer.copyrightTemplate, { year })}
           </p>
 
+          <div className="flex items-center gap-16">
+            {t.footer.legalLinks.map((l) => (
+              <a
+                key={l.href}
+                href={l.href}
+                className="font-body text-[1.1rem] font-medium text-white/50 transition-colors hover:text-white/80 md:text-[1.2rem]"
+              >
+                {l.label}
+              </a>
+            ))}
+          </div>
+
           <div className="flex items-start gap-12">
             {t.footer.socials.map((s) => {
               const Icon = ICON_MAP[s.kind];
