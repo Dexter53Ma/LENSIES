@@ -5,7 +5,6 @@ import { getDictionary } from "@/i18n/get-dictionary";
 const BASE = "https://lensies.ma";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const now = new Date();
   const staticRoutes = [
     "",
     "/about",
@@ -17,9 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   const staticEntries = staticRoutes.map((path) => ({
     url: `${BASE}${path}`,
-    lastModified: now,
-    changeFrequency: "monthly" as const,
-    priority: path === "" ? 1.0 : 0.8,
   }));
   const enPosts = getDictionary("en").blog.data.posts;
   const slugs = getAllSlugs();
@@ -27,9 +23,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const post = enPosts.find((p) => p.slug === s.slug);
     return {
       url: `${BASE}/blog/${s.slug}`,
-      lastModified: post ? new Date(post.date) : now,
-      changeFrequency: "yearly" as const,
-      priority: 0.6,
+      lastModified: post ? new Date(post.date) : undefined,
     };
   });
   return [...staticEntries, ...blogEntries];
