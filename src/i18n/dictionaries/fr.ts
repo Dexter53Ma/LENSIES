@@ -470,6 +470,90 @@ export const fr: DeepPartial<Dictionary> = {
       scrollDownLabel: "Défiler vers le bas",
       videoSrc: "/videos/hero-video.mp4",
     },
+    story: {
+      heading: "Notre histoire",
+      body: "Fondé en 2017 sur un toit de la médina avec une seule caméra et la conviction que Marrakech mérite une meilleure photographie. Huit ans plus tard, nous sommes une équipe complète — directeurs photo, pilotes de drone, monteurs et producteurs — toujours basés à Guéliz, toujours dans la même ville dont nous sommes tombés amoureux. Nous avons commencé par l'immobilier. Puis le drone. Puis la vidéo. Puis les événements. Chaque savoir-faire est né d'une demande client, pas d'un plan d'affaires. Le résultat : un studio qui fait six choses bien, sous un même toit, avec une seule facture et une seule échéance. Plus de 400 villas photographiées. Plus de 500 vols de drone. Plus de 200 événements couverts. Nous connaissons la lumière de chaque quartier — des ruelles étroites de la médina aux palmiers de la Palmeraie, des toits modernes de Guéliz aux contreforts de l'Atlas. Nous avons été arrêtés pour avoir survolé une zone interdite, priés de supprimer des images sur place, et avons une fois dû fuir une tempête de sable à l'Agafay. Chaque leçon apprise se retrouve dans le prochain shooting. Nous sommes référencés sur Airbnb, Booking.com, Expedia, Tripadvisor, Marriott et Hilton. Notre travail est utilisé parmi les agences, hôtels et promoteurs les plus respectés de Marrakech. Mais le brief dont nous sommes le plus fiers est toujours le prochain.",
+      image: "/images/work-3.png",
+      imageAlt: "Studio Lensies à Guéliz, Marrakech",
+    },
+    team: {
+      heading: "L'équipe",
+      members: [
+        {
+          name: "Sofia Bennani",
+          role: "Directrice photo",
+          bio: "Huit ans de lumière marrakchie. Photographie l'immobilier, l'hôtellerie et occasionnellement des mariages. A construit la pile de presets.",
+          photo: "/images/work-3.png",
+        },
+        {
+          name: "Karim Tazi",
+          role: "Responsable drone",
+          bio: "Pilote breveté, plus de 500 vols au-dessus de la médina. Connaît par cœur chaque zone de non-vol au Maroc.",
+          photo: "/images/work-6.png",
+        },
+        {
+          name: "Lina Ouazzani",
+          role: "Responsable éclairage",
+          bio: "Riads patrimoniaux, lancements d'hôtels, travail en studio. La raison pour laquelle le zellige ressemble à du zellige et non à du plastique.",
+          photo: "/images/work-9.png",
+        },
+        {
+          name: "Youssef El Fassi",
+          role: "Responsable vidéo",
+          bio: "Films de marque, cinéma de mariage, cuts sociaux. Monte plus vite que la raison ne le dicte — et les données le confirment.",
+          photo: "/images/work-12.png",
+        },
+      ],
+    },
+    gear: {
+      heading: "Le matériel",
+      items: [
+        {
+          name: "Sony A7R V",
+          description: "61 MP plein format. Notre boîtier principal pour l'immobilier et l'éditorial.",
+          image: "/images/work-5.png",
+        },
+        {
+          name: "DJI Mavic 3 Pro",
+          description: "4K HDR, capteur 4/3. Le drone qui vole sur chaque mission marrakchie.",
+          image: "/images/work-4.png",
+        },
+        {
+          name: "DJI Ronin 4D",
+          description: "Vidéo stabilisée gimbal. Visites virtuelles, films de marque, couverture d'événements.",
+          image: "/images/work-8.png",
+        },
+        {
+          name: "Aputure 600D",
+          description: "LED équilibrée lumière du jour. La clé principale pour chaque shooting intérieur.",
+          image: "/images/work-7.png",
+        },
+        {
+          name: "Profoto B10X",
+          description: "Flash compact. Travaux patrimoniaux, détails, et riads qui demandent de la finesse.",
+          image: "/images/work-10.png",
+        },
+      ],
+    },
+    values: {
+      items: [
+        {
+          icon: "craft",
+          heading: "Savoir-faire",
+          body: "Chaque image est une décision. Nous travaillons les détails pour que le résultat paraisse naturel.",
+        },
+        {
+          icon: "local",
+          heading: "Local",
+          body: "Nous vivons ici, nous photographions ici. Notre connaissance de la lumière, des riads et des toits est acquise, pas louée.",
+        },
+        {
+          icon: "honest",
+          heading: "Honnête",
+          body: "Nous polissons, nous ne fabriquons pas. Ce que vous voyez dans la galerie finale est ce que l'acheteur verra en personne.",
+        },
+      ],
+    },
     cta: {
       heading: "Envie de tourner avec nous ?",
       body: "Nous recrutons des photographes et opérateurs drone freelances pour la haute saison. Envoyez un portfolio, nous le gardons en archive.",
@@ -485,6 +569,83 @@ export const fr: DeepPartial<Dictionary> = {
       body: "Choisissez un service ou composez un pack. Nous staffons, filmons, montons et livrons — sous un même toit, une seule facture, une seule deadline.",
       scrollDownLabel: "Défiler vers le bas",
       videoSrc: "/videos/hero-video.mp4",
+    },
+    serviceCards: {
+      heading: "Ce que nous faisons",
+      items: [
+        {
+          id: "real-estate",
+          name: "Immobilier",
+          description: "Heure bleue, heure dorée, intérieurs. HDR + flash, entièrement retouchés, prêts MLS en 24 heures. Nous couvrons chaque angle — plans larges, détails et prises aériennes. Notre forfait immobilier comprend 20-40 photos retouchées, options de staging virtuel et plans d'étage sur demande. Les agences les plus réputées de Marrakech nous font confiance.",
+          image: "/images/work-2.png",
+          href: "/portfolio?category=Real+Estate",
+        },
+        {
+          id: "drone",
+          name: "Drone & Aérien",
+          description: "Pilotes brevetés avec plus de 500 vols au-dessus de Marrakech. Aériennes 4K HDR, couverture de toit à toit, plans de paysage. Nous gérons toutes les autorisations d'aviation marocaines — CAA, vérification des zones de non-vol, évaluation des risques. De la médina aux contreforts de l'Atlas, nous connaissons chaque zone et chaque restriction. DJI Mavic 3 Pro, capteur 4/3, stabilisation gimbal complète.",
+          image: "/images/work-4.png",
+          href: "/portfolio?category=Tours",
+        },
+        {
+          id: "video",
+          name: "Vidéo & Cinéma",
+          description: "Films de marque, visites virtuelles, cuts sociaux, re-edits verticaux. 4K, stabilisé gimbal, étalonné en interne. Nous livrons un master de 60 secondes plus des versions 30s, 15s et verticales pour Reels et TikTok. Musique licenciée, design sonore, prêt à être lancé. Notre équipe vidéo a produit du contenu pour Atlas Hotels, La Mamounia et de nombreuses marques internationales.",
+          image: "/images/work-5.png",
+          href: "/portfolio?category=Brand",
+        },
+        {
+          id: "events",
+          name: "Événements",
+          description: "Mariages, événements d'entreprise, rassemblements intimes, lancements de produits. Couverture multi-caméras avec deux photographes, montage 4K de la cérémonie et un highlight de 90 secondes. Nous avons couvert plus de 200 événements à Marrakech — des jardins de la Palmeraie aux rooftops de la médina. Couverture journée complète disponible. Galerie livrée en 48 heures.",
+          image: "/images/work-6.png",
+          href: "/portfolio?category=Events",
+        },
+        {
+          id: "tours",
+          name: "Excursions & Expériences",
+          description: "Camps du désert, treks Atlas, balades dans la médina, vols en montgolfière, sorties en yacht. Reportage + aériens, livrés en 48 heures. Nous travaillons avec Sahara Experiences, Ciel d'Afrique et Atlas Trek Co. pour créer du contenu marketing qui double le taux de réservation. Tournages de deux jours disponibles pour les excursions multi-sites.",
+          image: "/images/work-8.png",
+          href: "/portfolio?category=Tours",
+        },
+        {
+          id: "3d",
+          name: "Visites virtuelles 3D",
+          description: "Scans Matterport 3D, vues poupée, plans d'étage. Pour les annonces qui ont besoin d'immersion. Nous scannons chaque pièce, générons un modèle 3D navigable et livrons des liens intégrables pour votre site et MLS. Idéal pour les villas de luxe, les hôtels et les projets sur plan. Délai : 48 heures du scan à la livraison.",
+          image: "/images/work-7.png",
+          href: "/contact",
+        },
+      ],
+    },
+    process: {
+      heading: "Comment nous travaillons",
+      steps: [
+        {
+          title: "Brief",
+          description: "Dites-nous le projet, le lieu, les dates et ce que vous souhaitez livrer.",
+          icon: "brief",
+        },
+        {
+          title: "Repérage",
+          description: "Nous visitons le lieu, planifions les prises, confirmons les fenêtres de lumière.",
+          icon: "scout",
+        },
+        {
+          title: "Tournage",
+          description: "L'équipe arrive, le matériel roule, le travail commence.",
+          icon: "shoot",
+        },
+        {
+          title: "Montage",
+          description: "Étalonnage, retouche, révision. Même monteur sur chaque mission.",
+          icon: "edit",
+        },
+        {
+          title: "Livraison",
+          description: "Lien galerie, téléchargement, terminé. La plupart des projets sont livrés en 48 heures.",
+          icon: "deliver",
+        },
+      ],
     },
     cta: {
       heading: "Besoin d'un projet sur mesure ?",

@@ -99,6 +99,7 @@ export default async function RootLayout({
                 "https://instagram.com/lensies.ma",
                 "https://youtube.com/@lensies",
                 "https://x.com/lensies",
+                "https://share.google/Tu1iMQpouuJuXSQdb",
               ],
               aggregateRating: {
                 "@type": "AggregateRating",
