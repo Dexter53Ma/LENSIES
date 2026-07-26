@@ -66,7 +66,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       </head>
       <body className="min-h-screen bg-background text-foreground font-body selection:bg-pink selection:text-white">
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFS5S9FZ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+height={0} width={0} style={{ display: "none", visibility: "hidden" }}></iframe></noscript>
         <LenisProvider>
           <TranslationProvider dictionary={dict} locale={locale}>
             <Header />
